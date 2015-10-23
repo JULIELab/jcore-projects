@@ -1,0 +1,40 @@
+10
+
+dir
+9344
+https://www.coling.uni-jena.de/svn/uima-components/trunk/jcore-jsbd-ae-biomedical-english/src/main
+https://www.coling.uni-jena.de/svn/uima-components
+
+
+
+2015-10-02T09:01:12.060875Z
+9147
+matthies
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7ac257a9-6a28-0410-b245-f828558649ed
+
+
+
+
+
+
+
+
+((conflict java dir switch deleted deleted (version https://www.coling.uni-jena.de/svn/uima-components 4 9139 trunk/jcore-jsbd-ae/src/main/java none) (version https://www.coling.uni-jena.de/svn/uima-components 4 9140 trunk/jcore-jsbd-ae-biomedical-english/src/main/java none)))
+
+resources
+dir
+

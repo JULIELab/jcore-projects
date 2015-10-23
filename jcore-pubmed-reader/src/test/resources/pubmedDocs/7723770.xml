@@ -1,0 +1,184 @@
+<PubmedArticle>
+    <MedlineCitation Owner="NLM" Status="MEDLINE">
+        <PMID Version="1">7723770</PMID>
+        <DateCreated>
+            <Year>1995</Year>
+            <Month>05</Month>
+            <Day>23</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>1995</Year>
+            <Month>05</Month>
+            <Day>23</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2000</Year>
+            <Month>12</Month>
+            <Day>18</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Print">0161-5890</ISSN>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>32</Volume>
+                    <Issue>4</Issue>
+                    <PubDate>
+                        <Year>1995</Year>
+                        <Month>Mar</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Molecular immunology</Title>
+                <ISOAbbreviation>Mol. Immunol.</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Preparation and characterization of a disulfide-stabilized Fv fragment of the anti-Tac antibody: comparison with its single-chain analog.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>249-58</MedlinePgn>
+            </Pagination>
+            <Abstract>
+                <AbstractText>Recombinant DNA techniques now allow the production of &quot;mini-antibodies&quot; called Fv fragments. These have been produced either as the independent variable domains of the heavy and light chains non-covalently associated in one-to-one stoichiometry or as single-chain gene products with the two domains linked by an intervening peptide sequence. Although Fv fragments can have excellent binding properties, they are often difficult to produce in good yield and lack the characteristic stability of whole antibodies. To improve the stability of the Fv molecule, we have introduced a cysteine residue into conserved framework regions of both the heavy and light variable domains from the anti-Tac antibody at positions compatible with the formation of an interdomain disulfide linkage (i.e. VH-44 and VL-99). The mutant subunits form a disulfide-bonded Fv molecule, which binds to the alpha-subunit of the IL2 receptor (IL2R alpha) with an affinity identical to that of humanized anti-Tac IgG. This disulfide-stabilized Fv (dsFv) proved to be substantially more resistant to denaturation by heat or urea treatment than the single-chain Fv (scFv). Furthermore, the yield of dsFv is -four-fold higher than that of the single-chain analog.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Webber</LastName>
+                    <ForeName>K O</ForeName>
+                    <Initials>KO</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Division of Cancer Biology, Diagnosis and Centers, National Cancer Institute, National Institutes of Health, Bethesda, MD 20892, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Reiter</LastName>
+                    <ForeName>Y</ForeName>
+                    <Initials>Y</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Brinkmann</LastName>
+                    <ForeName>U</ForeName>
+                    <Initials>U</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kreitman</LastName>
+                    <ForeName>R</ForeName>
+                    <Initials>R</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Pastan</LastName>
+                    <ForeName>I</ForeName>
+                    <Initials>I</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>ENGLAND</Country>
+            <MedlineTA>Mol Immunol</MedlineTA>
+            <NlmUniqueID>7905289</NlmUniqueID>
+            <ISSNLinking>0161-5890</ISSNLinking>
+        </MedlineJournalInfo>
+        <ChemicalList>
+            <Chemical>
+                <RegistryNumber>0</RegistryNumber>
+                <NameOfSubstance UI="D017931">DNA Primers</NameOfSubstance>
+            </Chemical>
+            <Chemical>
+                <RegistryNumber>0</RegistryNumber>
+                <NameOfSubstance UI="D004220">Disulfides</NameOfSubstance>
+            </Chemical>
+            <Chemical>
+                <RegistryNumber>0</RegistryNumber>
+                <NameOfSubstance UI="D007128">Immunoglobulin Fragments</NameOfSubstance>
+            </Chemical>
+            <Chemical>
+                <RegistryNumber>0</RegistryNumber>
+                <NameOfSubstance UI="D015375">Receptors, Interleukin-2</NameOfSubstance>
+            </Chemical>
+            <Chemical>
+                <RegistryNumber>0</RegistryNumber>
+                <NameOfSubstance UI="D011994">Recombinant Proteins</NameOfSubstance>
+            </Chemical>
+            <Chemical>
+                <RegistryNumber>0</RegistryNumber>
+                <NameOfSubstance UI="C055966">immunoglobulin Fv</NameOfSubstance>
+            </Chemical>
+        </ChemicalList>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000595">Amino Acid Sequence</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000915">Antibody Affinity</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D001483">Base Sequence</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D001667">Binding, Competitive</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D017076">Computer-Aided Design</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D017931">DNA Primers</DescriptorName>
+                <QualifierName MajorTopicYN="N" UI="Q000737">chemistry</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D004220">Disulfides</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D004926">Escherichia coli</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D007128">Immunoglobulin Fragments</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000737">chemistry</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D008969">Molecular Sequence Data</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D016297">Mutagenesis, Site-Directed</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D015375">Receptors, Interleukin-2</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000276">immunology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D011994">Recombinant Proteins</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D013329">Structure-Activity Relationship</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>1995</Year>
+                <Month>3</Month>
+                <Day>1</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>1995</Year>
+                <Month>3</Month>
+                <Day>1</Day>
+                <Hour>0</Hour>
+                <Minute>1</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>1995</Year>
+                <Month>3</Month>
+                <Day>1</Day>
+                <Hour>0</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">7723770</ArticleId>
+            <ArticleId IdType="pii">016158909400150Y</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>

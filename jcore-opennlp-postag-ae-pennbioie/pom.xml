@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>jcore-opennlp-postag-ae-pennbioie</artifactId>
+	<packaging>jar</packaging>
+	<description>Wrapper for OpenNLP POS Tagger; with a model trained on the Penn BioIE corpus</description>
+	<parent>
+		<groupId>de.julielab</groupId>
+		<artifactId>jcore</artifactId>
+		<version>2.0.0</version>
+	</parent>
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>org.apache.maven.plugins</groupId>
+										<artifactId>maven-dependency-plugin</artifactId>
+										<versionRange>[1.0.0,)</versionRange>
+										<goals>
+											<goal>copy-dependencies</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore />
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+	<name>JCoRe OpenNLP POS Tagger Penn BioIE</name>
+	<organization>
+		<name>JULIE Lab Jena, Germany</name>
+		<url>http://www.julielab.de</url>
+	</organization>
+	<dependencies>
+		<dependency>
+			<groupId>de.julielab</groupId>
+			<artifactId>jcore-opennlp-postag-ae</artifactId>
+			<version>${jcore-version}</version>
+		</dependency>
+	</dependencies>
+</project>

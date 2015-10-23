@@ -1,0 +1,14 @@
+The GENE-model contained in this PEAR package 
+was trained on the PennBioIE corpus. The model distinguishes 
+three different GENE entities: dna, rna, and a generic type.
+
+For more information on the PennBioIE corpus, please refer to 
+see http://bioie.ldc.upenn.edu/.
+
+The training material (in the format JNET requires it) is 
+in this folder as well (pennbio_genes.train.ppd). 
+
+Using JNET, you might train your own models from different 
+training material according to your application needs. Please 
+refer to the JNET documentation for more detailed information on 
+how to train a model.

@@ -1,0 +1,8 @@
+Command:
+java -Xmx13g -jar jnet-2.5.0-SNAPSHOT-jar-with-dependencies.jar x allTraining.ppd tags.def crossval-pred-out.txt 10 crossval-performance-out.txt genes-plus-featureconfig.txt
+
+Result:
+Overall performance: avg (standard deviation)
+Recall: 0.735(0.007)
+Precision: 0.782(0.004)
+F1-Score: 0.757(0.005)

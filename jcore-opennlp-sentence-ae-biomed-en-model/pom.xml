@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>jcore-opennlp-sentence-ae-genia-pennbio-english</artifactId>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>src</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <parent>
+  	<groupId>de.julielab</groupId>
+  	<artifactId>jcore</artifactId>
+  	<version>2.0.0</version>
+  </parent>
+  <name>JCoRe OpenNLP Sentence Splitter BioMed English</name>
+  <description>model for the sentence splitter, trained on PennBio and Genia</description>
+  <organization>
+  	<name>JULIE Lab Jena, Germany</name>
+  	<url>http://www.julielab.de</url>
+  </organization>
+  <dependencies>
+  	<dependency>
+        	<groupId>de.julielab</groupId>
+        	<artifactId>jcore-types</artifactId>
+        	<version>${jcore-version}</version>
+        </dependency>
+  	<dependency>
+  		<groupId>de.julielab</groupId>
+  		<artifactId>jcore-opennlp-sentence-ae</artifactId>
+  		<version>${jcore-version}</version>
+  	</dependency>
+  </dependencies>
+</project>

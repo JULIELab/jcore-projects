@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/uima-components/!svn/ver/9121/trunk/jcore-jnet-ae-biomedical-english/JNET_data
+END
+gene_features.conf
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/uima-components/!svn/ver/9121/trunk/jcore-jnet-ae-biomedical-english/JNET_data/gene_features.conf
+END
+genetags-katrin.def
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/uima-components/!svn/ver/9121/trunk/jcore-jnet-ae-biomedical-english/JNET_data/genetags-katrin.def
+END
+pennbio_genes.train-model.gz
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/uima-components/!svn/ver/9121/trunk/jcore-jnet-ae-biomedical-english/JNET_data/pennbio_genes.train-model.gz
+END
+gene_features-katrin.conf
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/uima-components/!svn/ver/9121/trunk/jcore-jnet-ae-biomedical-english/JNET_data/gene_features-katrin.conf
+END
+pennbio_genes.tags
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/uima-components/!svn/ver/9121/trunk/jcore-jnet-ae-biomedical-english/JNET_data/pennbio_genes.tags
+END
+pennbio_genes.train.ppd
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/uima-components/!svn/ver/9121/trunk/jcore-jnet-ae-biomedical-english/JNET_data/pennbio_genes.train.ppd
+END
+genetags.def
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/uima-components/!svn/ver/9121/trunk/jcore-jnet-ae-biomedical-english/JNET_data/genetags.def
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/uima-components/!svn/ver/9121/trunk/jcore-jnet-ae-biomedical-english/JNET_data/README
+END

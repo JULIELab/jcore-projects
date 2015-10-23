@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<artifactId>jcore</artifactId>
+		<version>2.0.0</version>
+		<groupId>de.julielab</groupId>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>jcore-jpos-ae-medical-german</artifactId>
+	<dependencies>
+		<dependency>
+			<groupId>de.julielab</groupId>
+			<artifactId>jcore-jpos-ae</artifactId>
+			<version>${jcore-version}</version>
+		</dependency>
+	</dependencies>
+	<organization>
+		<url>http://www.julielab.de</url>
+		<name>JULIE Lab, Germany</name>
+	</organization>
+	<name>JCoRe JPOS AE Medical German</name>
+</project>
