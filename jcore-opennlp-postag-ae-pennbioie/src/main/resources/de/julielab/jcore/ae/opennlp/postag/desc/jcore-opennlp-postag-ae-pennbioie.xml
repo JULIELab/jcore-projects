@@ -2,7 +2,7 @@
 <analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
   <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
   <primitive>true</primitive>
-  <annotatorImplementationName>de.julielab.jcore.ae.opennlppostag.main.PosTagAnnotator</annotatorImplementationName>
+  <annotatorImplementationName>de.julielab.jcore.ae.opennlp.postag.PosTagAnnotator</annotatorImplementationName>
   <analysisEngineMetaData>
     <name>JCoRe OpenNLP POS Tagger</name>
     <description/>
@@ -28,13 +28,13 @@
       <nameValuePair>
         <name>modelFile</name>
         <value>
-          <string>de/julielab/jcore/ae/opennlppostag/model/opennlppostag-pennbioie.bin.gz</string>
+          <string>de/julielab/jcore/ae/opennlp/postag/model/opennlp-postag-pennbioie.bin.gz</string>
         </value>
       </nameValuePair>
       <nameValuePair>
         <name>tagset</name>
         <value>
-          <string>de.julielab.jules.types.PennBioIEPOSTag</string>
+          <string>de.julielab.jcore.types.PennBioIEPOSTag</string>
         </value>
       </nameValuePair>
     </configurationParameterSettings>
@@ -48,11 +48,11 @@
     <capabilities>
       <capability>
         <inputs>
-          <type allAnnotatorFeatures="true">de.julielab.jules.types.Token</type>
-          <type allAnnotatorFeatures="true">de.julielab.jules.types.Sentence</type>
+          <type allAnnotatorFeatures="true">de.julielab.jcore.types.Token</type>
+          <type allAnnotatorFeatures="true">de.julielab.jcore.types.Sentence</type>
         </inputs>
         <outputs>
-          <type allAnnotatorFeatures="true">de.julielab.jules.types.POSTag</type>
+          <type allAnnotatorFeatures="true">de.julielab.jcore.types.POSTag</type>
         </outputs>
         <languagesSupported/>
       </capability>
