@@ -83,5 +83,10 @@ This is for the english biomedical domain.</description>
 			<artifactId>jcore-jtbd-ae</artifactId>
 			<version>${jcore-version}</version>
 		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 </project>
