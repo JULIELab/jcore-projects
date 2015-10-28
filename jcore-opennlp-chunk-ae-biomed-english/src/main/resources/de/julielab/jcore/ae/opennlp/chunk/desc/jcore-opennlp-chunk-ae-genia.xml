@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+	<frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+	<primitive>true</primitive>
+	<annotatorImplementationName>de.julielab.jcore.ae.opennlp.chunk.ChunkAnnotator
+	</annotatorImplementationName>
+	<analysisEngineMetaData>
+		<name>JCoRe OpenNLP Chunk AE Biomed English</name>
+		<description>Descriptor for OpenNLP Sentence Splitter using a model
+			trained on Genia Treebank v1</description>
+		<version>1.0.0</version>
+		<vendor>JULIE Lab Jena, Germany</vendor>
+		<configurationParameters>
+			<configurationParameter>
+				<name>modelFile</name>
+				<type>String</type>
+				<multiValued>false</multiValued>
+				<mandatory>true</mandatory>
+			</configurationParameter>
+			<configurationParameter>
+				<name>posTagSetPref</name>
+				<type>String</type>
+				<multiValued>false</multiValued>
+				<mandatory>false</mandatory>
+			</configurationParameter>
+			<configurationParameter>
+				<name>mappings</name>
+				<type>String</type>
+				<multiValued>true</multiValued>
+				<mandatory>false</mandatory>
+			</configurationParameter>
+		</configurationParameters>
+		<configurationParameterSettings>
+			<nameValuePair>
+				<name>modelFile</name>
+				<value>
+					<string>de/julielab/jcore/ae/opennlp/chunk/model/opennlp-chunk-model-biomed-english-genia.bin
+					</string>
+				</value>
+			</nameValuePair>
+			<nameValuePair>
+				<name>posTagSetPref</name>
+				<value>
+					<string>de.julielab.jcore.types.GeniaPOSTag</string>
+				</value>
+			</nameValuePair>
+			<nameValuePair>
+				<name>mappings</name>
+				<value>
+					<array>
+						<string>NP;de.julielab.jcore.types.ChunkNP</string>
+						<string>PP;de.julielab.jcore.types.ChunkPP</string>
+						<string>VP;de.julielab.jcore.types.ChunkVP</string>
+						<string>ADJP;de.julielab.jcore.types.ChunkADJP</string>
+						<string>CONJP;de.julielab.jcore.types.ChunkCONJP</string>
+						<string>LST;de.julielab.jcore.types.ChunkLST</string>
+						<string>SBAR;de.julielab.jcore.types.ChunkSBAR</string>
+						<string>PRT;de.julielab.jcore.types.ChunkPRT</string>
+						<string>ADVP;de.julielab.jcore.types.ChunkADVP</string>
+					</array>
+				</value>
+			</nameValuePair>
+		</configurationParameterSettings>
+		<typeSystemDescription>
+			<imports>
+				<import name="de.julielab.jcore.types.jcore-morpho-syntax-types" />
+			</imports>
+		</typeSystemDescription>
+		<typePriorities />
+		<fsIndexCollection />
+		<capabilities>
+			<capability>
+				<inputs>
+					<type allAnnotatorFeatures="true">de.julielab.jcore.types.Token
+					</type>
+					<type allAnnotatorFeatures="true">de.julielab.jcore.types.Sentence
+					</type>
+					<type allAnnotatorFeatures="true">de.julielab.jcore.types.POSTag
+					</type>
+				</inputs>
+				<outputs>
+					<type allAnnotatorFeatures="true">de.julielab.jcore.types.Chunk
+					</type>
+				</outputs>
+				<languagesSupported />
+			</capability>
+		</capabilities>
+		<operationalProperties>
+			<modifiesCas>true</modifiesCas>
+			<multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+			<outputsNewCASes>false</outputsNewCASes>
+		</operationalProperties>
+	</analysisEngineMetaData>
+	<resourceManagerConfiguration />
+</analysisEngineDescription>
