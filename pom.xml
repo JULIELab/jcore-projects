@@ -18,5 +18,18 @@
 	<name>JCoRe Projects</name>
 	<modules>
 
+	<module>jcore-biosem-ae-bionlp-st11</module>
+	<module>jcore-jnet-ae-biomedical-english</module>
+	<module>jcore-jpos-ae-medical-german</module>
+	<module>jcore-jsbd-ae-biomedical-english</module>
+	<module>jcore-jtbd-ae-biomedical-english</module>
+	<module>jcore-lingpipegazetteer-ae-dummy-implementation</module>
+	<module>jcore-medline-reader</module>
+	<module>jcore-mstparser-ae-biomedical-english</module>
+	<module>jcore-opennlp-chunk-ae-genia</module>
+	<module>jcore-opennlp-postag-ae-pennbioie</module>
+	<module>jcore-opennlp-sentence-ae-biomed-en-model</module>
+	<module>jcore-opennlp-token-ae-biomedical-english</module>
+	<module>jcore-pubmed-reader</module>
 	</modules>
 </project>
