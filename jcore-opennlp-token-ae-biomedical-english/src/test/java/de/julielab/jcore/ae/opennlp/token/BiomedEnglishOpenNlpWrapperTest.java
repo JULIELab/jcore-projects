@@ -1,6 +1,6 @@
 package de.julielab.jcore.ae.opennlp.token;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import java.util.Collection;
 
@@ -11,19 +11,20 @@ import org.apache.uima.fit.util.JCasUtil;
 import org.apache.uima.jcas.JCas;
 import org.junit.Test;
 
-import de.julielab.jules.types.Sentence;
-import de.julielab.jules.types.Token;
+import de.julielab.jcore.types.Sentence;
+import de.julielab.jcore.types.Token;
 
 public class BiomedEnglishOpenNlpWrapperTest {
-	@Test
-	public void testCreationAndProcessing() throws Exception {
-		JCas jCas = JCasFactory.createJCas("de.julielab.jcore.types.jcore-morpho-syntax-types");
-		AnalysisEngine ae = AnalysisEngineFactory.createEngineFromPath("src/main/resources/de/julielab/jcore/ae/opennlp/token/desc/jcore-opennlp-token-ae-biomed-english.xml");
-		jCas.setDocumentText("Precise let-7 expression levels balance organ regeneration against tumor suppression.");
-		Sentence s = new Sentence(jCas, 0, jCas.getDocumentText().length());
-		s.addToIndexes();
-		ae.process(jCas);
-		Collection<Token> tokens = JCasUtil.select(jCas, Token.class);
-		assertEquals(11, tokens.size());
-	}
+    @Test
+    public void testCreationAndProcessing() throws Exception {
+        JCas jCas = JCasFactory.createJCas("de.julielab.jcore.types.jcore-morpho-syntax-types");
+        AnalysisEngine ae = AnalysisEngineFactory.createEngineFromPath(
+                "src/main/resources/de/julielab/jcore/ae/opennlp/token/desc/jcore-opennlp-token-ae-biomed-english.xml");
+        jCas.setDocumentText("Precise let-7 expression levels balance organ regeneration against tumor suppression.");
+        Sentence s = new Sentence(jCas, 0, jCas.getDocumentText().length());
+        s.addToIndexes();
+        ae.process(jCas);
+        Collection<Token> tokens = JCasUtil.select(jCas, Token.class);
+        assertEquals(11, tokens.size());
+    }
 }
