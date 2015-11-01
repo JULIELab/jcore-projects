@@ -6,7 +6,7 @@ import org.apache.uima.fit.factory.JCasFactory;
 import org.apache.uima.jcas.JCas;
 import org.junit.Test;
 
-import de.julielab.jules.types.Gene;
+import de.julielab.jcore.types.Gene;
 
 public class TestData {
 	@Test
