@@ -3,4 +3,8 @@
 /.settings
 /.classpath
 /.project
+<<<<<<< HEAD
 /target
+=======
+/target/
+>>>>>>> branch 'master' of https://github.com/JULIELab/jcore-projects.git
