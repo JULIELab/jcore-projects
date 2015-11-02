@@ -42,4 +42,16 @@ public class TestDifficultDocument {
 		FSIterator<Annotation> it = jCas.getAnnotationIndex(EventMention.type).iterator();
 		assertTrue(it.hasNext());
 	}
+	
+	@Test
+	public void testDifficultDoc3() throws Exception {
+		JCas jCas = JCasFactory
+				.createJCas("de.julielab.jcore.types.jcore-all-types");
+		XmiCasDeserializer.deserialize(new FileInputStream("src/test/resources/20935495.xmi"), jCas.getCas());
+		AnalysisEngine engine = AnalysisEngineFactory
+				.createEngine("de.julielab.jcore.ae.biosem.desc.jcore-biosem-ae-bionlp-st11");
+		engine.process(jCas);
+		FSIterator<Annotation> it = jCas.getAnnotationIndex(EventMention.type).iterator();
+		assertTrue(it.hasNext());
+	}
 }
