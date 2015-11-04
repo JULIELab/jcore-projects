@@ -1,0 +1,175 @@
+<PubmedArticle>
+    <MedlineCitation Owner="NLM" Status="PubMed-not-MEDLINE">
+        <PMID Version="1">26504747</PMID>
+        <DateCreated>
+            <Year>2015</Year>
+            <Month>10</Month>
+            <Day>27</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2015</Year>
+            <Month>10</Month>
+            <Day>27</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2015</Year>
+            <Month>10</Month>
+            <Day>29</Day>
+        </DateRevised>
+        <Article PubModel="Electronic-eCollection">
+            <Journal>
+                <ISSN IssnType="Electronic">2214-5400</ISSN>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>6</Volume>
+                    <PubDate>
+                        <Year>2015</Year>
+                        <Month>Dec</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Meta gene</Title>
+                <ISOAbbreviation>Meta Gene</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Absence of somatic mutations of the mTOR gene in differentiated thyroid cancer.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>69-71</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.mgene.2015.08.005</ELocationID>
+            <Abstract>
+                <AbstractText>Thyroid cancer is the most common endocrine malignancy with increasing incidence. Mammalian target of rapamycin (mTOR) is an important downstream mediator of phosphatidylinositol 3-kinase (PI3K/Akt) signaling and regulates cell growth, apoptosis and metabolism. The mTOR gene is frequently mutated in human cancers. Although PI3K/Akt pathway and its component genes were extensively studied in thyroid cancer, it is not known whether mTOR gene is somatically mutated and play a role in differentiated thyroid cancer (DTC). To determine the status of mTOR mutations in 53 DTC, we extensively examined 19 selected exons of mTOR gene which were reported to be frequently mutated in other human cancers. Unlike in other human cancers, we did not find common somatic mutations in the mTOR gene in differentiated thyroid cancer, except for some synonymous single nucleotide polymorphisms. Our results suggest that mTOR mutation is very rare and may not play a significant role in DTC.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Murugan</LastName>
+                    <ForeName>Avaniyapuram Kannan</ForeName>
+                    <Initials>AK</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Molecular Endocrinology Section, Department of Molecular Oncology, King Faisal Specialist Hospital and Research Center, Riyadh, Kingdom of Saudi Arabia.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Humudh</LastName>
+                    <ForeName>Eman A</ForeName>
+                    <Initials>EA</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Molecular Endocrinology Section, Department of Molecular Oncology, King Faisal Specialist Hospital and Research Center, Riyadh, Kingdom of Saudi Arabia ; Department of Zoology, King Saud University, Riyadh, Kingdom of Saudi Arabia.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Qasem</LastName>
+                    <ForeName>Ebtesam</ForeName>
+                    <Initials>E</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Molecular Endocrinology Section, Department of Molecular Oncology, King Faisal Specialist Hospital and Research Center, Riyadh, Kingdom of Saudi Arabia.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Al-Hindi</LastName>
+                    <ForeName>Hindi</ForeName>
+                    <Initials>H</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Pathology, King Faisal Specialist Hospital and Research Center, Riyadh, Kingdom of Saudi Arabia.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Almohanna</LastName>
+                    <ForeName>Mai</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Molecular Endocrinology Section, Department of Molecular Oncology, King Faisal Specialist Hospital and Research Center, Riyadh, Kingdom of Saudi Arabia.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Hassan</LastName>
+                    <ForeName>Zeinab Korany</ForeName>
+                    <Initials>ZK</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Zoology, King Saud University, Riyadh, Kingdom of Saudi Arabia.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Alzahrani</LastName>
+                    <ForeName>Ali S</ForeName>
+                    <Initials>AS</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Molecular Endocrinology Section, Department of Molecular Oncology, King Faisal Specialist Hospital and Research Center, Riyadh, Kingdom of Saudi Arabia.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2015</Year>
+                <Month>09</Month>
+                <Day>27</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Netherlands</Country>
+            <MedlineTA>Meta Gene</MedlineTA>
+            <NlmUniqueID>101627670</NlmUniqueID>
+            <ISSNLinking>2214-5400</ISSNLinking>
+        </MedlineJournalInfo>
+        <OtherID Source="NLM">PMC4588405</OtherID>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">MTOR</Keyword>
+            <Keyword MajorTopicYN="N">Oncogene</Keyword>
+            <Keyword MajorTopicYN="N">PI3K/Akt signaling</Keyword>
+            <Keyword MajorTopicYN="N">Thyroid</Keyword>
+            <Keyword MajorTopicYN="N">mTOR Mutation</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="ecollection">
+                <Year>2015</Year>
+                <Month>12</Month>
+                <Day/>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="received">
+                <Year>2015</Year>
+                <Month>4</Month>
+                <Day>21</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2015</Year>
+                <Month>8</Month>
+                <Day>24</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="epublish">
+                <Year>2015</Year>
+                <Month>9</Month>
+                <Day>27</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2015</Year>
+                <Month>10</Month>
+                <Day>28</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2015</Year>
+                <Month>10</Month>
+                <Day>28</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2015</Year>
+                <Month>10</Month>
+                <Day>28</Day>
+                <Hour>6</Hour>
+                <Minute>1</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="doi">10.1016/j.mgene.2015.08.005</ArticleId>
+            <ArticleId IdType="pii">S2214-5400(15)00050-X</ArticleId>
+            <ArticleId IdType="pubmed">26504747</ArticleId>
+            <ArticleId IdType="pmc">PMC4588405</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
