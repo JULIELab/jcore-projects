@@ -66,4 +66,28 @@ public class TestDifficultDocument {
 		FSIterator<Annotation> it = jCas.getAnnotationIndex(EventMention.type).iterator();
 		assertTrue(it.hasNext());
 	}
+	
+	@Test
+	public void testDifficultDoc5() throws Exception {
+		JCas jCas = JCasFactory
+				.createJCas("de.julielab.jcore.types.jcore-all-types");
+		XmiCasDeserializer.deserialize(new FileInputStream("src/test/resources/22675210.xmi"), jCas.getCas());
+		AnalysisEngine engine = AnalysisEngineFactory
+				.createEngine("de.julielab.jcore.ae.biosem.desc.jcore-biosem-ae-bionlp-st11");
+		engine.process(jCas);
+		FSIterator<Annotation> it = jCas.getAnnotationIndex(EventMention.type).iterator();
+		assertTrue(it.hasNext());
+	}
+	
+	@Test
+	public void testDifficultDoc6() throws Exception {
+		JCas jCas = JCasFactory
+				.createJCas("de.julielab.jcore.types.jcore-all-types");
+		XmiCasDeserializer.deserialize(new FileInputStream("src/test/resources/23380144.xmi"), jCas.getCas());
+		AnalysisEngine engine = AnalysisEngineFactory
+				.createEngine("de.julielab.jcore.ae.biosem.desc.jcore-biosem-ae-bionlp-st11");
+		engine.process(jCas);
+		FSIterator<Annotation> it = jCas.getAnnotationIndex(EventMention.type).iterator();
+		assertTrue(it.hasNext());
+	}
 }
