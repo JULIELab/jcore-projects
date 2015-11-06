@@ -48,4 +48,9 @@
 		<module>jcore-opennlp-token-ae-biomedical-english</module>
 		<module>jcore-pubmed-reader</module>
 	</modules>
+	<scm>
+        <connection>scm:git:git@github.com:JULIELab/jcore-projects.git</connection>
+        <developerConnection>scm:git:git@github.com:JULIELab/jcore-projects.git</developerConnection>
+        <url>https://github.com/JULIELab/jcore-projects</url>
+    </scm>
 </project>
