@@ -27,7 +27,7 @@ This is for the english biomedical domain.</description>
 							<mainClass>de.julielab.jtbd.TokenizerApplication</mainClass>
 						</manifest>
 					</archive>
-					<appendAssemblyId>false</appendAssemblyId>
+<!-- 					<appendAssemblyId>false</appendAssemblyId> -->
 					<finalName>jtbd-${project.version}</finalName>
 				</configuration>
 				<executions>
