@@ -32,6 +32,13 @@
 				<id>0</id>
 			</partOfDocumentText>
 		</offset>
+		<tsFeature>
+			<tsFeatureName>titleType</tsFeatureName>
+			<tsFullClassName>java.lang.String</tsFullClassName>
+			<valueMapping>
+				<default>document</default>
+			</valueMapping>
+		</tsFeature>
 	</tsType>
 
 	<tsType>
