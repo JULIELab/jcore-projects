@@ -26,7 +26,7 @@
       <nameValuePair>
         <name>ModelFilename</name>
         <value>
-          <string>de.julielab.jcore.ae.jpos.model.jpos-framed</string>
+          <string>de/julielab/jcore/ae/jpos/model/jpos-framed.gz</string>
         </value>
       </nameValuePair>
        <nameValuePair>

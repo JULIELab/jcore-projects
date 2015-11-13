@@ -11,7 +11,7 @@
 		<dependency>
 			<groupId>de.julielab</groupId>
 			<artifactId>jcore-jpos-ae</artifactId>
-			<version>${jcore-version}</version>
+			<version>2.0.1</version>
 		</dependency>
 	</dependencies>
 	<organization>
@@ -19,4 +19,5 @@
 		<name>JULIE Lab, Germany</name>
 	</organization>
 	<name>JCoRe JPOS AE Medical German</name>
+	<version>2.0.1</version>
 </project>
