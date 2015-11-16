@@ -95,7 +95,7 @@ Available modes are:
       <nameValuePair>
         <name>ModelFilename</name>
         <value>
-          <string>de.julielab.jcore.ae.jnet.model.jnet-pennbio.mod.gz</string>
+          <string>de/julielab/jcore/ae/jnet/model/jnet-pennbio.gz</string>
         </value>
       </nameValuePair>
       <nameValuePair>
