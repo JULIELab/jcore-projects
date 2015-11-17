@@ -26,13 +26,13 @@
       <nameValuePair>
         <name>ModelFilename</name>
         <value>
-          <string>de.julielab.jcore.ae.jpos.model.jpos-framed</string>
+          <string>de/julielab/jcore/ae/jpos/model/jpos-framed.gz</string>
         </value>
       </nameValuePair>
        <nameValuePair>
         <name>tagset</name>
         <value>
-          <string>de.julielab.jules.types.STTSMedPOSTag</string>
+          <string>de.julielab.jcore.types.STTSMedPOSTag</string>
         </value>
       </nameValuePair>
     </configurationParameterSettings>
@@ -46,11 +46,11 @@
     <capabilities>
       <capability>
         <inputs>
-          <type allAnnotatorFeatures="true">de.julielab.jules.types.Token</type>
-          <type allAnnotatorFeatures="true">de.julielab.jules.types.Sentence</type>
+          <type allAnnotatorFeatures="true">de.julielab.jcore.types.Token</type>
+          <type allAnnotatorFeatures="true">de.julielab.jcore.types.Sentence</type>
         </inputs>
         <outputs>
-          <type allAnnotatorFeatures="true">de.julielab.jules.types.Token</type>
+          <type allAnnotatorFeatures="true">de.julielab.jcore.types.Token</type>
         </outputs>
         <languagesSupported/>
       </capability>
