@@ -9,4 +9,4 @@ Accuracy: 0.976(0.002)
 ```
 
 ### Reference
-[1] Johannes Hellrich, Franz Matthies, Erik Faessler and Udo Hahn: Sharing Models and Tools for Processing German Clinical Text. In: Ronald Cornet, Lăcrămioara Stoicu-Tivadar, Alexander Hörbst, Carlos Luis Parra Calderón, Stig Kjær Andersen, Mira Hercigonja-Szekeres (Eds.): Digital Healthcare Empowering Europeans [= Proceedings of MIE2015], 2015, pp. 734-738 (Studies in Health Technology and Informatics, 210).
+**[1]** Johannes Hellrich, Franz Matthies, Erik Faessler and Udo Hahn: [Sharing Models and Tools for Processing German Clinical Text](http://ebooks.iospress.nl/volumearticle/39444). In: Ronald Cornet, Lăcrămioara Stoicu-Tivadar, Alexander Hörbst, Carlos Luis Parra Calderón, Stig Kjær Andersen, Mira Hercigonja-Szekeres (Eds.): *Digital Healthcare Empowering Europeans* [= Proceedings of MIE2015], 2015, pp. 734-738 (Studies in Health Technology and Informatics, 210).
