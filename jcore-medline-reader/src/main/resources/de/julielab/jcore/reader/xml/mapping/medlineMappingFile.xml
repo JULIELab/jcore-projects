@@ -1,5 +1,5 @@
 <mappings>
-<documentText>
+	<documentText>
 		<partOfDocumentText id="0">
 			<xPath>/MedlineCitation/Article/ArticleTitle</xPath>
 		</partOfDocumentText>
@@ -252,6 +252,27 @@
 						<tsFullClassName>int</tsFullClassName>
 						<tsFeatureName>day</tsFeatureName>
 					</tsFeature>
+				</tsFeature>
+			</tsFeature>
+		</tsFeature>
+		<tsFeature>
+			<tsFullClassName>org.apache.uima.jcas.cas.FSArray</tsFullClassName>
+			<tsFeatureName>otherIDs</tsFeatureName>
+			<isType>true</isType>
+			<tsFeature>
+				<tsFullClassName>de.julielab.jcore.types.pubmed.OtherID
+				</tsFullClassName>
+				<xPath>/MedlineCitation/OtherID</xPath>
+				<isType>true</isType>
+				<tsFeature>
+					<tsFeatureName>id</tsFeatureName>
+					<tsFullClassName>java.lang.String</tsFullClassName>
+					<xPath>.</xPath>
+				</tsFeature>
+				<tsFeature>
+					<tsFeatureName>source</tsFeatureName>
+					<tsFullClassName>java.lang.String</tsFullClassName>
+					<xPath>@Source</xPath>
 				</tsFeature>
 			</tsFeature>
 		</tsFeature>
