@@ -58,4 +58,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+    <scm>
+        <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-opennlp-postag-ae-pennbioie</url>
+    </scm>
 </project>

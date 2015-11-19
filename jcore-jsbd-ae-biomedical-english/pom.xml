@@ -71,16 +71,6 @@ This is for the english biomedical domain.</description>
 			</plugins>
 		</pluginManagement>
 	</build>
-
-
-
-
-	
-
-	
-
-
-
 	<organization>
 		<name>JULIE Lab Jena, Germany</name>
 		<url>http://www.julielab.de</url>
@@ -92,4 +82,7 @@ This is for the english biomedical domain.</description>
 			<version>${jcore-version}</version>
 		</dependency>
 	</dependencies>
+    <scm>
+        <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-jsbd-ae-biomedical-english</url>
+    </scm>
 </project>

@@ -19,4 +19,7 @@
   	</dependency>
   </dependencies>
   <name>JCoRe Lingpipe Gazetteer Dummy Impl</name>
+    <scm>
+        <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-lingpipegazetteer-ae-dummy-implementation</url>
+    </scm>
 </project>

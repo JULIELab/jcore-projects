@@ -24,4 +24,7 @@
    	</dependency>
    </dependencies>
    <version>2.0.2</version>
+    <scm>
+        <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-mstparser-ae-biomedical-english</url>
+    </scm>
 </project>

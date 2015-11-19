@@ -19,4 +19,7 @@
 		<name>JULIE Lab, Germany</name>
 	</organization>
 	<name>JCoRe JPOS AE Medical German</name>
+    <scm>
+        <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-jpos-ae-medical-german</url>
+    </scm>
 </project>

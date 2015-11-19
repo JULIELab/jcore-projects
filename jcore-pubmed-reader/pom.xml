@@ -24,4 +24,7 @@
   	<name>JULIE Lab, Germany</name>
   	<url>http://www.julielab.de</url>
   </organization>
+    <scm>
+        <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-pubmed-reader</url>
+    </scm>
 </project>
