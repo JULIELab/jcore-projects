@@ -1,85 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+	                         http://maven.apache.org/maven-v4_0_0.xsd">
 
-	<modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
+	
+    <!-- Basics & Project Information -->
+    <parent>
+        <groupId>de.julielab</groupId>
+        <artifactId>jcore-parent</artifactId>
+        <version>2.1.0-SNAPSHOT</version>
+    </parent>
 	<artifactId>jcore-projects</artifactId>
 	<packaging>pom</packaging>
+	
+	<name>JCoRe Projects</name>
 	<description>The POM for the JCoRe Projects.</description>
 	<organization>
 		<name>JULIE Lab, Germany</name>
 		<url>http://www.julielab.de</url>
 	</organization>
-	<parent>
-		<groupId>de.julielab</groupId>
-		<artifactId>jcore-parent</artifactId>
-		<version>2.0.0</version>
-	</parent>
-	<name>JCoRe Projects</name>
+	<licenses>
+        <license>
+            <name>GNU Lesser General Public License, Version 3.0</name>
+            <url>http://www.gnu.org/licenses/lgpl-3.0.html</url>
+        </license>
+    </licenses>
+    <url>https://github.com/JULIELab/jcore-projects</url>
+	
 	<dependencies>
-       <dependency>
-           <groupId>org.apache.uima</groupId>
-           <artifactId>uimaj-core</artifactId>
-           <version>${uima-version}</version>
-       </dependency>
-       <dependency>
-           <groupId>org.apache.uima</groupId>
-           <artifactId>uimafit-core</artifactId>
-           <version>${uimafit-version}</version>
-       </dependency>
-       <dependency>
-        <groupId>de.julielab</groupId>
-        <artifactId>jcore-types</artifactId>
-        <version>${jcore-version}</version>
-       </dependency>
+        <dependency>
+            <groupId>org.apache.uima</groupId>
+            <artifactId>uimaj-core</artifactId>
+            <version>${uima-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.uima</groupId>
+            <artifactId>uimafit-core</artifactId>
+            <version>${uimafit-version}</version>
+        </dependency>
     </dependencies>
-    <build>
-      <plugins>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-source-plugin</artifactId>
-          <version>2.2.1</version>
-          <executions>
-            <execution>
-              <id>attach-sources</id>
-              <phase>package</phase>
-              <goals>
-                <goal>jar-no-fork</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-javadoc-plugin</artifactId>
-          <version>2.9.1</version>
-          <executions>
-            <execution>
-              <id>attach-javadocs</id>
-              <phase>package</phase>
-              <goals>
-                <goal>jar</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>
-      </plugins>
-    </build>
+    
 	<modules>
-<!-- 		<module>jcore-biosem-ae-bionlp-st11</module> -->
+		<module>jcore-biosem-ae-bionlp-st11</module>
 		<module>jcore-jnet-ae-biomedical-english</module>
 		<module>jcore-jpos-ae-medical-german</module>
 		<module>jcore-jsbd-ae-biomedical-english</module>
 		<module>jcore-jtbd-ae-biomedical-english</module>
 		<module>jcore-lingpipegazetteer-ae-dummy-implementation</module>
-<!-- 		<module>jcore-medline-reader</module> -->
-<!-- 		<module>jcore-mstparser-ae-biomedical-english</module> -->
+		<module>jcore-medline-reader</module>
+		<module>jcore-mstparser-ae-biomedical-english</module>
 		<module>jcore-opennlp-chunk-ae-genia</module>
+		<module>jcore-opennlp-parser-ae-genia</module>
 		<module>jcore-opennlp-postag-ae-pennbioie</module>
 		<module>jcore-opennlp-sentence-ae-biomed-en-model</module>
 		<module>jcore-opennlp-token-ae-biomedical-english</module>
-<!-- 		<module>jcore-pubmed-reader</module> -->
+		<module>jcore-pubmed-reader</module>
 	</modules>
+	
+	<!-- Environment Settings -->
 	<scm>
         <connection>scm:git:git@github.com:JULIELab/jcore-projects.git</connection>
         <developerConnection>scm:git:git@github.com:JULIELab/jcore-projects.git</developerConnection>
