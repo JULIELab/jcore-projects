@@ -8,7 +8,7 @@
   </parent>
   <artifactId>jcore-opennlp-token-ae-biomedical-english</artifactId>
   <name>JCoRe OpenNLP Token AE, Biomedical English</name>
-  <description>This project employes the JCoRe OpenNLP tokenizer wrapper with a model for the tokenization of biomedical english language.</description>
+  <description>This project employes the JCoRe OpenNLP tokenizer wrapper with a model trained on the PennBioIE corpus and data from MedLine abstracts.</description>
   <organization>
   	<name>JULIE Lab Jena, Germany</name>
   	<url>http://www.julielab.de</url>
@@ -25,7 +25,5 @@
   		<scope>test</scope>
   	</dependency>
   </dependencies>
-    <scm>
-        <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-opennlp-token-ae-biomedical-english</url>
-    </scm>
+  <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-opennlp-token-ae-biomedical-english</url>
 </project>

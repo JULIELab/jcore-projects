@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <artifactId>jcore-opennlp-sentence-ae-genia-pennbio-english</artifactId>
+  <artifactId>jcore-opennlp-sentence-ae-biomedical-english</artifactId>
     <build>
         <pluginManagement>
             <plugins>
@@ -38,8 +38,8 @@
   	<artifactId>jcore-projects</artifactId>
   	<version>2.0.0</version>
   </parent>
-  <name>JCoRe OpenNLP Sentence Splitter BioMed English</name>
-  <description>model for the sentence splitter, trained on PennBio and Genia</description>
+  <name>JCoRe OpenNLP Sentence Splitter, Biomedical English</name>
+  <description>This project employs the UIMA wrapper (jcore-opennlp-sentence-ae) with a model trained on the PennBioIE and Genia corpora.</description>
   <organization>
   	<name>JULIE Lab Jena, Germany</name>
   	<url>http://www.julielab.de</url>
@@ -56,7 +56,5 @@
   		<version>${jcore-version}</version>
   	</dependency>
   </dependencies>
-    <scm>
-        <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-opennlp-sentence-ae-genia-pennbio-english</url>
-    </scm>
+  <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-opennlp-sentence-ae-biomedical-english</url>
 </project>

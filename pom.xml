@@ -51,18 +51,18 @@
 		<module>jcore-lingpipegazetteer-ae-dummy-implementation</module>
 		<module>jcore-medline-reader</module>
 		<module>jcore-mstparser-ae-biomedical-english</module>
-		<module>jcore-opennlp-chunk-ae-genia</module>
-		<module>jcore-opennlp-parser-ae-genia</module>
-		<module>jcore-opennlp-postag-ae-pennbioie</module>
-		<module>jcore-opennlp-sentence-ae-biomed-en-model</module>
+		<module>jcore-opennlp-chunk-ae-biomedical-english</module>
+		<module>jcore-opennlp-parser-ae-biomedical-english</module>
+		<module>jcore-opennlp-postag-ae-biomedical-english</module>
+		<module>jcore-opennlp-sentence-ae-biomedical-english</module>
 		<module>jcore-opennlp-token-ae-biomedical-english</module>
 		<module>jcore-pubmed-reader</module>
 	</modules>
 	
 	<!-- Environment Settings -->
 	<scm>
-        <connection>scm:git:git@github.com:JULIELab/jcore-projects.git</connection>
-        <developerConnection>scm:git:git@github.com:JULIELab/jcore-projects.git</developerConnection>
-        <url>https://github.com/JULIELab/jcore-projects</url>
+        <connection>scm:git:git://github.com/JULIELab/jcore-projects.git</connection>
+        <developerConnection>scm:git:git://github.com/JULIELab/jcore-projects.git</developerConnection>
+        <url>scm:git:https://github.com/JULIELab/jcore-projects</url>
     </scm>
 </project>

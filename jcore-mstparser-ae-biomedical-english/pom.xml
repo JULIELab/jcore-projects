@@ -3,9 +3,9 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>jcore-mstparser-ae-biomedical-english</artifactId>
   <packaging>jar</packaging>
-  <name>JCoRe MST Parser AE</name>
-  <description> This dependency parser determines all syntactic dependencies between words within a sentence. Certain level of adaptation of the original source code was necessary to neatly integrate the parser in UIMA.</description>
-  <url>http://maven.apache.org</url>
+  <name>JCoRe MST Parser AE, Biomedical English</name>
+  <description>This project employs the jcore-mstparser-ae (Dependency Parser) with a model trained on the GENIA corpus.</description>
+  <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-mstparser-ae-biomedical-english</url>
   
   <parent>
     <groupId>de.julielab</groupId>
@@ -24,7 +24,4 @@
    	</dependency>
    </dependencies>
    <version>2.0.2</version>
-    <scm>
-        <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-mstparser-ae-biomedical-english</url>
-    </scm>
 </project>

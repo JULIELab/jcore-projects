@@ -4,8 +4,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>jcore-jtbd-ae-biomedical-english</artifactId>
 	<packaging>jar</packaging>
-	<description>UIMA Wrapper for JULIE Token Boundary Detector.
-This is for the english biomedical domain.</description>
+	<description>UIMA Wrapper for the JCoRe Token Boundary Detector with a model trained on a special biomedical corpus which consists of data from (manually annotated) material which we took from MedLine abstracts and a modified version of PennBioIE's underlying tokenization.
+</description>
 
 	<parent>
 		<groupId>de.julielab</groupId>
@@ -70,7 +70,7 @@ This is for the english biomedical domain.</description>
 			</plugins>
 		</pluginManagement>
 	</build>
-	<name>JCoRe Token Annotator</name>
+	<name>JCoRe Token Annotator, Biomedical English</name>
 	<organization>
 		<name>JULIE Lab Jena, Germany</name>
 		<url>http://www.julielab.de</url>
@@ -87,7 +87,5 @@ This is for the english biomedical domain.</description>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	<scm>
-        <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-jtbd-ae-biomedical-english</url>
-    </scm>
+	<url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-jtbd-ae-biomedical-english</url>
 </project>
