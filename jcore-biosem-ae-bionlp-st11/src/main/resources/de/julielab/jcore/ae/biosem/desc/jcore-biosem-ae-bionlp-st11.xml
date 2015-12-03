@@ -3,7 +3,7 @@
   <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
   <primitive>true</primitive>  <annotatorImplementationName>de.julielab.jcore.ae.biosem.BioSemEventAnnotator</annotatorImplementationName>
   <analysisEngineMetaData>
-    <name>jules-biosem-event-annotator</name>
+    <name>JCoRe BioSEM Event Annotator</name>
     <description/>
     <version>1.0</version>
     <vendor/>
