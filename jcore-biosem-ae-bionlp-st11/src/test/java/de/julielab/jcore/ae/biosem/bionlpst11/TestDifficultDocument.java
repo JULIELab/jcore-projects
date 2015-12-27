@@ -102,4 +102,5 @@ public class TestDifficultDocument {
 		FSIterator<Annotation> it = jCas.getAnnotationIndex(EventMention.type).iterator();
 		assertTrue(it.hasNext());
 	}
+	
 }
