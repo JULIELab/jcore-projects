@@ -20,6 +20,11 @@
   		<artifactId>logback-classic</artifactId>
   		<scope>test</scope>
   	</dependency>
+  	<dependency>
+  		<groupId>de.julielab</groupId>
+  		<artifactId>jcore-types</artifactId>
+  		<version>2.0.1</version>
+  	</dependency>
   </dependencies>
   <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-biosem-ae-bionlp-st11</url>
 </project>
