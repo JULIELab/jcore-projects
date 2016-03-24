@@ -48,7 +48,20 @@
     <capabilities>
       <capability>
         <inputs/>
-        <outputs/>
+        <outputs>
+          <type allAnnotatorFeatures="true">de.julielab.jcore.types.pubmed.OtherID</type>
+          <type allAnnotatorFeatures="true">de.julielab.jcore.types.AbstractText</type>
+          <type allAnnotatorFeatures="true">de.julielab.jcore.types.Title</type>
+          <type allAnnotatorFeatures="true">de.julielab.jcore.types.pubmed.Header</type>
+          <type allAnnotatorFeatures="true">de.julielab.jcore.types.AuthorInfo</type>
+          <type allAnnotatorFeatures="true">de.julielab.jcore.types.Journal</type>
+          <type allAnnotatorFeatures="true">de.julielab.jcore.types.Date</type>
+          <type allAnnotatorFeatures="true">de.julielab.jcore.types.pubmed.ManualDescriptor</type>
+          <type allAnnotatorFeatures="true">de.julielab.jcore.types.Keyword</type>
+          <type allAnnotatorFeatures="true">de.julielab.jcore.types.Chemical</type>
+          <type allAnnotatorFeatures="true">de.julielab.jcore.types.DBInfo</type>
+          <type allAnnotatorFeatures="true">de.julielab.jcore.types.MeshHeading</type>
+        </outputs>
         <languagesSupported/>
       </capability>
     </capabilities>
