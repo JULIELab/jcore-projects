@@ -33,12 +33,9 @@
 <fsIndexCollection/>
 <capabilities>
 <capability>
-<inputs>
-<type allAnnotatorFeatures="true">de.julielab.jcore.types.Token</type>
-<type allAnnotatorFeatures="true">de.julielab.jcore.types.Sentence</type>
-</inputs>
+<inputs/>
 <outputs>
-<type allAnnotatorFeatures="true">de.julielab.jcore.types.Constituent</type>
+<type allAnnotatorFeatures="true">de.julielab.jcore.types.Sentence</type>
 </outputs>
 <languagesSupported/>
 </capability>
