@@ -4,16 +4,16 @@
 <primitive>true</primitive>
 <annotatorImplementationName>de.julielab.jcore.ae.opennlpparser.main.ParseAnnotator</annotatorImplementationName>
 <analysisEngineMetaData>
-<name>JCoRe OpenNLP Parser Test</name>
+<name>JCoRe OpenNLP Constituency Parser, Genia 2009</name>
 <description/>
 <version>2.0.0</version>
 <vendor>JULIE Lab Jena, Germany</vendor>
 <configurationParameters>
 <configurationParameter>
-<name>modelDir</name>
+<name>modelFile</name>
 <type>String</type>
 <multiValued>false</multiValued>
-<mandatory>false</mandatory>
+<mandatory>true</mandatory>
 </configurationParameter>
 <configurationParameter>
 <name>useTagdict</name>
@@ -78,7 +78,7 @@
 </value>
 </nameValuePair>
 <nameValuePair>
-<name>modelDir</name>
+<name>modelFile</name>
 <value>
 <string>src/main/resources/de/julielab/jcore/ae/opennlp/parser/model/opennlp-parser-genia2009.bin</string>
 </value>
