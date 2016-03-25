@@ -16,7 +16,7 @@ public class TestPipeline {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(TestPipeline.class);
     private static final File ENTITY_ANNOTATOR_DESC = new File(
-            "src/main/resources/de/julielab/jcore/ae/jpos/desc/jcore-jpos-medical-german.xml");
+            "src/main/resources/de/julielab/jcore/ae/jpos/desc/jcore-jpos-ae-medical-german.xml");
 
     /**
      * test whether Annotator can be initialized properly from given descriptor

@@ -11,6 +11,6 @@ public class TestModel {
     public void testAE() throws Exception {
         JCas jCas = JCasFactory.createJCas("de.julielab.jcore.types.jcore-all-types");
         AnalysisEngine engine = AnalysisEngineFactory
-                .createEngine("de.julielab.jcore.ae.mstparser.desc.jcore-mstparser-biomedical-english");
+                .createEngine("de.julielab.jcore.ae.mstparser.desc.jcore-mstparser-ae-biomedical-english");
     }
 }

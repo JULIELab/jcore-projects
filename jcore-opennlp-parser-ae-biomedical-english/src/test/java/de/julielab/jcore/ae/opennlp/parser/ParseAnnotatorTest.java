@@ -84,7 +84,7 @@ public class ParseAnnotatorTest extends TestCase {
 
         try {
             parserXML = new XMLInputSource(
-                    "src/main/resources/de/julielab/jcore/ae/opennlp/parser/desc/opennlp-parser-genia2009.xml");
+                    "src/main/resources/de/julielab/jcore/ae/opennlp/parser/desc/jcore-opennlp-parser-ae-biomedical-english.xml");
             parserSpec = UIMAFramework.getXMLParser().parseResourceSpecifier(parserXML);
             parserAnnotator = UIMAFramework.produceAnalysisEngine(parserSpec);
         } catch (Exception e) {

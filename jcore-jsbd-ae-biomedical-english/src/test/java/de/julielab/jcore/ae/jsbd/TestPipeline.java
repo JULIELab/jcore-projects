@@ -23,7 +23,7 @@ public class TestPipeline {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(TestPipeline.class);
     private static final File ENTITY_ANNOTATOR_DESC = new File(
-            "src/main/resources/de/julielab/jcore/ae/jsbd/desc/jcore-jsbd-biomedical-english.xml");
+            "src/main/resources/de/julielab/jcore/ae/jsbd/desc/jcore-jsbd-ae-biomedical-english.xml");
 
     private static final String testText = "Down-regulation of protein kinase C: a potential mechanism for 2-amino-3-methylimidazo[4,5-f]quinoline-mediated immunosuppression."
             + " Immunosuppressive mechanism of food-born mutagenic and carcinogenic heterocyclic amine, 2-amino-3-methylimidazo[4,5-f]quinoline (IQ), was studied in murine spleen cells."
