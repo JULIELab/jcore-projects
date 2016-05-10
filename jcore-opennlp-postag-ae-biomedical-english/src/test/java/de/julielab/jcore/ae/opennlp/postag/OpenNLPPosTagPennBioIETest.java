@@ -27,7 +27,7 @@ public class OpenNLPPosTagPennBioIETest {
 		new Token(jCas, 26, 29).addToIndexes();
 		new Token(jCas, 30, 34).addToIndexes();
 		new Token(jCas, 34, 35).addToIndexes();
-		AnalysisEngine ae = AnalysisEngineFactory.createEngine("de.julielab.jcore.ae.opennlp.postag.desc.jcore-opennlp-postag-ae-pennbioie");
+		AnalysisEngine ae = AnalysisEngineFactory.createEngine("de.julielab.jcore.ae.opennlp.postag.desc.jcore-opennlp-postag-ae-biomedical-english");
 		ae.process(jCas);
 		FSIterator<Annotation> it = jCas.getAnnotationIndex(Token.type).iterator();
 		Token t = (Token) it.next();
