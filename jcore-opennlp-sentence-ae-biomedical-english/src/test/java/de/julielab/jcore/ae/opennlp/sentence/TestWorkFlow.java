@@ -14,6 +14,6 @@ public class TestWorkFlow {
     public void testInitialization() throws UIMAException, IOException {
         JCas jCas = JCasFactory.createJCas("de.julielab.jcore.types.jcore-morpho-syntax-types");
         AnalysisEngine ae = AnalysisEngineFactory
-                .createEngine("de.julielab.jcore.ae.opennlp.sentence.desc.jcore-opennlp-sentence-biomedical-english");
+                .createEngine("de.julielab.jcore.ae.opennlp.sentence.desc.jcore-opennlp-sentence-ae-biomedical-english");
     }
 }

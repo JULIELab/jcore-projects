@@ -34,7 +34,7 @@ public class OpenNLPChunkerGeniaTest {
 		createToken(jCas, 26, 29, "DT");
 		createToken(jCas, 30, 34, "NN");
 		createToken(jCas, 34, 35, ".");
-		AnalysisEngine ae = AnalysisEngineFactory.createEngine("de.julielab.jcore.ae.opennlp.chunk.desc.jcore-opennlp-chunk-ae-genia");
+		AnalysisEngine ae = AnalysisEngineFactory.createEngine("de.julielab.jcore.ae.opennlp.chunk.desc.jcore-opennlp-chunk-ae-biomedical-english");
 		ae.process(jCas);
 		FSIterator<Annotation> it = jCas.getAnnotationIndex(Chunk.type).iterator();
 		assertTrue(it.hasNext());

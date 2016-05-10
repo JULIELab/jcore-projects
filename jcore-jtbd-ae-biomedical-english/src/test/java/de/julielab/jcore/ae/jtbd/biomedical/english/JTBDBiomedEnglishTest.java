@@ -16,7 +16,7 @@ import de.julielab.jcore.types.Token;
 public class JTBDBiomedEnglishTest {
 	@Test
 	public void testPackage() throws Exception {
-		AnalysisEngine ae = AnalysisEngineFactory.createEngine("de.julielab.jcore.ae.jtbd.desc.jcore-jtbd-biomedical-english");
+		AnalysisEngine ae = AnalysisEngineFactory.createEngine("de.julielab.jcore.ae.jtbd.desc.jcore-jtbd-ae-biomedical-english");
 		JCas jCas = ae.newJCas();
 		jCas.setDocumentText("A very simple sentence.");
 		new Sentence(jCas, 0, jCas.getDocumentText().length()).addToIndexes();
