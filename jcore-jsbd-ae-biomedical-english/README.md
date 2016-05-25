@@ -17,7 +17,7 @@ Usage
 
 To run JSBD just run the self-executing JAR "jsbd-&lt;version&gt;.jar". This will show the available modes.
 
-To use the UIMA component with its delivered descriptor, you may specify `de.julielab.jcore.ae.jsbd.desc.jcore-jsbd-ae-biomedical-english.xml` for an import by name.
+To use the UIMA component with its delivered descriptor, you may specify `de.julielab.jcore.ae.jsbd.desc.jcore-jsbd-ae-biomedical-english` for an import by name.
 
 Documentation
 ==============
