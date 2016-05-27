@@ -12,7 +12,7 @@ If not stated otherwise, all the components found in this project are in their r
     <version>${jcore-version}</version>
 </dependency>
 ```
-For instance, to get a version of the BioSEM Annotator that was trained on the BioNLP SharedTask'11 data, include this in your Maven dependencies:
+Where `#COMPONENT-NAME` is exactly the same as the name on GitHub. For instance, to get a version of the BioSEM Annotator that was trained on the BioNLP SharedTask'11 data, include this in your Maven dependencies:
 ```
 <dependency>
     <groupId>de.julielab</groupId>
