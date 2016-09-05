@@ -4,8 +4,9 @@ document types as described in [1].
 The model and the descriptor file can be found in the `src/main/resources` folder.
 Performance in a 10-fold crossvalidation on the complete framed corpus with OpenNLP's (v1.6) standard configuration was
 ```
-Overall performance:
-Accuracy: 0.969
+Precision: 0.847
+Recall: 0.762
+F-Measure: 0.802
 ```
 ### Reference
 **[1]** *list reference to LREC 2014 here*
