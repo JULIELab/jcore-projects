@@ -2,11 +2,9 @@
 This model was trained on the confidential FRAMED corpus, a non-sharable collection of various German-language clinical
 document types as described in [1].
 The model and the descriptor file can be found in the `src/main/resources` folder.
-Performance in a 10-fold crossvalidation on the complete framed corpus with OpenNLP's (v1.6) standard configuration was
+Performance in a 10-fold crossvalidation on the complete framed corpus with OpenNLP's (v1.6) (**ToDo**: what configuration?)
 ```
-Precision: 0.847
-Recall: 0.762
-F-Measure: 0.802
+???
 ```
 ### Reference
 **[1]** *list reference to LREC 2014 here*
@@ -14,5 +12,5 @@ F-Measure: 0.802
 ### Import
 To import this component by name, specify
 
-<code>de.julielab.jcore.ae.opennlp.postag.desc.jcore-opennlp-postag-ae-medical-german</code>
+<code>de.julielab.jcore.ae.opennlp.postag.desc.jcore-opennlp-sentence-ae-medical-german</code>
 
