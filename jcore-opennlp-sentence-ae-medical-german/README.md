@@ -5,7 +5,7 @@ The model and the descriptor file can be found in the `src/main/resources` folde
 Performance in a 10-fold crossvalidation on the complete framed corpus with OpenNLP's (v1.6) standard configuration was
 ```
 Overall performance:
-Accuracy: 0.969
+
 ```
 ### Reference
 **[1]** *list reference to LREC 2014 here*
@@ -13,5 +13,5 @@ Accuracy: 0.969
 ### Import
 To import this component by name, specify
 
-<code>de.julielab.jcore.ae.opennlp.postag.desc.jcore-opennlp-postag-ae-medical-german</code>
+<code>de.julielab.jcore.ae.opennlp.sentence.desc.jcore-opennlp-sentence-ae-medical-german</code>
 
