@@ -4,7 +4,7 @@ document types as described in [1].
 The model and the descriptor file can be found in the `src/main/resources` folder.
 Performance in a 10-fold crossvalidation on the complete framed corpus with (**ToDo**: what configuration?)
 ```
-???
+F-Score: 0.995
 ```
 ### Reference
 **[1]** *list reference to LREC 2014 here*
