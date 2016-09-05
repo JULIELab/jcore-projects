@@ -51,9 +51,13 @@
 		<module>jcore-opennlp-chunk-ae-biomedical-english</module>
 		<module>jcore-opennlp-parser-ae-biomedical-english</module>
 		<module>jcore-opennlp-postag-ae-biomedical-english</module>
+		<module>jcore-opennlp-postag-ae-medical-german</module>
 		<module>jcore-opennlp-sentence-ae-biomedical-english</module>
+		<module>jcore-opennlp-sentence-ae-medical-german</module>
 		<module>jcore-opennlp-token-ae-biomedical-english</module>
+		<module>jcore-opennlp-token-ae-medical-german</module>
 		<module>jcore-pubmed-reader</module>
+		
 	</modules>
 	
 	
