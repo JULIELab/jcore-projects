@@ -1,5 +1,10 @@
 jules-token-ae
-==============
+==============  
+
+**Descriptor Path**:
+```
+Path
+```
 
 JULIE Token Boundary Detector (JTBD)
 

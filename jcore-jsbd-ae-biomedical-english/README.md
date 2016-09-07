@@ -1,4 +1,9 @@
-JULIE Sentence Boundary Detector (JSBD)
+JULIE Sentence Boundary Detector (JSBD)  
+
+**Descriptor Path**:
+```
+Path
+```
 
 Introduction
 ============

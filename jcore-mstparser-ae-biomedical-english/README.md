@@ -1,4 +1,9 @@
-# MST Parser Genia 2008
+# MST Parser Genia 2008  
+
+**Descriptor Path**:
+```
+Path
+```
 
 ### Evaluation
 10-fold crossvalidation on the Genia corpus results in the following:
