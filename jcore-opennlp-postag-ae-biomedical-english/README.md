@@ -1,3 +1,7 @@
-To import this component by name, specify
+# JCoRe OpenNLP POS Tagger Wrapper, Biomedical English  
 
-<code>de.julielab.jcore.ae.opennlp.postag.desc.jcore-opennlp-postag-ae-biomedical-english</code>
+**Descriptor Path**:
+```
+de.julielab.jcore.ae.opennlp.postag.desc.jcore-opennlp-postag-ae-biomedical-english
+```
+

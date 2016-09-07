@@ -1,4 +1,10 @@
-# JCoRe Wrapper for OpenNLP Framed
+# JCoRe OpenNLP POS Tagger Wrapper, Medical German (FraMed)  
+
+**Descriptor Path**:
+```
+de.julielab.jcore.ae.opennlp.postag.desc.jcore-opennlp-postag-ae-medical-german
+```
+
 This model was trained on the confidential FRAMED corpus, a non-sharable collection of various German-language clinical
 document types as described in [1].
 The model and the descriptor file can be found in the `src/main/resources` folder.
@@ -8,10 +14,6 @@ Overall performance:
 Accuracy: 0.969
 ```
 ### Reference
-**[1]** *list reference to LREC 2014 here*
+**[1]** Faessler, Erik, Johannes Hellrich, and Udo Hahn. *"Disclose Models, Hide the Data-How to Make Use of Confidential Corpora without Seeing Sensitive Raw Data."* LREC. 2014.
 
-### Import
-To import this component by name, specify
-
-<code>de.julielab.jcore.ae.opennlp.postag.desc.jcore-opennlp-postag-ae-medical-german</code>
 
