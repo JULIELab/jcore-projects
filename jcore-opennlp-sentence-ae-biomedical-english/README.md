@@ -1,6 +1,6 @@
-  
+# JCoRe OpenNLP Sentence Segmenter Wrapper, Biomedical English  
 
 **Descriptor Path**:
 ```
-Path
+de.julielab.jcore.ae.opennlp.sentence.desc.jcore-opennlp-sentence-ae-biomedical-english
 ```

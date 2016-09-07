@@ -2,7 +2,7 @@
 
 **Descriptor Path**:
 ```
-Path
+de.julielab.jcore.ae.jpos.desc.jcore-jpos-ae-medical-german
 ```
 
 This model was trained on the confidential FRAMED corpus, a non-sharable collection of various German-language clinical

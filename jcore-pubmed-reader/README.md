@@ -1,6 +1,6 @@
-  
+# JCoRe PubMed Reader
 
 **Descriptor Path**:
 ```
-Path
+de.julielab.jcore.reader.xml.desc.jcore-pubmed-reader
 ```

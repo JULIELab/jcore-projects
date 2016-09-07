@@ -2,5 +2,5 @@
 
 **Descriptor Path**:
 ```
-Path
+de.julielab.jcore.ae.lingpipegazetteer.dummy.desc.ApproxGazetteerAnnotatorTest
 ```

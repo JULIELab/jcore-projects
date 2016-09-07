@@ -2,7 +2,7 @@
 
 **Descriptor Path**:
 ```
-Path
+de.julielab.jcore.ae.mstparser.desc.jcore-mstparser-ae-biomedical-english
 ```
 
 ### Evaluation

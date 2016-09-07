@@ -2,7 +2,7 @@
 
 **Descriptor Path**:
 ```
-Path
+de.julielab.jcore.ae.jtbd.desc.jcore-jtbd-ae-medical-german
 ```
 
 ## 1

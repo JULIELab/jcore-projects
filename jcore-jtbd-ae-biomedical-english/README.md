@@ -3,7 +3,7 @@ jules-token-ae
 
 **Descriptor Path**:
 ```
-Path
+de.julielab.jcore.ae.jtbd.desc.jcore-jtbd-ae-biomedical-english
 ```
 
 JULIE Token Boundary Detector (JTBD)
@@ -26,9 +26,6 @@ Usage
 
 To run JTBD just run the self-executing jar "jtbd-&lt;version&gt;.jar". This will show the available modes.
 
-To use the component via name within UIMA, refer to the descriptor at
-
-`de.julielab.jcore.ae.jtbd.desc.jcore-jtbd-ae-biomedical-english`
 
 Documentation
 ==============

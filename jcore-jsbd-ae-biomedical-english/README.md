@@ -2,7 +2,7 @@ JULIE Sentence Boundary Detector (JSBD)
 
 **Descriptor Path**:
 ```
-Path
+de.julielab.jcore.ae.jsbd.desc.jcore-jsbd-ae-biomedical-english
 ```
 
 Introduction
