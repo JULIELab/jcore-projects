@@ -42,7 +42,7 @@
       <nameValuePair>
         <name>Postprocessing</name>
         <value>
-          <boolean>biomed</boolean>
+          <string>biomed</string>
         </value>
       </nameValuePair>
       <nameValuePair>
