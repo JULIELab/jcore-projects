@@ -35,7 +35,7 @@
       <nameValuePair>
         <name>Postprocessing</name>
         <value>
-          <boolean>medical</boolean>
+          <string>medical</string>
         </value>
       </nameValuePair>
       <nameValuePair>
