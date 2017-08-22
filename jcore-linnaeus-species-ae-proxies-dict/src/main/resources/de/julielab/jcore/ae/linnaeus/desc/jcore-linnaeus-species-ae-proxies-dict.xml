@@ -21,7 +21,7 @@
       <nameValuePair>
         <name>ConfigFile</name>
         <value>
-          <string>internal:/de/julielab/jcore/linnaeus/resources-species-proxies/properties.conf</string>
+          <string>internal:/de/julielab/jcore/ae/linnaeus/resources-species-proxies/properties.conf</string>
         </value>
       </nameValuePair>
     </configurationParameterSettings>
