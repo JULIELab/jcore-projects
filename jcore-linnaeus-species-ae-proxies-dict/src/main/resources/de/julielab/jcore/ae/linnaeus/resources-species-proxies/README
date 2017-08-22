@@ -1,0 +1,9 @@
+Species proxy dictionary for LINNAEUS (Gerner et al., 2010)
+
+Among other terms, this dictionary contains names and synonyms for cell-lines, linked to their respective host species. This dictionary is useful if a researcher would like to learn not only about mentions of species in an article, but also  what species the article discusses in more general terms. While an article on human might not explicitly mention 'human', it may mention a cell line that the authors work on - which in turn could be linked to human. 
+
+As such, using this dictionary with LINNAEUS will allow cell-lines and other species synonyms to be tagged to their host organisms (for example, mentions of 'HeLa cells' or 'patient' would be mapped to the NCBI taxonomy identifier for human.
+
+In case of problems utilizing the dictionary, don't hesitate to contact me at linnaeus@gerner.co
+
+Data from Sarntivijai et al. (2008) [http://bioinformatics.oxfordjournals.org/cgi/content/abstract/24/23/2760]

@@ -59,7 +59,10 @@
 		<module>jcore-opennlp-token-ae-biomedical-english</module>
 		<module>jcore-opennlp-token-ae-medical-german</module>
 		<module>jcore-pubmed-reader</module>
-		
+
+		<module>jcore-linnaeus-species-ae-genera-species-proxies-dicts</module>
+		<module>jcore-linnaeus-species-ae-proxies-dict</module>
+		<module>jcore-linnaeus-species-ae-species-dict</module>
 	</modules>
 	
 	
