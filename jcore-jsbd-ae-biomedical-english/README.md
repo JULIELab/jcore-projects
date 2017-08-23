@@ -23,7 +23,7 @@ To use the UIMA component with its delivered descriptor, you may specify `de.jul
 ### Performance
 These are the results of the 10-folds cross validation for JSBD:
 
-`All : 12446
+All : 12446
 Correct: 12421
 fp (false positives) :21
 fn (false negatives) :4
@@ -44,7 +44,7 @@ ACCURACY : 0.9979913225132573
 avg accuracy: 0,998
 avg f-score: 0,999
 
-Accuracy on cross validation: 0.9975798557915574`
+Accuracy on cross validation: 0.9975798557915574
 
 ### Documentation
 For further information please refer to the documentation, JSBD-x.pdf.
