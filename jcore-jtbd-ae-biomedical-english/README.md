@@ -22,28 +22,26 @@ To run JTBD just run the self-executing jar "jtbd-&lt;version&gt;.jar". This wil
 ### Performance
 These are the results for the 10-folds-cross-validation for JTBD:
 
-Results for 10-folds-crossvalidation for JTBD Biomed:
+critical decisions: 22805<br>
+correct decisions: 21979<br>
+fp: 417<br>
+fn: 409<br>
+R: 0.9817312846167598<br>
+P: 0.9813806036792284<br>
+F: 0.9815559128260092<br>
+ACC = 0.9637798728349046<br>
 
-critical decisions: 22805
-correct decisions: 21979
-fp: 417
-fn: 409
-R: 0.9817312846167598
-P: 0.9813806036792284
-F: 0.9815559128260092
-ACC = 0.9637798728349046
-
-ACC in round 0: 0,952
-ACC in round 1: 0,815
-ACC in round 2: 0,960
-ACC in round 3: 0,964
-ACC in round 4: 0,957
-ACC in round 5: 0,957
-ACC in round 6: 0,960
-ACC in round 7: 0,965
-ACC in round 8: 0,948
-ACC in round 9: 0,964
-avg accuracy: 0,944
+ACC in round 0: 0,952<br>
+ACC in round 1: 0,815<br>
+ACC in round 2: 0,960<br>
+ACC in round 3: 0,964<br>
+ACC in round 4: 0,957<br>
+ACC in round 5: 0,957<br>
+ACC in round 6: 0,960<br>
+ACC in round 7: 0,965<br>
+ACC in round 8: 0,948<br>
+ACC in round 9: 0,964<br>
+avg accuracy: 0,944<br>
 avg F-score: 0,971
 
 
