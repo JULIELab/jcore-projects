@@ -23,9 +23,9 @@ To use the UIMA component with its delivered descriptor, you may specify `de.jul
 ### Performance
 JSBD was developed and optimized for the biomedical domain. However, when training it on respective corpora, it may also be used for other domains. We have evaluated JSBD on our data which we compiled for the bio-medical domain. It
 consists of data from both the GENIA [?] and the PennBioIE 7 corpus and additional
-material which we took from MedLine abstracts.
+material which we took from MedLine abstracts.<br>
 Currently, it comprises about 62000 sentences. An accuracy of 99.7% is yielded on this
-data using 10-fold cross-validation and the f-score averages 99.9%.
+data using 10-fold cross-validation and the f-score averages 99.9%.<br>
 You will find the model trained on this data in the directory `resources`
 
 ### Documentation
