@@ -20,30 +20,9 @@ necessary libraries are included in the executable JAR (see below) and accessibl
 To run JTBD just run the self-executing jar "jtbd-&lt;version&gt;.jar". This will show the available modes.
 
 ### Performance
-These are the results for the 10-folds-cross-validation for JTBD:
-
-critical decisions: 22805<br>
-correct decisions: 21979<br>
-fp: 417<br>
-fn: 409<br>
-R: 0.9817312846167598<br>
-P: 0.9813806036792284<br>
-F: 0.9815559128260092<br>
-ACC = 0.9637798728349046<br>
-
-ACC in round 0: 0,952<br>
-ACC in round 1: 0,815<br>
-ACC in round 2: 0,960<br>
-ACC in round 3: 0,964<br>
-ACC in round 4: 0,957<br>
-ACC in round 5: 0,957<br>
-ACC in round 6: 0,960<br>
-ACC in round 7: 0,965<br>
-ACC in round 8: 0,948<br>
-ACC in round 9: 0,964<br>
-avg accuracy: 0,944<br>
-avg F-score: 0,971
-
+We have evaluated JTBD on out tokenization corpus which we compiled for the biomedical domain. It consists of data from (manually annotated) material which we took from MEDLINE abstracts and a modified version of PennBioIE's underlying tokenization.
+Currently, our tokenization corpus comprises about 36,000 sentences. An accuracy of 99,4% is reached on this data using 10-folds-cross-validation.<br> 
+You will find the model trained on this data in the directory `resources`. 
 
 ### Documentation
 For further information please refer to the documentation, JTBD-x.pdf.
