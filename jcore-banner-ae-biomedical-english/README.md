@@ -2,7 +2,7 @@
 
 **Descriptor Path**:
 ```
-de.julielab.jcore.ae.banner.desc.jcore-banner-ae
+de.julielab.jcore.ae.banner.desc.jcore-banner-ae-biomedical-english
 ```
 
 ### Objective
