@@ -7,6 +7,7 @@ import java.io.File;
 import org.apache.uima.UIMAFramework;
 import org.apache.uima.analysis_engine.AnalysisEngine;
 import org.apache.uima.cas.FSIterator;
+import org.apache.uima.fit.factory.AnalysisEngineFactory;
 import org.apache.uima.fit.factory.JCasFactory;
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.tcas.Annotation;
@@ -22,8 +23,8 @@ import de.julielab.jcore.types.Sentence;
 public class TestPipeline {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(TestPipeline.class);
-    private static final File ENTITY_ANNOTATOR_DESC = new File(
-            "src/main/resources/de/julielab/jcore/ae/jsbd/desc/jcore-jsbd-ae-medical-german.xml");
+    private static final String ENTITY_ANNOTATOR_DESC = 
+    		"de.julielab.jcore.ae.jsbd.desc.jcore-jsbd-ae-medical-german";
 
     private static final String testText =
     		"Frau XXX wurde am 10.12.85 aus der Gyn.-Abteilung nach Sectio (Eingriff problemlos, Kind gesund) bei V. a. zunehmende Aortendissektion bei Aneurysma der Aorta-desc.."
@@ -48,10 +49,11 @@ public class TestPipeline {
         LOGGER.info("testInitialize()");
 
         try {
-            taggerXML = new XMLInputSource(ENTITY_ANNOTATOR_DESC);
-            taggerSpec = UIMAFramework.getXMLParser().parseResourceSpecifier(taggerXML);
-            entityAnnotator = UIMAFramework.produceAnalysisEngine(taggerSpec);
+//            taggerXML = new XMLInputSource(ENTITY_ANNOTATOR_DESC);
+//            taggerSpec = UIMAFramework.getXMLParser().parseResourceSpecifier(taggerXML);
+            entityAnnotator = AnalysisEngineFactory.createEngine(ENTITY_ANNOTATOR_DESC);
         } catch (final Exception e) {
+        	System.out.println(e);
             LOGGER.error("testInitialize()", e);
         }
 
