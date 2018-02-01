@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>de.julielab</groupId>
+    <artifactId>jcore-projects</artifactId>
+    <version>2.3.0-SNAPSHOT</version>
+  </parent>
+  <artifactId>jcore-medline-db-reader</artifactId>
+  <name>JCoRe Medline DB Reader</name>
+  <description>Leveraging the JCoRe XML DB Reader, this project employs a Medline-enabled mapping file to map Medline XML documents to CAS instances. The input comes from a database containing the full Medline citation XML data. The XML format is the one used by NCBI when downloading Medline documents in large batches from the NCBI FTP server. However, the component currently expects single documents in form of &lt;MedlineCitation&gt; elements instead of whole PubmedArticleSets containing multiple MedlineCitations.</description>
+  <dependencies>
+  	<dependency>
+  		<groupId>de.julielab</groupId>
+  		<artifactId>jcore-xml-db-reader</artifactId>
+  		<version>${jcore-version}</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>de.julielab</groupId>
+  		<artifactId>jcore-descriptor-creator</artifactId>
+  	</dependency>
+  </dependencies>
+  <organization>
+  	<name>JULIE Lab, Germany</name>
+  	<url>http://www.julielab.de</url>
+  </organization>
+  <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-medline-db-reader</url>
+</project>

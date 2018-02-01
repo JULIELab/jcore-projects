@@ -64,6 +64,7 @@
 		<module>jcore-linnaeus-species-ae-genera-species-proxies-dicts</module>
 		<module>jcore-linnaeus-species-ae-proxies-dict</module>
 		<module>jcore-linnaeus-species-ae-species-dict</module>
+		<module>jcore-medline-db-reader</module>
 	</modules>
 	
 	
