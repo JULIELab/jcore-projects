@@ -6,9 +6,9 @@
     <artifactId>jcore-projects</artifactId>
     <version>2.3.0-SNAPSHOT</version>
   </parent>
-  <artifactId>jcore-medline-db-reader</artifactId>
-  <name>JCoRe Medline DB Reader</name>
-  <description>Leveraging the JCoRe XML DB Reader, this project employs a Medline-enabled mapping file to map Medline XML documents to CAS instances. The input comes from a database containing the full Medline citation XML data. The XML format is the one used by NCBI when downloading Medline documents in large batches from the NCBI FTP server. However, the component currently expects single documents in form of &lt;MedlineCitation&gt; elements instead of whole PubmedArticleSets containing multiple MedlineCitations.</description>
+  <artifactId>jcore-pubmed-db-reader</artifactId>
+  <name>JCoRe PubMed DB Reader</name>
+  <description>Leveraging the JCoRe XML DB Reader, this project employs a Medline-enabled mapping file to map Medline XML documents to CAS instances. The input comes from a database containing the full Pubmed/Medline citation XML data. The XML format is the one used by NCBI when downloading Medline documents in large batches from the NCBI FTP server. However, the component currently expects single documents in form of &lt;MedlineCitation&gt; elements instead of whole PubmedArticleSets containing multiple MedlineCitations.</description>
   <dependencies>
   	<dependency>
   		<groupId>de.julielab</groupId>
@@ -24,5 +24,5 @@
   	<name>JULIE Lab, Germany</name>
   	<url>http://www.julielab.de</url>
   </organization>
-  <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-medline-db-reader</url>
+  <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-pubmed-db-reader</url>
 </project>
