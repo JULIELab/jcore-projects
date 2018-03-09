@@ -78,11 +78,17 @@
 		<dependency>
 			<groupId>de.julielab</groupId>
 			<artifactId>jcore-jsbd-ae</artifactId>
-			<version>${jcore-version}</version>
+			<version>${project.parent.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>de.julielab</groupId>
+			<artifactId>jcore-pmc-reader</artifactId>
+			<version>${project.parent.version}</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
