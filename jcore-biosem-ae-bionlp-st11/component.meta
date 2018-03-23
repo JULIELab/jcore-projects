@@ -4,6 +4,6 @@
   "maven-artifact": "jcore-biosem-ae-bionlp-st11",
   "descriptor-location": ["de.julielab.jcore.ae.biosem.desc.jcore-biosem-ae-bionlp-st11"],
   "category": "ae",
-  "group": "semantic"
+  "group": "semantic",
   "base": "jcore-biosem-ae"
 }
