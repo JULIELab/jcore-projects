@@ -1,9 +1,14 @@
 {
-  "name": "JCoRe BioSem AE, BioNLP-ST2011",
-  "exposable": true,
-  "maven-artifact": "jcore-biosem-ae-bionlp-st11",
-  "descriptors": [{"location":"de.julielab.jcore.ae.biosem.desc.jcore-biosem-ae-bionlp-st11", "category":"ae"}],
-  "category": "ae",
-  "group": "semantic",
-  "base": "jcore-biosem-ae"
+    "category": "ae",
+    "description": "This project employs the JCoRe BioSem wrapper (jcore-biosem-ae) with a BioSem database trained on the BioNLP SharedTask 2011 train and development (that is, \"mixed\") data for biological event extraction.",
+    "descriptors": [
+        {
+            "category": "ae",
+            "location": "de.julielab.jcore.ae.biosem.desc.jcore-biosem-ae-bionlp-st11"
+        }
+    ],
+    "exposable": true,
+    "group": "semantic",
+    "maven-artifact": "jcore-biosem-ae-bionlp-st11",
+    "name": "JCoRe BioSem AE, BioNLP SharedTask 2011"
 }
