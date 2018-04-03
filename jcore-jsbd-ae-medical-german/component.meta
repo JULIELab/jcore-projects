@@ -1,0 +1,14 @@
+{
+    "category": "ae",
+    "description": "UIMA Wrapper for the JCoRe Sentence Boundary Detector (jcore-jsbd-ae) with a model trained on data from the confidential FraMed corpus",
+    "descriptors": [
+        {
+            "category": "ae",
+            "location": "de.julielab.jcore.ae.jsbd.desc.jcore-jsbd-ae-medical-german"
+        }
+    ],
+    "exposable": true,
+    "group": "general",
+    "maven-artifact": "jcore-jsbd-ae-medical-german",
+    "name": "JCoRe Sentence Annotator, Medical German"
+}

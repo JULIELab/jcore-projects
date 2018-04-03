@@ -1,0 +1,14 @@
+{
+    "category": "ae",
+    "description": "This Model was trained on the confidential FraMed corpus.",
+    "descriptors": [
+        {
+            "category": "ae",
+            "location": "de.julielab.jcore.ae.opennlp.postag.desc.jcore-opennlp-postag-ae-medical-german"
+        }
+    ],
+    "exposable": true,
+    "group": "general",
+    "maven-artifact": "jcore-opennlp-postag-ae-medical-german",
+    "name": "JCoRe OpenNLP POS Tagger, Medical German"
+}

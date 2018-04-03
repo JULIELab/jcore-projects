@@ -1,0 +1,14 @@
+{
+    "category": "ae",
+    "description": "The JCoRe BANNER Gene Tagger wrapper with a model for biomedical english.",
+    "descriptors": [
+        {
+            "category": "ae",
+            "location": "de.julielab.jcore.ae.banner.desc.jcore-banner-ae-biomedical-english"
+        }
+    ],
+    "exposable": true,
+    "group": "general",
+    "maven-artifact": "jcore-banner-ae-biomedical-english",
+    "name": "JCoRe BANNER AE for Biomedical English"
+}

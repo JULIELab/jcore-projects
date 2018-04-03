@@ -1,0 +1,14 @@
+{
+    "category": "ae",
+    "description": "This project employs the jcore-jpos-ae (Part-of-Speech Tagger) with a model trained on the confidential FraMed corpus.",
+    "descriptors": [
+        {
+            "category": "ae",
+            "location": "de.julielab.jcore.ae.jpos.desc.jcore-jpos-ae-medical-german"
+        }
+    ],
+    "exposable": true,
+    "group": "general",
+    "maven-artifact": "jcore-jpos-ae-medical-german",
+    "name": "JCoRe JPOS AE, Medical German"
+}

@@ -1,0 +1,14 @@
+{
+    "category": "ae",
+    "description": "This project employes the JCoRe OpenNLP tokenizer wrapper with a model trained on the PennBioIE corpus and data from MedLine abstracts.",
+    "descriptors": [
+        {
+            "category": "ae",
+            "location": "de.julielab.jcore.ae.opennlp.token.desc.jcore-opennlp-token-ae-biomedical-english"
+        }
+    ],
+    "exposable": true,
+    "group": "general",
+    "maven-artifact": "jcore-opennlp-token-ae-biomedical-english",
+    "name": "JCoRe OpenNLP Token AE, Biomedical English"
+}

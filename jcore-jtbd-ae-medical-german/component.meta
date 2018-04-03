@@ -1,0 +1,14 @@
+{
+    "category": "ae",
+    "description": "UIMA Wrapper for the JCoRe Token Boundary Detector with a model trained on the confidential FraMed corpus.\n",
+    "descriptors": [
+        {
+            "category": "ae",
+            "location": "de.julielab.jcore.ae.jtbd.desc.jcore-jtbd-ae-medical-german"
+        }
+    ],
+    "exposable": true,
+    "group": "general",
+    "maven-artifact": "jcore-jtbd-ae-medical-german",
+    "name": "JCoRe Token Annotator, Medical German"
+}
