@@ -5,6 +5,7 @@ import static org.junit.Assert.assertEquals;
 import java.util.ArrayList;
 import java.util.List;
 
+import de.julielab.jcore.types.EntityMention;
 import org.apache.uima.analysis_engine.AnalysisEngine;
 import org.apache.uima.fit.factory.AnalysisEngineFactory;
 import org.apache.uima.fit.factory.JCasFactory;
@@ -37,7 +38,7 @@ public class BannerAETest {
 		// P00055040A0000|243 254|cryoglobulin
 		// P00055040A0000|269 278|fibrinogen
 		// However, we ignore the offsets because the eval offsets ignore white spaces
-		List<Gene> geneList = new ArrayList<Gene>(JCasUtil.select(jcas, Gene.class));
+		List<Gene> geneList = new ArrayList<>(JCasUtil.select(jcas, Gene.class));
 		assertEquals("fibrinogen", geneList.get(0).getCoveredText());
 		assertEquals("fibrin", geneList.get(1).getCoveredText());
 		assertEquals("FR-antigen", geneList.get(2).getCoveredText());

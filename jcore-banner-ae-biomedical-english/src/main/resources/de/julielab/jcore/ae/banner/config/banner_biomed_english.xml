@@ -4,9 +4,10 @@
     <eval>
       <datasetName>banner.eval.dataset.BC2GMDataset</datasetName>
       <dataset>
-        <sentenceFilename>src/main/resources/bc2geneMention/train/train.in</sentenceFilename>
-        <mentionTestFilename>src/main/resources/bc2geneMention/train/GENE.eval</mentionTestFilename>
-        <mentionAlternateFilename>src/main/resources/bc2geneMention/train/ALTGENE.eval</mentionAlternateFilename>
+        <sentenceFilename>/var/data/data_corpora/genomics/Genes/bc2-gm/BC2GM-test/test/test.in</sentenceFilename>
+        <mentionTestFilename>/var/data/data_corpora/genomics/Genes/bc2-gm/BC2GM-test/test/GENE.eval</mentionTestFilename>
+        <mentionAlternateFilename>/var/data/data_corpora/genomics/Genes/bc2-gm/BC2GM-test/test/ALTGENE.eval</mentionAlternateFilename>
+        <geneLabel>Gene</geneLabel>
       </dataset>
       <idInputFilename>output/ids.txt</idInputFilename>
       <rawInputFilename>output/raw.txt</rawInputFilename>
@@ -14,7 +15,7 @@
       <outputFilename>output/output.txt</outputFilename>
       <inContextAnalysisFilename>output/contextAnalysis.html</inContextAnalysisFilename>
       <mentionFilename>output/mention.txt</mentionFilename>
-      <modelFilename>de/julielab/jcore/ae/banner/resources/model_BC2GM.bin</modelFilename>
+      <modelFilename>de/julielab/jcore/ae/banner/resources/banner-bc2gm-dictbannerdefault.bin</modelFilename>
       <lemmatiserDataDirectory>nlpdata/lemmatiser</lemmatiserDataDirectory>
       <posTaggerDataDirectory>nlpdata/tagger</posTaggerDataDirectory>
       <posTagger>dragon.nlp.tool.HeppleTagger</posTagger>
@@ -38,8 +39,8 @@
           <canonize>false</canonize>
           <generate2PartVariations>true</generate2PartVariations>
           <dropEndParentheticals>false</dropEndParentheticals>
-          <dictionaryFile>dict/single.txt</dictionaryFile>
-          <dictionaryType>GENE</dictionaryType>
+          <dictionaryFile>/dict/single.txt</dictionaryFile>
+          <dictionaryType>Gene</dictionaryType>
         </DictionaryTagger>
       </dictionary>
     </tagging>
