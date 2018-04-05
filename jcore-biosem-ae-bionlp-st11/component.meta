@@ -1,5 +1,7 @@
 {
-    "category": "ae",
+    "categories": [
+        "ae"
+    ],
     "description": "This project employs the JCoRe BioSem wrapper (jcore-biosem-ae) with a BioSem database trained on the BioNLP SharedTask 2011 train and development (that is, \"mixed\") data for biological event extraction.",
     "descriptors": [
         {

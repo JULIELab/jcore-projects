@@ -1,5 +1,7 @@
 {
-    "category": "ae",
+    "categories": [
+        "ae"
+    ],
     "description": "UIMA Wrapper for the JCoRe Token Boundary Detector with a model trained on the confidential FraMed corpus.\n",
     "descriptors": [
         {

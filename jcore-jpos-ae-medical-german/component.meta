@@ -1,5 +1,7 @@
 {
-    "category": "ae",
+    "categories": [
+        "ae"
+    ],
     "description": "This project employs the jcore-jpos-ae (Part-of-Speech Tagger) with a model trained on the confidential FraMed corpus.",
     "descriptors": [
         {

@@ -1,5 +1,7 @@
 {
-    "category": "ae",
+    "categories": [
+        "ae"
+    ],
     "description": "The JCoRe BANNER Gene Tagger wrapper with a model for biomedical english.",
     "descriptors": [
         {

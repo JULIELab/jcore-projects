@@ -1,5 +1,7 @@
 {
-    "category": "ae",
+    "categories": [
+        "ae"
+    ],
     "description": "This is just a dummy implementation that can be adapted according to ones own need.",
     "descriptors": [
         {

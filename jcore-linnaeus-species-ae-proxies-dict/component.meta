@@ -1,5 +1,7 @@
 {
-    "category": "ae",
+    "categories": [
+        "ae"
+    ],
     "description": "This project is a resource for the JULES Linnaeus Annotator. The dictionary contained herein is used for the recognition of concrete species names in text, e.g. \"human\", \"mouse\", \"n. furzeri\", \"c. elegans\" etc as well as species hints, i.e. indirect clues to a species like the word \"patient\" which most likely refers to a human. For the task of only finding concrete species names in text, there is the project jcore-linnaeus-species-ae-species-dict.",
     "descriptors": [
         {

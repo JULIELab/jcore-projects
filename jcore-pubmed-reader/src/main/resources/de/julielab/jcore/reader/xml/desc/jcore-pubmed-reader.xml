@@ -3,7 +3,7 @@
   <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
   <implementationName>de.julielab.jcore.reader.xml.XMLReader</implementationName>
   <processingResourceMetaData>
-    <name>JCoRe PubMed Reader</name>
+    <name>JCoRe PubMed Reader, single article XML</name>
     <description>Leveraging the JCoRe XML Reader, this project employs a PubMed-enabled mapping file to map PubMed XML documents to CAS instances. The input is a directory of single XML files, each containing exactly one XML PubmedArticle. The XML format is the one used by NCBI when displaying results in PubMed as XML.</description>
     <version>2.1.0</version>
     <vendor>JULIE Lab, Germany</vendor>

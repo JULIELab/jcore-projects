@@ -1,5 +1,7 @@
 {
-    "category": "reader",
+    "categories": [
+        "reader"
+    ],
     "description": "Leveraging the JCoRe XML Reader, this project employs a Medline-enabled mapping file to map Medline XML documents to CAS instances. The input is a directory of single XML files, each containing exactly one XML MedlineCitation. The XML format is the one used by NCBI when downloading Medline documents in large batches from the NCBI FTP server. However, the component currently expects single documents instead of whole MedlineCitationSets containing sets of MedlineCitations.",
     "descriptors": [
         {

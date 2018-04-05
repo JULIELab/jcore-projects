@@ -1,5 +1,7 @@
 {
-    "category": "ae",
+    "categories": [
+        "ae"
+    ],
     "description": "This project employs the jcore-jnet-ae (Named Entity Tagger) with a model trained on the PennBioIE corpus.",
     "descriptors": [
         {

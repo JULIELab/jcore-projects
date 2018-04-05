@@ -1,5 +1,7 @@
 {
-    "category": "ae",
+    "categories": [
+        "ae"
+    ],
     "description": "This project employs the OpenNLP wrapper (jcore-opennlp-postag-ae) with a model trained on the PennBioIE corpus.",
     "descriptors": [
         {
