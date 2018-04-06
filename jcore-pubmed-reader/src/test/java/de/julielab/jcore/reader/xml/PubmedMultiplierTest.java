@@ -47,10 +47,35 @@ public class PubmedMultiplierTest {
                 "src/main/resources/de/julielab/jcore/reader/xml/desc/jcore-pubmed-articleset-multiplier.xml");
         AnalysisEngineDescription testAe = AnalysisEngineFactory.createEngineDescription(TestAe.class);
         AnalysisEngineDescription topAAE = AnalysisEngineFactory.createEngineDescription(Arrays.asList(multiplier, testAe), Arrays.asList("Multiplier", "TestAe"), null, null, null);
+        AnalysisEngineDescription topTopAAE = AnalysisEngineFactory.createEngineDescription(Arrays.asList(topAAE), Arrays.asList("TopAAE"), null, null, null);
 
         // We must wrap the CM with its substream components into an AAE of itself. The CPE directly doesn't know how
         // to deal with the multiplier.
-        CpePipeline.runPipeline(reader, topAAE);
+        //CpePipeline.runPipeline(reader, topAAE);
+        CpeBuilder cpeBuilder = new CpeBuilder();
+        cpeBuilder.setReader(reader);
+        cpeBuilder.setAnalysisEngine(topTopAAE);
+
+        cpeBuilder.setMaxProcessingUnitThreadCount(1);
+
+        StatusCallbackListenerImpl status = new StatusCallbackListenerImpl();
+        CollectionProcessingEngine engine = cpeBuilder.createCpe(status);
+
+        engine.process();
+        try {
+            synchronized (status) {
+                while (status.isProcessing) {
+                    status.wait();
+                }
+            }
+        } catch (InterruptedException e) {
+            // Do nothing
+        }
+
+        if (status.exceptions.size() > 0) {
+            throw new AnalysisEngineProcessException(status.exceptions.get(0));
+        }
+
 
         // The seenPmids list is filled by the TestAe (see code below).
         assertEquals(177, seenPmids.size());
@@ -73,13 +98,13 @@ public class PubmedMultiplierTest {
 
     private static class StatusCallbackListenerImpl implements StatusCallbackListener {
 
-        private final List<Exception> exceptions = new ArrayList<Exception>();
+        private final List<Throwable> exceptions = new ArrayList<>();
 
         private boolean isProcessing = true;
 
         public void entityProcessComplete(CAS arg0, EntityProcessStatus arg1) {
             if (arg1.isException()) {
-                for (Exception e : arg1.getExceptions()) {
+                for (Throwable e : arg1.getExceptions()) {
                     exceptions.add(e);
                 }
             }
