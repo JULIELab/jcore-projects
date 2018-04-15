@@ -4,7 +4,7 @@
     <implementationName>de.julielab.jcore.reader.xml.XMLDBReader</implementationName>
     <processingResourceMetaData>
         <name>de.julielab.jcore.reader.xml.XMLDBReader</name>
-        <description>An instantiation of the JCoRe XML DB reader specialized on medline documents.</description>
+        <description>An instantiation of the JCoRe XML DB Reader specialized on PubMed documents.</description>
         <version>unknown</version>
         <vendor>de.julielab.jcore.reader.xml</vendor>
         <configurationParameters>
@@ -13,7 +13,7 @@
                 <description/>
                 <type>String</type>
                 <multiValued>true</multiValued>
-                <mandatory>true</mandatory>
+                <mandatory>false</mandatory>
             </configurationParameter>
             <configurationParameter>
                 <name>MappingFile</name>
@@ -27,21 +27,21 @@
                 <description/>
                 <type>Integer</type>
                 <multiValued>false</multiValued>
-                <mandatory>true</mandatory>
+                <mandatory>false</mandatory>
             </configurationParameter>
             <configurationParameter>
                 <name>DBDriver</name>
                 <description/>
                 <type>String</type>
                 <multiValued>false</multiValued>
-                <mandatory>true</mandatory>
+                <mandatory>false</mandatory>
             </configurationParameter>
             <configurationParameter>
                 <name>Timestamp</name>
                 <description/>
                 <type>String</type>
                 <multiValued>false</multiValued>
-                <mandatory>true</mandatory>
+                <mandatory>false</mandatory>
             </configurationParameter>
             <configurationParameter>
                 <name>Table</name>
@@ -55,45 +55,45 @@
                 <description/>
                 <type>String</type>
                 <multiValued>true</multiValued>
-                <mandatory>true</mandatory>
+                <mandatory>false</mandatory>
             </configurationParameter>
             <configurationParameter>
                 <name>AdditionalTableSchema</name>
                 <description/>
                 <type>String</type>
                 <multiValued>false</multiValued>
-                <mandatory>true</mandatory>
+                <mandatory>false</mandatory>
             </configurationParameter>
             <configurationParameter>
                 <name>RandomSelection</name>
                 <description/>
                 <type>String</type>
                 <multiValued>false</multiValued>
-                <mandatory>true</mandatory>
+                <mandatory>false</mandatory>
             </configurationParameter>
             <configurationParameter>
                 <name>FetchIdsProactively</name>
                 <description/>
                 <type>Boolean</type>
                 <multiValued>false</multiValued>
-                <mandatory>true</mandatory>
+                <mandatory>false</mandatory>
             </configurationParameter>
             <configurationParameter>
                 <name>WhereCondition</name>
                 <description/>
                 <type>String</type>
                 <multiValued>false</multiValued>
-                <mandatory>true</mandatory>
+                <mandatory>false</mandatory>
             </configurationParameter>
             <configurationParameter>
                 <name>Limit</name>
                 <description/>
                 <type>Integer</type>
                 <multiValued>false</multiValued>
-                <mandatory>true</mandatory>
+                <mandatory>false</mandatory>
             </configurationParameter>
             <configurationParameter>
-                <name>JedisConfigFile</name>
+                <name>CostosysConfigFile</name>
                 <description/>
                 <type>String</type>
                 <multiValued>false</multiValued>
@@ -104,7 +104,7 @@
                 <description/>
                 <type>Boolean</type>
                 <multiValued>false</multiValued>
-                <mandatory>true</mandatory>
+                <mandatory>false</mandatory>
             </configurationParameter>
         </configurationParameters>
         <configurationParameterSettings>
@@ -117,7 +117,7 @@
             <nameValuePair>
                 <name>RandomSelection</name>
                 <value>
-                    <string/>
+                    <boolean>false</boolean>
                 </value>
             </nameValuePair>
             <nameValuePair>
@@ -164,12 +164,6 @@
         <name>Table</name>
         <value>
           <string>data_mirror0</string>
-        </value>
-      </nameValuePair>
-    <nameValuePair>
-        <name>JedisConfigFile</name>
-        <value>
-          <string>jedisConfiguration.xml</string>
         </value>
       </nameValuePair>
     </configurationParameterSettings>
