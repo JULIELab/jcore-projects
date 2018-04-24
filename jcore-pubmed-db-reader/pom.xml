@@ -6,12 +6,12 @@
     <artifactId>jcore-projects</artifactId>
     <version>2.3.0-SNAPSHOT</version>
   </parent>
-  <artifactId>jcore-medline-db-reader</artifactId>
+  <artifactId>jcore-pubmed-db-reader</artifactId>
   <name>JCoRe MEDLINE DB Reader</name>
-  <description>An instantiation of the jcore-db-reader that uses the jcore-xml-mapper to retrieve and parse MEDLINE XML
-      from a PostgreSQL database. The XML format of retrieved documents is expected to follow the MEDLINE XML schema
-      that was used until inclusive 2016. I.e. the root document of MEDLINE citation must be MedlineCitation and not,
-      as it is since 2017, PubmedArticle.</description>
+  <description>An instantiation of the jcore-db-reader that uses the jcore-xml-mapper to retrieve and parse PubMed XML
+      from a PostgreSQL database. The XML format of retrieved documents is expected to follow the PubMed/MEDLINE XML schema
+      that was used beginning from 2017. I.e. the root document of a document must be PubmedArticle and not,
+      as it was for MEDLINE until 2017, MedlineCitation.</description>
   <dependencies>
   	<dependency>
   		<groupId>de.julielab</groupId>
@@ -22,6 +22,11 @@
   		<groupId>de.julielab</groupId>
   		<artifactId>jcore-descriptor-creator</artifactId>
   	</dependency>
+      <dependency>
+          <groupId>ch.qos.logback</groupId>
+          <artifactId>logback-classic</artifactId>
+          <scope>provided</scope>
+      </dependency>
   </dependencies>
   <organization>
   	<name>JULIE Lab, Germany</name>

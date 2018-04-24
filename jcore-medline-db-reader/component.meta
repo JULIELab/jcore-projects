@@ -1,16 +1,25 @@
 {
     "categories": [
+        "ae",
         "reader"
     ],
-    "description": "Leveraging the JCoRe XML DB Reader, this project employs a Medline-enabled mapping file to map Medline XML documents to CAS instances. The input comes from a database containing the full Pubmed/Medline citation XML data. The XML format is the one used by NCBI when downloading Medline documents in large batches from the NCBI FTP server. However, the component currently expects single documents in form of <MedlineCitation> elements instead of whole PubmedArticleSets containing multiple MedlineCitations.",
+    "description": "An instantiation of the jcore-db-reader that uses the jcore-xml-mapper to retrieve and parse MEDLINE XML\n      from a PostgreSQL database. The XML format of retrieved documents is expected to follow the MEDLINE XML schema\n      that was used until inclusive 2016. I.e. the root document of MEDLINE citation must be MedlineCitation and not,\n      as it is since 2017, PubmedArticle.",
     "descriptors": [
         {
             "category": "reader",
-            "location": "de.julielab.jcore.reader.pubmed-db.desc.jcore-pubmed-db-reader"
+            "location": "de.julielab.jcore.reader.medline-db.desc.jcore-medline-db-multiplier-reader"
+        },
+        {
+            "category": "ae",
+            "location": "de.julielab.jcore.reader.medline-db.desc.jcore-medline-db-multiplier"
+        },
+        {
+            "category": "reader",
+            "location": "de.julielab.jcore.reader.medline-db.desc.jcore-medline-db-reader"
         }
     ],
     "exposable": true,
     "group": "general",
-    "maven-artifact": "jcore-pubmed-db-reader",
-    "name": "JCoRe PubMed DB Reader"
+    "maven-artifact": "jcore-medline-db-reader",
+    "name": "JCoRe MEDLINE DB Reader"
 }

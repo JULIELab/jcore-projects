@@ -10,14 +10,14 @@
     <configurationParameters>
       <configurationParameter>
         <name>InputDirectory</name>
-        <description>Directory of Medline XML files to read in. Each file is assumed to contain a single MedlineCitation XML document.</description>
+        <description>Directory of PubMed XML files to read in. Each file is assumed to contain a single PubmedArticle XML document.</description>
         <type>String</type>
         <multiValued>false</multiValued>
         <mandatory>true</mandatory>
       </configurationParameter>
       <configurationParameter>
         <name>MappingFile</name>
-        <description>The mapping file that determines how Medline XML elements are mapped to CAS annotations.</description>
+        <description>The mapping file that determines how PubMed XML elements are mapped to CAS annotations.</description>
         <type>String</type>
         <multiValued>false</multiValued>
         <mandatory>true</mandatory>
