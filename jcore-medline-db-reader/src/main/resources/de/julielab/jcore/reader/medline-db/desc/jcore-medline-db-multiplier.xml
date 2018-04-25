@@ -4,7 +4,7 @@
     <primitive>true</primitive>
     <annotatorImplementationName>de.julielab.jcore.reader.xml.XMLDBMultiplier</annotatorImplementationName>
     <analysisEngineMetaData>
-        <name>JCoRe MEDLINE XML Database Multiplier</name>
+        <name>JCoRe Medline XML Database Multiplier</name>
         <description>This CAS multiplier receives information about documents to be read from an instance of the XML
             Database Multiplier reader from the jcore-db-reader project. The multiplier employs the jcore-xml-mapper to
             map the MEDLINE XML structure into CAS instances. It also supports additional tables sent by the DB
@@ -48,6 +48,7 @@
         </configurationParameterSettings>
         <typeSystemDescription>
             <imports>
+                <import name="de.julielab.jcore.types.casmultiplier.jcore-dbtable-multiplier-types"></import>
                 <import name="de.julielab.jcore.types.jcore-document-meta-pubmed-types"></import>
                 <import name="de.julielab.jcore.types.jcore-document-structure-pubmed-types"></import>
             </imports>
