@@ -1,6 +1,6 @@
 {
     "categories": [
-        "ae",
+        "multiplier",
         "reader"
     ],
     "description": "An instantiation of the jcore-db-reader that uses the jcore-xml-mapper to retrieve and parse MEDLINE XML\n      from a PostgreSQL database. The XML format of retrieved documents is expected to follow the MEDLINE XML schema\n      that was used until inclusive 2016. I.e. the root document of MEDLINE citation must be MedlineCitation and not,\n      as it is since 2017, PubmedArticle.",
@@ -10,7 +10,7 @@
             "location": "de.julielab.jcore.reader.medline-db.desc.jcore-medline-db-multiplier-reader"
         },
         {
-            "category": "ae",
+            "category": "multiplier",
             "location": "de.julielab.jcore.reader.medline-db.desc.jcore-medline-db-multiplier"
         },
         {
