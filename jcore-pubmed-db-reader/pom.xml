@@ -7,7 +7,7 @@
     <version>2.3.0-SNAPSHOT</version>
   </parent>
   <artifactId>jcore-pubmed-db-reader</artifactId>
-  <name>JCoRe MEDLINE DB Reader</name>
+  <name>JCoRe PubMed DB Reader</name>
   <description>An instantiation of the jcore-db-reader that uses the jcore-xml-mapper to retrieve and parse PubMed XML
       from a PostgreSQL database. The XML format of retrieved documents is expected to follow the PubMed/MEDLINE XML schema
       that was used beginning from 2017. I.e. the root document of a document must be PubmedArticle and not,

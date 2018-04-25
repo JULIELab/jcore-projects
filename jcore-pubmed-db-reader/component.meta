@@ -22,5 +22,5 @@
     "exposable": true,
     "group": "general",
     "maven-artifact": "jcore-pubmed-db-reader",
-    "name": "JCoRe MEDLINE DB Reader"
+    "name": "JCoRe PubMed DB Reader"
 }
