@@ -49,6 +49,10 @@
 		<module>jcore-jtbd-ae-biomedical-english</module>
 		<module>jcore-jtbd-ae-medical-german</module>
 		<module>jcore-lingpipegazetteer-ae-dummy-implementation</module>
+		<module>jcore-linnaeus-species-ae-genera-species-proxies-dicts</module>
+		<module>jcore-linnaeus-species-ae-proxies-dict</module>
+		<module>jcore-linnaeus-species-ae-species-dict</module>
+		<module>jcore-medline-db-reader</module>
 		<module>jcore-medline-reader</module>
 		<module>jcore-mstparser-ae-biomedical-english</module>
 		<module>jcore-opennlp-chunk-ae-biomedical-english</module>
@@ -59,12 +63,8 @@
 		<module>jcore-opennlp-sentence-ae-medical-german</module>
 		<module>jcore-opennlp-token-ae-biomedical-english</module>
 		<module>jcore-opennlp-token-ae-medical-german</module>
+		<module>jcore-pubmed-db-reader</module>
 		<module>jcore-pubmed-reader</module>
-
-		<module>jcore-linnaeus-species-ae-genera-species-proxies-dicts</module>
-		<module>jcore-linnaeus-species-ae-proxies-dict</module>
-		<module>jcore-linnaeus-species-ae-species-dict</module>
-		<module>jcore-medline-db-reader</module>
 	</modules>
 	
 	
