@@ -11,6 +11,10 @@
     ],
     "exposable": true,
     "group": "general",
-    "maven-artifact": "jcore-linnaeus-species-ae-genera-species-proxies-dicts",
+    "maven-artifact": {
+        "artifactId": "jcore-linnaeus-species-ae-genera-species-proxies-dicts",
+        "groupId": "de.julielab",
+        "version": "2.3.0-SNAPSHOT"
+    },
     "name": "JCoRe Linnaeus Species AE Genera and Species Proxies Dictionaries"
 }

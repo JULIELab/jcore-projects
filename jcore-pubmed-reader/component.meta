@@ -20,6 +20,10 @@
     ],
     "exposable": true,
     "group": "general",
-    "maven-artifact": "jcore-pubmed-reader",
+    "maven-artifact": {
+        "artifactId": "jcore-pubmed-reader",
+        "groupId": "de.julielab",
+        "version": "2.3.0-SNAPSHOT"
+    },
     "name": "JCoRe PubMed Reader"
 }

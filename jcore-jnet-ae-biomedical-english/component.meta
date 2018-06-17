@@ -11,6 +11,10 @@
     ],
     "exposable": true,
     "group": "general",
-    "maven-artifact": "jcore-jnet-ae-biomedical-english",
+    "maven-artifact": {
+        "artifactId": "jcore-jnet-ae-biomedical-english",
+        "groupId": "de.julielab",
+        "version": "2.3.0-SNAPSHOT"
+    },
     "name": "JCoRe JNET AE, Biomedical English"
 }

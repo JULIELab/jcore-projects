@@ -11,6 +11,10 @@
     ],
     "exposable": true,
     "group": "general",
-    "maven-artifact": "jcore-banner-ae-biomedical-english",
+    "maven-artifact": {
+        "artifactId": "jcore-banner-ae-biomedical-english",
+        "groupId": "de.julielab",
+        "version": "2.3.0-SNAPSHOT"
+    },
     "name": "JCoRe BANNER AE for Biomedical English"
 }
