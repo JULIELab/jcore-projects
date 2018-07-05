@@ -51,6 +51,7 @@
                 <import name="de.julielab.jcore.types.casmultiplier.jcore-dbtable-multiplier-types"></import>
                 <import name="de.julielab.jcore.types.jcore-document-meta-pubmed-types"></import>
                 <import name="de.julielab.jcore.types.jcore-document-structure-pubmed-types"></import>
+                <import name="de.julielab.jcore.types.extensions.jcore-document-meta-extension-types"/>
             </imports>
         </typeSystemDescription>
         <fsIndexCollection/>
