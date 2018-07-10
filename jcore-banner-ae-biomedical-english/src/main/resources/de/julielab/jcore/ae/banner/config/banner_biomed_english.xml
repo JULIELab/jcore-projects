@@ -15,7 +15,7 @@
       <outputFilename>output/output.txt</outputFilename>
       <inContextAnalysisFilename>output/contextAnalysis.html</inContextAnalysisFilename>
       <mentionFilename>output/mention.txt</mentionFilename>
-      <modelFilename>de/julielab/jcore/ae/banner/resources/banner-bc2gm-dictbannerdefault.bin</modelFilename>
+      <modelFilename>de/julielab/jcore/ae/banner/resources/banner-bc2gmall-dictbannerdefault.bin</modelFilename>
       <lemmatiserDataDirectory>nlpdata/lemmatiser</lemmatiserDataDirectory>
       <posTaggerDataDirectory>nlpdata/tagger</posTaggerDataDirectory>
       <posTagger>dragon.nlp.tool.HeppleTagger</posTagger>
