@@ -63,7 +63,7 @@
                 <value>
                     <array>
                         <string>de.julielab.jcore.types.Title</string>
-                        <string>de.julielab.jcore.types.Abstract</string>
+                        <string>de.julielab.jcore.types.AbstractText</string>
                         <string>de.julielab.jcore.types.AbstractSectionHeading</string>
                         <string>de.julielab.jcore.types.AbstractSection</string>
                         <string>de.julielab.jcore.types.Section</string>
