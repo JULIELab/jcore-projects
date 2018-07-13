@@ -53,7 +53,26 @@
             <nameValuePair>
                 <name>ModelFilename</name>
                 <value>
-                    <string>de/julielab/jcore/ae/jsbd/model/jsbd-biomed-oversampled-abstracts-split-at-punctuation.mod.gz</string>
+                    <string>
+                        de/julielab/jcore/ae/jsbd/model/jsbd-biomed-oversampled-abstracts-split-at-punctuation.mod.gz
+                    </string>
+                </value>
+            </nameValuePair>
+            <nameValuePair>
+                <name>SentenceDelimiterTypes</name>
+                <value>
+                    <array>
+                        <string>de.julielab.jcore.types.Title</string>
+                        <string>de.julielab.jcore.types.Abstract</string>
+                        <string>de.julielab.jcore.types.AbstractSectionHeading</string>
+                        <string>de.julielab.jcore.types.AbstractSection</string>
+                        <string>de.julielab.jcore.types.Section</string>
+                        <string>de.julielab.jcore.types.Paragraph</string>
+                        <string>de.julielab.jcore.types.Zone</string>
+                        <string>de.julielab.jcore.types.Caption</string>
+                        <string>de.julielab.jcore.types.Figure</string>
+                        <string>de.julielab.jcore.types.Table</string>
+                    </array>
                 </value>
             </nameValuePair>
         </configurationParameterSettings>
