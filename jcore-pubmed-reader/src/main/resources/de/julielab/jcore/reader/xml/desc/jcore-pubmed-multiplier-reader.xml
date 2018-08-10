@@ -3,7 +3,7 @@
   <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
   <implementationName>de.julielab.jcore.reader.xml.XMLMultiplierReader</implementationName>
   <processingResourceMetaData>
-    <name>JCoRe Pubmed Reader for ArticleSet Multiplier</name>
+    <name>JCoRe PubMed Reader for ArticleSet Multiplier</name>
     <description/>
     <version>1.0</version>
     <vendor/>
