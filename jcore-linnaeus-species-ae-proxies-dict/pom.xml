@@ -2,8 +2,8 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>de.julielab</groupId>
-    <artifactId>jcore-base</artifactId>
-    <version>2.3.0-SNAPSHOT</version>
+    <artifactId>jcore-projects</artifactId>
+    <version>2.3.0</version>
   </parent>
   <artifactId>jcore-linnaeus-species-ae-proxies-dict</artifactId>
   <description>This project is a resource for the JULES Linnaeus Annotator. The dictionary contained herein is used for the recognition of concrete species names in text, e.g. &quot;human&quot;, &quot;mouse&quot;, &quot;n. furzeri&quot;, &quot;c. elegans&quot; etc as well as species hints, i.e. indirect clues to a species like the word &quot;patient&quot; which most likely refers to a human. For the task of only finding concrete species names in text, there is the project jcore-linnaeus-species-ae-species-dict.</description>
