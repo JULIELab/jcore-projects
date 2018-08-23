@@ -36,7 +36,9 @@
     </dependencies>
     <modules>
         <module>jcore-banner-ae-biomedical-english</module>
+        <module>jcore-biosem-ae-bionlp-st09</module>
         <module>jcore-biosem-ae-bionlp-st11</module>
+        <module>jcore-biosem-ae-bionlp-st13</module>
         <module>jcore-jnet-ae-biomedical-english</module>
         <module>jcore-jpos-ae-medical-german</module>
         <module>jcore-jsbd-ae-biomedical-english</module>

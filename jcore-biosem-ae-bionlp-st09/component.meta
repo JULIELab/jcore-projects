@@ -1,0 +1,20 @@
+{
+    "categories": [
+        "ae"
+    ],
+    "description": "This project employs the JCoRe BioSem wrapper (jcore-biosem-ae) with a BioSem database trained on the BioNLP SharedTask 2009 train data for biological event extraction.",
+    "descriptors": [
+        {
+            "category": "ae",
+            "location": "de.julielab.jcore.ae.biosem.desc.jcore-biosem-ae-bionlp-st09"
+        }
+    ],
+    "exposable": true,
+    "group": "semantic",
+    "maven-artifact": {
+        "artifactId": "jcore-biosem-ae-bionlp-st09",
+        "groupId": "de.julielab",
+        "version": "2.3.0"
+    },
+    "name": "JCoRe BioSem AE, BioNLP SharedTask 2009"
+}
