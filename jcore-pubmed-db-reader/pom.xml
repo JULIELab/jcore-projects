@@ -1,36 +1,40 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>de.julielab</groupId>
-    <artifactId>jcore-projects</artifactId>
-    <version>2.3.0</version>
-  </parent>
-  <artifactId>jcore-pubmed-db-reader</artifactId>
-  <name>JCoRe PubMed DB Reader</name>
-  <description>An instantiation of the jcore-db-reader that uses the jcore-xml-mapper to retrieve and parse PubMed XML
-      from a PostgreSQL database. The XML format of retrieved documents is expected to follow the PubMed/MEDLINE XML schema
-      that was used beginning from 2017. I.e. the root document of a document must be PubmedArticle and not,
-      as it was for MEDLINE until 2017, MedlineCitation.</description>
-  <dependencies>
-  	<dependency>
-  		<groupId>de.julielab</groupId>
-  		<artifactId>jcore-xml-db-reader</artifactId>
-  		<version>${jcore-version}</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>de.julielab</groupId>
-  		<artifactId>jcore-descriptor-creator</artifactId>
-  	</dependency>
-      <dependency>
-          <groupId>ch.qos.logback</groupId>
-          <artifactId>logback-classic</artifactId>
-          <scope>provided</scope>
-      </dependency>
-  </dependencies>
-  <organization>
-  	<name>JULIE Lab, Germany</name>
-  	<url>http://www.julielab.de</url>
-  </organization>
-  <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-pubmed-db-reader</url>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>de.julielab</groupId>
+        <artifactId>jcore-projects</artifactId>
+        <version>2.3.0</version>
+    </parent>
+    <artifactId>jcore-pubmed-db-reader</artifactId>
+    <name>JCoRe PubMed DB Reader</name>
+    <version>2.3.1-SNAPSHOT</version>
+    <description>An instantiation of the jcore-db-reader that uses the jcore-xml-mapper to retrieve and parse PubMed XML
+        from a PostgreSQL database. The XML format of retrieved documents is expected to follow the PubMed/MEDLINE XML
+        schema
+        that was used beginning from 2017. I.e. the root document of a document must be PubmedArticle and not,
+        as it was for MEDLINE until 2017, MedlineCitation.
+    </description>
+    <dependencies>
+        <dependency>
+            <groupId>de.julielab</groupId>
+            <artifactId>jcore-xml-db-reader</artifactId>
+            <version>2.3.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>de.julielab</groupId>
+            <artifactId>jcore-descriptor-creator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+    <organization>
+        <name>JULIE Lab, Germany</name>
+        <url>http://www.julielab.de</url>
+    </organization>
+    <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-pubmed-db-reader</url>
 </project>
