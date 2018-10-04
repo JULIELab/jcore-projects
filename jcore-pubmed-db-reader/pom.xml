@@ -9,7 +9,7 @@
     </parent>
     <artifactId>jcore-pubmed-db-reader</artifactId>
     <name>JCoRe PubMed DB Reader</name>
-    <version>2.3.1-SNAPSHOT</version>
+    <version>2.3.2</version>
     <description>An instantiation of the jcore-db-reader that uses the jcore-xml-mapper to retrieve and parse PubMed XML
         from a PostgreSQL database. The XML format of retrieved documents is expected to follow the PubMed/MEDLINE XML
         schema
@@ -20,7 +20,7 @@
         <dependency>
             <groupId>de.julielab</groupId>
             <artifactId>jcore-xml-db-reader</artifactId>
-            <version>2.3.1-SNAPSHOT</version>
+            <version>2.3.2</version>
         </dependency>
         <dependency>
             <groupId>de.julielab</groupId>
