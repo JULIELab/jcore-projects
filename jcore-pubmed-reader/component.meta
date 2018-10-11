@@ -1,7 +1,7 @@
 {
     "categories": [
-        "reader",
-        "multiplier"
+        "multiplier",
+        "reader"
     ],
     "description": "Leveraging the JCoRe XML Reader, this project employs a PubMed-enabled mapping file to map PubMed XML\n        documents to CAS instances. The input is a directory of single XML files, each containing exactly one XML\n        PubmedArticle. The XML format is the one used by NCBI when displaying results in PubMed as XML.\n    ",
     "descriptors": [

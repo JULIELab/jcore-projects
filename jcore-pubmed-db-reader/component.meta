@@ -4,7 +4,7 @@
         "multiplier",
         "reader"
     ],
-    "description": "An instantiation of the jcore-db-reader that uses the jcore-xml-mapper to retrieve and parse PubMed XML\n      from a PostgreSQL database. The XML format of retrieved documents is expected to follow the PubMed/MEDLINE XML schema\n      that was used beginning from 2017. I.e. the root document of a document must be PubmedArticle and not,\n      as it was for MEDLINE until 2017, MedlineCitation.",
+    "description": "An instantiation of the jcore-db-reader that uses the jcore-xml-mapper to retrieve and parse PubMed XML\n        from a PostgreSQL database. The XML format of retrieved documents is expected to follow the PubMed/MEDLINE XML\n        schema\n        that was used beginning from 2017. I.e. the root document of a document must be PubmedArticle and not,\n        as it was for MEDLINE until 2017, MedlineCitation.\n    ",
     "descriptors": [
         {
             "category": "reader",
@@ -24,7 +24,7 @@
     "maven-artifact": {
         "artifactId": "jcore-pubmed-db-reader",
         "groupId": "de.julielab",
-        "version": "2.3.0"
+        "version": "2.3.2"
     },
     "name": "JCoRe PubMed DB Reader"
 }
