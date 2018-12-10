@@ -14,7 +14,7 @@
     "maven-artifact": {
         "artifactId": "jcore-linnaeus-species-ae-species-dict",
         "groupId": "de.julielab",
-        "version": "2.3.0"
+        "version": "2.3.1"
     },
     "name": "JCoRe Linnaeus Species AE with Species Dictionary"
 }
