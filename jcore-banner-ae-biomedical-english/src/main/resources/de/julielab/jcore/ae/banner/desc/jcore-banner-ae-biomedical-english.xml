@@ -4,8 +4,8 @@
     <primitive>true</primitive>
     <annotatorImplementationName>de.julielab.jcore.ae.banner.BANNERAnnotator</annotatorImplementationName>
     <analysisEngineMetaData>
-        <name>jcore-banner-ae</name>
-        <description/>
+        <name>JCoRe BANNER AE for Biomedical English</name>
+        <description>This component uses the BANNER named entity recognizer with a model trained on the complete (train and test) dataset of the BioCreative II gene mention challenge.</description>
         <version>1.0</version>
         <vendor/>
         <configurationParameters>
