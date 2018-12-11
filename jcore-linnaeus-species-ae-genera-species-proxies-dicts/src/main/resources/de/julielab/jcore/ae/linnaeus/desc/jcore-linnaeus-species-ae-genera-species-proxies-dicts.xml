@@ -4,7 +4,7 @@
   <primitive>true</primitive>
   <annotatorImplementationName>de.julielab.jcore.ae.linnaeus.LinnaeusSpeciesAnnotator</annotatorImplementationName>
   <analysisEngineMetaData>
-    <name>jules-linnaeus-species-ae</name>
+    <name>JCoRe LINNEAUS Species AE with Genera and Proxies</name>
     <description/>
     <version>1.0</version>
     <vendor/>
