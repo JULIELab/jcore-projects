@@ -15,8 +15,11 @@ import org.junit.Test;
 
 import de.julielab.jcore.types.Gene;
 import de.julielab.jcore.types.Sentence;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class BannerAETest {
+    private final static Logger log = LoggerFactory.getLogger(BannerAETest.class);
 	@Test
 	public void testDescriptor() throws Exception {
 		// just tag a single sentence with a test model that actually used that sentence as training data.
@@ -28,7 +31,8 @@ public class BannerAETest {
 				"Ten out-patients with pustulosis palmaris et plantaris were examined with direct immunofluorescence (IF) technique for deposition of fibrinogen, fibrin or its degradation products (FR-antigen) in affected and unaffected skin, together with heparin-precipitable fraction (HPF), cryoglobulin and total plasma fibrinogen in the blood.");
 		new Sentence(jcas, 0, jcas.getDocumentText().length()).addToIndexes();
 
-		AnalysisEngine bannerAe = AnalysisEngineFactory.createEngine("de.julielab.jcore.ae.banner.desc.jcore-banner-ae-biomedical-english");
+        AnalysisEngine bannerAe = null;
+                bannerAe= AnalysisEngineFactory.createEngine("de.julielab.jcore.ae.banner.desc.jcore-banner-ae-biomedical-english");
 		bannerAe.process(jcas);
 
 		// expected result from the GENE.eval.small file:
@@ -44,6 +48,7 @@ public class BannerAETest {
 		assertEquals("FR-antigen", geneList.get(2).getCoveredText());
 		assertEquals("cryoglobulin", geneList.get(3).getCoveredText());
 		assertEquals("fibrinogen", geneList.get(4).getCoveredText());
+
 	}
 
 }
