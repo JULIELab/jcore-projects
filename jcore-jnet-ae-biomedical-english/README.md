@@ -1,4 +1,9 @@
-# JNET PennBIO
+# JNET PennBIO  
+
+**Descriptor Path**:
+```
+de.julielab.jcore.ae.jnet.desc.jcore-jnet-ae-biomedical-english
+```
 
 xval without POS on PennBIO data (pennbio_genes.train.ppd) - see `src/main/resources` for feaure config file
 ```

@@ -2,22 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <artifactId>jcore-opennlp-chunk-ae-biomedical-english</artifactId>
-  <build>
-    <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.1</version>
-        <configuration>
-          <source>1.7</source>
-          <target>1.7</target>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
   <parent>
   	<groupId>de.julielab</groupId>
   	<artifactId>jcore-projects</artifactId>
-  	<version>2.1.0</version>
+  	<version>2.3.0</version>
   </parent>
   <name>JCoRe OpenNLP Chunker, Biomedical English</name>
   <description>This project employs the OpenNLP wrapper (jcore-opennlp-chunker-ae) with a model trained on the Genia corpus.</description>

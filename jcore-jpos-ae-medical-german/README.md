@@ -1,4 +1,10 @@
-# JPOS Framed
+# JPOS Framed  
+
+**Descriptor Path**:
+```
+de.julielab.jcore.ae.jpos.desc.jcore-jpos-ae-medical-german
+```
+
 This model was trained on the confidential FRAMED corpus, a non-sharable collection of various German-language clinical
 document types as described in [1].
 The feature configuration for the training process as well as the model and the descriptor file can be found in the `src/main/resources` folder.

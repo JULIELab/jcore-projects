@@ -1,4 +1,9 @@
-# MST Parser Genia 2008
+# MST Parser Genia 2008  
+
+**Descriptor Path**:
+```
+de.julielab.jcore.ae.mstparser.desc.jcore-mstparser-ae-biomedical-english
+```
 
 ### Evaluation
 10-fold crossvalidation on the Genia corpus results in the following:

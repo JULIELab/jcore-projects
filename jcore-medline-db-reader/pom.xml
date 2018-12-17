@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>de.julielab</groupId>
+        <artifactId>jcore-projects</artifactId>
+        <version>2.3.1</version>
+    </parent>
+    <artifactId>jcore-medline-db-reader</artifactId>
+    <name>JCoRe MEDLINE DB Reader</name>
+    <version>2.3.3</version>
+    <description>An instantiation of the jcore-db-reader that uses the jcore-xml-mapper to retrieve and parse MEDLINE
+        XML
+        from a PostgreSQL database. The XML format of retrieved documents is expected to follow the MEDLINE XML schema
+        that was used until inclusive 2016. I.e. the root element of MEDLINE documents must be MedlineCitation and not,
+        as it is since 2017, PubmedArticle.
+    </description>
+    <dependencies>
+        <dependency>
+            <groupId>de.julielab</groupId>
+            <artifactId>jcore-xml-db-reader</artifactId>
+            <version>2.3.5-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>de.julielab</groupId>
+            <artifactId>jcore-descriptor-creator</artifactId>
+        </dependency>
+    </dependencies>
+    <organization>
+        <name>JULIE Lab, Germany</name>
+        <url>http://www.julielab.de</url>
+    </organization>
+    <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-pubmed-db-reader</url>
+</project>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+    <primitive>true</primitive>
+    <annotatorImplementationName>de.julielab.jcore.reader.xml.XMLDBMultiplier</annotatorImplementationName>
+    <analysisEngineMetaData>
+        <name>JCoRe PubMed XML Database Multiplier</name>
+        <description>This CAS multiplier receives information about documents to be read from an instance of the XML
+            Database Multiplier reader from the jcore-db-reader project. The multiplier employs the jcore-xml-mapper to
+            map the PubMed XML structure into CAS instances. It also supports additional tables sent by the DB
+            Multiplier Reader that are then joined to the main table. This mechanism is used to load separate data from
+            additional database tables and populate the CAS with them via the 'RowMapping' parameter. This component is
+            part of the Jena Document Information System, JeDIS.
+        </description>
+        <vendor>JULIE Lab Jena, Germany</vendor>
+        <configurationParameters>
+            <configurationParameter>
+                <name>RowMapping</name>
+                <description>In case that the CoStoSys active table schema specified more than two columns to be
+                    retrieved, the other columns need a mapping into the CAS.A mapping item has the following form: &lt;column
+                    index&gt;=&lt;uima type&gt;#&lt;type feature&gt;:&lt;feature datatype&gt;:defaultValue where the
+                    defaultValue is optional. Example: 2=de.julielab.jules.types.max_xmi_id#id:int:0 maps the content of
+                    the third (index 2, zero-based) retrieved column (may also belong to an additional table!) to
+                    feature "id" of the type "d.j.j.t.max_xmi_id" which is an int. In case there is no value returned
+                    from the database for a document, use a 0 as default.
+                </description>
+                <type>String</type>
+                <multiValued>true</multiValued>
+                <mandatory>false</mandatory>
+            </configurationParameter>
+            <configurationParameter>
+                <name>MappingFile</name>
+                <description>An XML mapping file following the specification required by the jcore-xml-mapper. The
+                    mapping file specifies how contents from an XML docuent are to be brought into the CAS.
+                </description>
+                <type>String</type>
+                <multiValued>false</multiValued>
+                <mandatory>true</mandatory>
+            </configurationParameter>
+        </configurationParameters>
+        <configurationParameterSettings>
+            <nameValuePair>
+                <name>MappingFile</name>
+                <value>
+                    <string>de/julielab/jcore/reader/pubmed-db/mapping/pubmedMappingFile.xml</string>
+                </value>
+            </nameValuePair>
+        </configurationParameterSettings>
+        <typeSystemDescription>
+            <imports>
+                <import name="de.julielab.jcore.types.casmultiplier.jcore-dbtable-multiplier-types"></import>
+                <import name="de.julielab.jcore.types.jcore-document-meta-pubmed-types"></import>
+                <import name="de.julielab.jcore.types.jcore-document-structure-pubmed-types"></import>
+                <import name="de.julielab.jcore.types.extensions.jcore-document-meta-extension-types"/>
+            </imports>
+        </typeSystemDescription>
+        <fsIndexCollection/>
+        <capabilities/>
+        <operationalProperties>
+            <modifiesCas>true</modifiesCas>
+            <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+            <outputsNewCASes>true</outputsNewCASes>
+        </operationalProperties>
+    </analysisEngineMetaData>
+</analysisEngineDescription>

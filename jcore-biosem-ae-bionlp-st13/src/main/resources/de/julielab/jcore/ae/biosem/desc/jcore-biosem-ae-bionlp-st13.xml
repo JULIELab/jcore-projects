@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <primitive>true</primitive>  <annotatorImplementationName>de.julielab.jcore.ae.biosem.BioSemEventAnnotator</annotatorImplementationName>
+  <analysisEngineMetaData>
+    <name>JCoRe BioSEM Event Annotator</name>
+    <description/>
+    <version>2.1.0</version>
+    <vendor/>
+    <configurationParameters/>
+    <configurationParameterSettings/>
+    <typeSystemDescription>
+      <imports>
+        <import name="de.julielab.jcore.types.jcore-semantics-biology-types"/>
+      </imports>
+    </typeSystemDescription>
+    <typePriorities/>
+    <fsIndexCollection/>
+    <capabilities>
+      <capability>
+        <inputs>
+          <type allAnnotatorFeatures="true">de.julielab.jcore.types.Gene</type>
+        </inputs>
+        <outputs>
+          <type allAnnotatorFeatures="true">de.julielab.jcore.types.EventTrigger</type>
+          <type allAnnotatorFeatures="true">de.julielab.jcore.types.EventMention</type>
+          <type allAnnotatorFeatures="true">de.julielab.jcore.types.ArgumentMention</type>
+        </outputs>
+        <languagesSupported/>
+      </capability>
+    </capabilities>
+  <operationalProperties>
+      <modifiesCas>true</modifiesCas>
+      <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+      <outputsNewCASes>false</outputsNewCASes>
+    </operationalProperties>
+  </analysisEngineMetaData>
+  <externalResourceDependencies>
+    <externalResourceDependency>
+      <key>TrainedDB</key>
+      <description>The BioSem database in which triggers and event rules have been learned. New predictions are mode based on the rules in this database.</description>
+      <interfaceName>de.julielab.jcore.ae.biosem.DBUtilsProvider</interfaceName>
+      <optional>false</optional>
+    </externalResourceDependency>
+  </externalResourceDependencies>
+  <resourceManagerConfiguration>
+    <externalResources>
+      <externalResource>
+        <name>TrainedDB</name>
+        <description/>
+        <fileResourceSpecifier>
+          <fileUrl>file:de/julielab/jcore/ae/biosem/conf/biosemannotator-st13.properties</fileUrl>
+        </fileResourceSpecifier>
+        <implementationName>de.julielab.jcore.ae.biosem.DBUtilsProviderImpl</implementationName>
+      </externalResource>
+    </externalResources>
+    <externalResourceBindings>
+      <externalResourceBinding>
+        <key>TrainedDB</key>
+        <resourceName>TrainedDB</resourceName>
+      </externalResourceBinding>
+    </externalResourceBindings>
+  </resourceManagerConfiguration>
+</analysisEngineDescription>

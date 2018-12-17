@@ -1,0 +1,20 @@
+{
+    "categories": [
+        "ae"
+    ],
+    "description": "This project employs the OpenNLP wrapper (jcore-opennlp-postag-ae) with a model trained on the PennBioIE corpus.",
+    "descriptors": [
+        {
+            "category": "ae",
+            "location": "de.julielab.jcore.ae.opennlp.postag.desc.jcore-opennlp-postag-ae-biomedical-english"
+        }
+    ],
+    "exposable": true,
+    "group": "general",
+    "maven-artifact": {
+        "artifactId": "jcore-opennlp-postag-ae-biomedical-english",
+        "groupId": "de.julielab",
+        "version": "2.3.0"
+    },
+    "name": "JCoRe OpenNLP POS Tagger, Biomedical English"
+}

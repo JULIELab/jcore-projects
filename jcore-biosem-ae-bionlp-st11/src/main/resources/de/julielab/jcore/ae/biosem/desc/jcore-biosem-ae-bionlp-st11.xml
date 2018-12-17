@@ -49,7 +49,7 @@
         <name>TrainedDB</name>
         <description/>
         <fileResourceSpecifier>
-          <fileUrl>file:de/julielab/jcore/ae/biosem/conf/biosemannotator.properties</fileUrl>
+          <fileUrl>file:de/julielab/jcore/ae/biosem/conf/biosemannotator-st11.properties</fileUrl>
         </fileResourceSpecifier>
         <implementationName>de.julielab.jcore.ae.biosem.DBUtilsProviderImpl</implementationName>
       </externalResource>

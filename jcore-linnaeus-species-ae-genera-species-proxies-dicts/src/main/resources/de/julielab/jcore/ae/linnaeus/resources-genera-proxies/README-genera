@@ -1,0 +1,10 @@
+Genera proxy dictionary for LINNAEUS (Gerner et al., 2010)
+
+This dictionary contains genus names, linked to the their member species that has been mentioned most frequently in MEDLINE and PubMed Central. This will link, for example, "Drosophila" to D. melanogaster, and "Arabidopsis" to A. thaliana. This can be useful for guiding e.g. gene NER software.
+
+For usage, change the variantMatcher line in your species pack configuaration file to something like this:
+variantMatcher=$dir/dict-species.tsv;$dir/dict-genera-proxy.tsv
+
+This will load not only the normal species dictionary, but also the genera proxy dictionary.
+
+In case of problems utilizing the dictionary, don't hesitate to contact me at martin.gerner@postgrad.manchester.ac.uk

@@ -1,0 +1,20 @@
+{
+    "categories": [
+        "ae"
+    ],
+    "description": "This is just a dummy implementation that can be adapted according to ones own need.",
+    "descriptors": [
+        {
+            "category": "ae",
+            "location": "de.julielab.jcore.ae.lingpipegazetteer.dummy.desc.ApproxGazetteerAnnotatorTest"
+        }
+    ],
+    "exposable": true,
+    "group": "general",
+    "maven-artifact": {
+        "artifactId": "jcore-lingpipegazetteer-ae-dummy-implementation",
+        "groupId": "de.julielab",
+        "version": "2.3.0"
+    },
+    "name": "JCoRe Lingpipe Gazetteer Dummy Implementation"
+}

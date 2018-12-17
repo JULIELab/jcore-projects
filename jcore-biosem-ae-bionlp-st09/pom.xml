@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>de.julielab</groupId>
+    <artifactId>jcore-projects</artifactId>
+    <version>2.3.0</version>
+  </parent>
+    <version>2.3.2</version>
+  <artifactId>jcore-biosem-ae-bionlp-st09</artifactId>
+  <name>JCoRe BioSem AE, BioNLP SharedTask 2009</name>
+  <description>This project employs the JCoRe BioSem wrapper (jcore-biosem-ae) with a BioSem database trained on the BioNLP SharedTask 2009 train data for biological event extraction.</description>
+  <dependencies>
+  	<dependency>
+  		<groupId>de.julielab</groupId>
+  		<artifactId>jcore-biosem-ae</artifactId>
+  		<version>2.3.3-SNAPSHOT</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>ch.qos.logback</groupId>
+  		<artifactId>logback-classic</artifactId>
+  		<scope>test</scope>
+  	</dependency>
+  	<dependency>
+  		<groupId>de.julielab</groupId>
+  		<artifactId>jcore-types</artifactId>
+  		<version>${jcore-version}</version>
+  	</dependency>
+  </dependencies>
+  <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-biosem-ae-bionlp-st09</url>
+</project>

@@ -44,12 +44,7 @@ public class OpenNLPChunkerGeniaTest {
 		
 		assertTrue(it.hasNext());
 		c = (Chunk) it.next();
-		assertEquals("was", c.getCoveredText());
-		assertEquals(ChunkVP.class, c.getClass());
-
-		assertTrue(it.hasNext());
-		c = (Chunk) it.next();
-		assertEquals("regulated", c.getCoveredText());
+		assertEquals("was regulated", c.getCoveredText());
 		assertEquals(ChunkVP.class, c.getClass());
 
 		assertTrue(it.hasNext());
@@ -60,7 +55,7 @@ public class OpenNLPChunkerGeniaTest {
 
 		assertTrue(it.hasNext());
 		c = (Chunk) it.next();
-		assertEquals("the cell.", c.getCoveredText());
+		assertEquals("the cell", c.getCoveredText());
 		assertEquals(ChunkNP.class, c.getClass());
 	}
 

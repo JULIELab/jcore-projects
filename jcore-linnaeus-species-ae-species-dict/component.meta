@@ -1,0 +1,20 @@
+{
+    "categories": [
+        "ae"
+    ],
+    "description": "This project is a project for the JCoRe Linnaeus Annotator. The dictionary contained herein is used for the recognition of concrete species names in text, e.g. \"human\", \"mouse\", \"n. furzeri\", \"c. elegans\" etc. It does not contain species proxies, i.e. indirect clues to a species like the word \"patient\" which most likely refers to a human. For this task there is the project jcore-linnaeus-species-ae-proxies-dict.",
+    "descriptors": [
+        {
+            "category": "ae",
+            "location": "de.julielab.jcore.ae.linnaeus.desc.jcore-linnaeus-species-ae-species-dict"
+        }
+    ],
+    "exposable": true,
+    "group": "general",
+    "maven-artifact": {
+        "artifactId": "jcore-linnaeus-species-ae-species-dict",
+        "groupId": "de.julielab",
+        "version": "2.3.1"
+    },
+    "name": "JCoRe Linnaeus Species AE with Species Dictionary"
+}
