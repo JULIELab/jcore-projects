@@ -17,7 +17,7 @@
         <dependency>
             <groupId>de.julielab</groupId>
             <artifactId>jcore-xml-reader</artifactId>
-            <version>${jcore-version}</version>
+            <version>2.3.8-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
@@ -36,7 +36,7 @@
         <dependency>
             <groupId>de.julielab</groupId>
             <artifactId>jcore-utilities</artifactId>
-            <version>${jcore-version}</version>
+            <version>${jcore-utilities-version}</version>
         </dependency>
     </dependencies>
     <organization>

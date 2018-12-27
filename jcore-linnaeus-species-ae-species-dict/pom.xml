@@ -12,7 +12,7 @@
   	<dependency>
   		<groupId>de.julielab</groupId>
   		<artifactId>jcore-linnaeus-species-ae</artifactId>
-  		<version>2.3.4-SNAPSHOT</version>
+  		<version>2.3.8-SNAPSHOT</version>
   	</dependency>
   </dependencies>
 </project>

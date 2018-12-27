@@ -79,7 +79,7 @@
 		<dependency>
 			<groupId>de.julielab</groupId>
 			<artifactId>jcore-jtbd-ae</artifactId>
-			<version>${jcore-version}</version>
+			<version>2.3.8-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>

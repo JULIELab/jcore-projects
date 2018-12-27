@@ -17,7 +17,7 @@
         <dependency>
             <groupId>de.julielab</groupId>
             <artifactId>jcore-biosem-ae</artifactId>
-            <version>2.3.3-SNAPSHOT</version>
+            <version>2.3.8-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
