@@ -27,7 +27,7 @@
         <dependency>
             <groupId>de.julielab</groupId>
             <artifactId>jcore-types</artifactId>
-            <version>2.3.0</version>
+            <version>${jcore-types-version}</version>
         </dependency>
     </dependencies>
     <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-biosem-ae-bionlp-st09</url>
