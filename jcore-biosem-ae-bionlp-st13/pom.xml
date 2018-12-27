@@ -7,13 +7,17 @@
         <artifactId>jcore-projects</artifactId>
         <version>2.3.8-SNAPSHOT</version>
     </parent>
-    
+
     <artifactId>jcore-biosem-ae-bionlp-st13</artifactId>
     <name>JCoRe BioSem AE, BioNLP SharedTask 2013</name>
     <description>This project employs the JCoRe BioSem wrapper (jcore-biosem-ae) with a BioSem database trained on the
         BioNLP SharedTask 2013 train and development (mix) data for biological event extraction.
     </description>
     <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
         <dependency>
             <groupId>de.julielab</groupId>
             <artifactId>jcore-biosem-ae</artifactId>

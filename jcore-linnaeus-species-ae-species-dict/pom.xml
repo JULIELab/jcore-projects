@@ -14,5 +14,8 @@
   		<artifactId>jcore-linnaeus-species-ae</artifactId>
   		<version>2.3.8-SNAPSHOT</version>
   	</dependency>
-  </dependencies>
+      <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+      </dependency></dependencies>
 </project>

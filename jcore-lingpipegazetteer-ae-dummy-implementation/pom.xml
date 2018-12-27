@@ -17,7 +17,10 @@
   		<artifactId>jcore-lingpipe-gazetteer-ae</artifactId>
   		<version>2.3.8-SNAPSHOT</version>
   	</dependency>
-  </dependencies>
+      <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+      </dependency></dependencies>
   <name>JCoRe Lingpipe Gazetteer Dummy Implementation</name>
   <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-lingpipegazetteer-ae-dummy-implementation</url>
   <description>This is just a dummy implementation that can be adapted according to ones own need.</description>

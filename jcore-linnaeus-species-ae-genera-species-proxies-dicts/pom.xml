@@ -9,7 +9,10 @@
   		<artifactId>jcore-linnaeus-species-ae-proxies-dict</artifactId>
   		<version>2.3.8-SNAPSHOT</version>
   	</dependency>
-  </dependencies>
+      <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+      </dependency></dependencies>
   <parent>
   	<groupId>de.julielab</groupId>
   	<artifactId>jcore-projects</artifactId>

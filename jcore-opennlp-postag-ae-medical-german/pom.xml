@@ -19,6 +19,9 @@
   		<artifactId>logback-classic</artifactId>
   		<scope>test</scope>
   	</dependency>
-  </dependencies>
+      <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+      </dependency></dependencies>
   <description>This Model was trained on the confidential FraMed corpus.</description>
 </project>
