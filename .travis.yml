@@ -17,10 +17,10 @@ cache:
   directories:
     - $HOME/.m2/repository
 
-before_deploy: travis-deployment/before-deploy.sh
+before_deploy: ./travis-deployment/before-deploy.sh
 deploy:
   provider: script
-  script: travis-deployment/deploy.sh
+  script: ./travis-deployment/deploy.sh
   # We need the built artifacts to create their checksums and check if they are already deployed
   skip_cleanup: true
   on:
