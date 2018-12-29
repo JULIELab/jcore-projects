@@ -20,7 +20,7 @@ if [ "$TRAVIS_PULL_REQUEST" == 'false' ]; then
         csNotFound=`java -cp julielab-maven-aether-utilities.jar de.julielab.utilities.aether.apps.GetRemoteChecksums $groupId:$artifactId:$packaging:$version | grep '<checkums not found>'`
 	    if [[ $version =~ .*SNAPSHOT.* ]] || [ "$csNotFound" == "<checkums not found>" ]; then
             echo "This is a SNAPSHOT or a release that has not yet been deployed. Deploying."
-            mvn deploy -f $i/pom.xml -P sonatype-nexus-deployment --settings travis-deployment/mvnsettings.xml -DskipTests=true -N
+            mvn deploy -B -f $i/pom.xml -P sonatype-nexus-deployment --settings travis-deployment/mvnsettings.xml -DskipTests=true -N
 	    fi
     done
 
