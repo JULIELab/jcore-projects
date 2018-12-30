@@ -4,7 +4,7 @@
   <artifactId>jcore-lingpipegazetteer-ae-dummy-implementation</artifactId>
   <parent>
   	<artifactId>jcore-projects</artifactId>
-  	<version>2.3.8-SNAPSHOT</version>
+  	<version>2.3.8</version>
   	<groupId>de.julielab</groupId>
   </parent>
   <organization>
@@ -15,7 +15,7 @@
   	<dependency>
   		<groupId>de.julielab</groupId>
   		<artifactId>jcore-lingpipe-gazetteer-ae</artifactId>
-  		<version>2.3.8-SNAPSHOT</version>
+  		<version>2.3.8</version>
   	</dependency>
       <dependency>
           <groupId>junit</groupId>

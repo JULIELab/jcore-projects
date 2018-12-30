@@ -8,9 +8,14 @@ if [ "$TRAVIS_PULL_REQUEST" == 'false' ]; then
     	    wget https://oss.sonatype.org/content/repositories/releases/de/julielab/julielab-maven-aether-utilities/1.0.0/julielab-maven-aether-utilities-1.0.0-cli-assembly.jar --output-document julielab-maven-aether-utilities.jar
     fi
 
+    modulestodeploy=
+
 
 	for i in . `java -jar julie-xml-tools.jar pom.xml //module`; do
 	    java -cp julielab-maven-aether-utilities.jar de.julielab.utilities.aether.apps.GetCoordinatesFromRawPom $i/pom.xml > coords.txt;
+	    if [ ! "$?" -eq "0" ]; then
+	        exit 1
+	    fi
 	    groupId=`grep 'GROUPID:' coords.txt | sed 's/^GROUPID: //'`
 	    artifactId=`grep 'ARTIFACTID:' coords.txt | sed 's/^ARTIFACTID: //'`
 	    version=`grep 'VERSION:' coords.txt | sed 's/^VERSION: //'`
@@ -20,10 +25,13 @@ if [ "$TRAVIS_PULL_REQUEST" == 'false' ]; then
         csNotFound=`java -cp julielab-maven-aether-utilities.jar de.julielab.utilities.aether.apps.GetRemoteChecksums $groupId:$artifactId:$packaging:$version | grep '<checkums not found>'`
 	    if [[ $version =~ .*SNAPSHOT.* ]] || [ "$csNotFound" == "<checkums not found>" ]; then
             echo "This is a SNAPSHOT or a release that has not yet been deployed. Deploying."
-            mvn deploy -B -f $i/pom.xml -P sonatype-nexus-deployment --settings travis-deployment/mvnsettings.xml -DskipTests=true -N
+            #mvn deploy -T 1C -B -f $i/pom.xml -P sonatype-nexus-deployment --settings travis-deployment/mvnsettings.xml -DskipTests=true -N
+            modulestodeploy=$modulestodeploy,$i
 	    fi
     done
 
+    echo "Deploying $modulestodeploy"
+    mvn deploy -T 1C -B -P sonatype-nexus-deployment --settings travis-deployment/mvnsettings.xml -DskipTests=true -pl $modulestodeploy
 else
 	echo "Deploy not executed"
 fi

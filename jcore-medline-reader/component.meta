@@ -3,7 +3,7 @@
         "multiplier",
         "reader"
     ],
-    "description": "Leveraging the JCoRe XML Reader, this project employs a Medline-enabled mapping file to map Medline XML documents to CAS instances. The input is a directory of single XML files, each containing exactly one XML MedlineCitation. The XML format is the one used by NCBI when downloading Medline documents in large batches from the NCBI FTP server. However, the component currently expects single documents instead of whole MedlineCitationSets containing sets of MedlineCitations.",
+    "description": "Leveraging the JCoRe XML Reader, this project employs a Medline-enabled mapping file to map Medline XML\n        documents to CAS instances. The input is a directory of single XML files, each containing exactly one XML\n        MedlineCitation. The XML format is the one used by NCBI when downloading Medline documents in large batches from\n        the NCBI FTP server. However, the component currently expects single documents instead of whole\n        MedlineCitationSets containing sets of MedlineCitations.\n    ",
     "descriptors": [
         {
             "category": "multiplier",
@@ -23,7 +23,7 @@
     "maven-artifact": {
         "artifactId": "jcore-medline-reader",
         "groupId": "de.julielab",
-        "version": "2.3.8-SNAPSHOT"
+        "version": "2.3.8"
     },
     "name": "JCoRe Medline Reader"
 }
