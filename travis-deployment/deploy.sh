@@ -30,7 +30,6 @@ if [ "$TRAVIS_PULL_REQUEST" == 'false' ]; then
 	    fi
     done
 
-    echo "Deploying $modulestodeploy"
     if [ ! -z "$modulestodeploy" ]; then
         echo "Deploying moduels $modulestodeploy"
         mvn deploy -T 1C -B -P sonatype-nexus-deployment --settings travis-deployment/mvnsettings.xml -DskipTests=true -pl $modulestodeploy
