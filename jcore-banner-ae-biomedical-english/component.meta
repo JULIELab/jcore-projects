@@ -14,7 +14,7 @@
     "maven-artifact": {
         "artifactId": "jcore-banner-ae-biomedical-english",
         "groupId": "de.julielab",
-        "version": "2.3.8"
+        "version": "2.3.10"
     },
     "name": "JCoRe BANNER AE for Biomedical English"
 }
