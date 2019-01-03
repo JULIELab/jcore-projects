@@ -10,8 +10,8 @@ env:
   - secure: GYwpNZxHCSA8E7i5u9bwdr1krUC0suapj0r5doPzZob6K4wNcoHHkaRP6OPpJ7aPUHPaPdI9lbpNbKG3sLeNU39AOHTJRlPGjG3FFirVYLvwRDgl00e7uZk4BXfDotqDeXW6pOZA2ZPtuvxY/JLBYGseXuyDwyTh5rJLKJcaP/Ynh9cb7a6QDkY8MShCAUWr8/8NoyluhunimPXn9TwlSOPnNpXexKXd65NK25ftagxSPFGxKhc7O1D5VRz21DbKkIy0SmXEXTghY3nkgMG4XAulqLo8kTyQcvzq4Aw8zMsBw1gKuJkj+FnBHBxaUweR5wWV8pDa8iHff0YPOp4qKAYu/BHppdPsvBoUYGi5U3oLbBDl3w25/aX41J45nnoNyFugTT2rAt8+ChnomWr0fkniI69GcUfCJ7aJRD2XQIYwYFPrNqO+jpHrda1xiPIlvfVYi8V2+rBiGNGjSB0IvQWTT/dTjatqedxsZmxvD+n2/MJJLbmb2Fjlfk8hPImGR/39gpYKqPNZ3qmN3Z3lZ1Z5h3xc0uf4Tu9d+S8GKSNT0XZJiJC/u+wpOHMokLqnWgbdIj2IbP7ehH4shFEopRhI/j0hfrD7EedTpbX4FrzlMFG7XiHH1y4VFc97Ah6RwMWplqzJcEVl34nSbqNPlShJ+uACciK+lg6aKwnv5+8=
   - # GPG_PASSPHRASE
 
-install: mvn -T 1C install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-script: mvn test -B
+install: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+script: mvn -T 1C test -B
 
 cache:
   directories:
