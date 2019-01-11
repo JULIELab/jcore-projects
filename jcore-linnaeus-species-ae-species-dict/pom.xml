@@ -3,7 +3,7 @@
   <parent>
     <groupId>de.julielab</groupId>
     <artifactId>jcore-projects</artifactId>
-    <version>2.3.10</version>
+    <version>2.4.0-SNAPSHOT</version>
   </parent>
   <artifactId>jcore-linnaeus-species-ae-species-dict</artifactId>
   <name>JCoRe Linnaeus Species AE with Species Dictionary</name>
@@ -12,7 +12,7 @@
   	<dependency>
   		<groupId>de.julielab</groupId>
   		<artifactId>jcore-linnaeus-species-ae</artifactId>
-  		<version>2.3.10</version>
+  		<version>2.4.0-SNAPSHOT</version>
   	</dependency>
       <dependency>
           <groupId>junit</groupId>
