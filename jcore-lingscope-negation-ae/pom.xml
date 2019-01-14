@@ -29,10 +29,6 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.assertj</groupId>
-            <artifactId>assertj</artifactId>
-        </dependency>
-        <dependency>
             <groupId>de.julielab</groupId>
             <artifactId>jcore-descriptor-creator</artifactId>
         </dependency>
