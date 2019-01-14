@@ -13,7 +13,8 @@ public class LingscopeNegationAeTest {
     @Test
     public void testWithoutLikelihoodDict() throws Exception {
         final JCas jCas = JCasFactory.createJCas("de.julielab.jcore.types.jcore-morpho-syntax-types", "de.julielab.jcore.types.jcore-semantics-mention-types");
-        final AnalysisEngine engine = AnalysisEngineFactory.createEngine("de.julielab.jcore.ae.lingscope.desc.jcore-lingscope-negation-ae");
+        final AnalysisEngine engine = AnalysisEngineFactory.createEngine(LingscopePosAnnotator.class, LingscopePosAnnotator.PARAM_CUE_MODEL, "de/julielab/jcore/ae/lingscope/resources/negation_models/baseline_cue_all_both.model", LingscopePosAnnotator.PARAM_SCOPE_MODEL, "de/julielab/jcore/ae/lingscope/resources/negation_models/crf_scope_words_crf_all_both.model", LingscopePosAnnotator.PARAM_IS_NEGATION_ANNOTATOR, true);
+        //final AnalysisEngine engine = AnalysisEngineFactory.createEngine("de.julielab.jcore.ae.lingscope.desc.jcore-lingscope-negation-ae");
         jCas.setDocumentText("The patient denied leg pain but complained about a headache.");
         new Sentence(jCas, 0, jCas.getDocumentText().length()).addToIndexes();
         addToken(jCas, 0, 3, "DT", "The");
