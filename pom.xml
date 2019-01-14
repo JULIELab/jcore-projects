@@ -50,6 +50,7 @@
         <module>jcore-opennlp-token-ae-medical-german</module>
         <module>jcore-pubmed-db-reader</module>
         <module>jcore-pubmed-reader</module>
+        <module>jcore-lingscope-negation-ae</module>
     </modules>
     <scm>
         <connection>scm:git:git://github.com/JULIELab/jcore-projects.git</connection>
