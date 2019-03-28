@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <collectionReaderDescription xmlns="http://uima.apache.org/resourceSpecifier">
     <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
     <implementationName>de.julielab.jcore.reader.db.DBMultiplierReader</implementationName>
@@ -75,7 +75,7 @@
             </configurationParameter>
             <configurationParameter>
                 <name>BatchSize</name>
-                <description/>
+                <description />
                 <type>Integer</type>
                 <multiValued>false</multiValued>
                 <mandatory>true</mandatory>
@@ -127,7 +127,7 @@
             </configurationParameter>
             <configurationParameter>
                 <name>Limit</name>
-                <description/>
+                <description />
                 <type>Integer</type>
                 <multiValued>false</multiValued>
                 <mandatory>false</mandatory>
@@ -168,23 +168,23 @@
             <nameValuePair>
                 <name>SelectionOrder</name>
                 <value>
-                    <string/>
+                    <string />
                 </value>
             </nameValuePair>
         </configurationParameterSettings>
         <typeSystemDescription>
             <imports>
-                <import name="de.julielab.jcore.types.casmultiplier.jcore-dbtable-multiplier-types"></import>
-                <import name="de.julielab.jcore.types.jcore-document-meta-pubmed-types"></import>
-                <import name="de.julielab.jcore.types.jcore-document-structure-pubmed-types"></import>
+                <import name="de.julielab.jcore.types.casmultiplier.jcore-dbtable-multiplier-types" />
+                <import name="de.julielab.jcore.types.jcore-document-meta-pubmed-types" />
+                <import name="de.julielab.jcore.types.jcore-document-structure-pubmed-types" />
             </imports>
         </typeSystemDescription>
-        <fsIndexCollection/>
-        <capabilities/>
+        <fsIndexCollection />
+        <capabilities />
         <operationalProperties>
             <modifiesCas>true</modifiesCas>
             <multipleDeploymentAllowed>false</multipleDeploymentAllowed>
             <outputsNewCASes>true</outputsNewCASes>
         </operationalProperties>
-    </processingResourceMetaData>
+    <version>2.4.0</version></processingResourceMetaData>
 </collectionReaderDescription>

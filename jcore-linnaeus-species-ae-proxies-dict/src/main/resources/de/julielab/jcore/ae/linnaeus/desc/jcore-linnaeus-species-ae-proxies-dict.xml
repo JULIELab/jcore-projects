@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
   <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
   <primitive>true</primitive>
   <annotatorImplementationName>de.julielab.jcore.ae.linnaeus.LinnaeusSpeciesAnnotator</annotatorImplementationName>
   <analysisEngineMetaData>
     <name>jules-linnaeus-species-ae</name>
-    <description/>
-    <version>1.0</version>
-    <vendor/>
+    <description />
+    <version>2.4.0</version>
+    <vendor />
     <configurationParameters>
       <configurationParameter>
         <name>ConfigFile</name>
@@ -27,19 +27,19 @@
     </configurationParameterSettings>
    <typeSystemDescription>
       <imports>
-        <import name="de.julielab.jcore.types.jcore-semantics-biology-types"/>
+        <import name="de.julielab.jcore.types.jcore-semantics-biology-types" />
       </imports>
     </typeSystemDescription>
-    <typePriorities/>
-    <fsIndexCollection/>
+    <typePriorities />
+    <fsIndexCollection />
     <capabilities>
       <capability>
-        <inputs/>
+        <inputs />
         <outputs>
           <type allAnnotatorFeatures="true">de.julielab.jcore.types.Organism</type>
           <type allAnnotatorFeatures="true">de.julielab.jcore.types.ResourceEntry</type>
         </outputs>
-        <languagesSupported/>
+        <languagesSupported />
       </capability>
     </capabilities>
     <operationalProperties>
@@ -48,5 +48,5 @@
       <outputsNewCASes>false</outputsNewCASes>
     </operationalProperties>
   </analysisEngineMetaData>
-  <resourceManagerConfiguration/>
+  <resourceManagerConfiguration />
 </analysisEngineDescription>

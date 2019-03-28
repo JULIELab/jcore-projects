@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
     <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
     <primitive>true</primitive>
@@ -6,8 +6,8 @@
     <analysisEngineMetaData>
         <name>JCoRe BANNER AE for Biomedical English</name>
         <description>This component uses the BANNER named entity recognizer with a model trained on the complete (train and test) dataset of the BioCreative II gene mention challenge.</description>
-        <version>1.0</version>
-        <vendor/>
+        <version>2.4.0</version>
+        <vendor />
         <configurationParameters>
             <configurationParameter>
                 <name>ConfigFile</name>
@@ -46,13 +46,13 @@
         </configurationParameterSettings>
         <typeSystemDescription>
             <imports>
-                <import name="de.julielab.jcore.types.jcore-document-structure-types"/>
-                <import name="de.julielab.jcore.types.jcore-morpho-syntax-types"/>
-                <import name="de.julielab.jcore.types.jcore-semantics-biology-types"/>
+                <import name="de.julielab.jcore.types.jcore-document-structure-types" />
+                <import name="de.julielab.jcore.types.jcore-morpho-syntax-types" />
+                <import name="de.julielab.jcore.types.jcore-semantics-biology-types" />
             </imports>
         </typeSystemDescription>
-        <typePriorities/>
-        <fsIndexCollection/>
+        <typePriorities />
+        <fsIndexCollection />
         <capabilities>
             <capability>
                 <inputs>
@@ -61,7 +61,7 @@
                 <outputs>
                     <type allAnnotatorFeatures="true">de.julielab.jcore.types.Gene</type>
                 </outputs>
-                <languagesSupported/>
+                <languagesSupported />
             </capability>
         </capabilities>
         <operationalProperties>
@@ -70,5 +70,5 @@
             <outputsNewCASes>false</outputsNewCASes>
         </operationalProperties>
     </analysisEngineMetaData>
-    <resourceManagerConfiguration/>
+    <resourceManagerConfiguration />
 </analysisEngineDescription>

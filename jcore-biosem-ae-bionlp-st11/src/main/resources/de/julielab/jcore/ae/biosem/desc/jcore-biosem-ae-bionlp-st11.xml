@@ -1,21 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
   <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
   <primitive>true</primitive>  <annotatorImplementationName>de.julielab.jcore.ae.biosem.BioSemEventAnnotator</annotatorImplementationName>
   <analysisEngineMetaData>
     <name>JCoRe BioSEM Event Annotator</name>
-    <description/>
-    <version>2.1.0</version>
-    <vendor/>
-    <configurationParameters/>
-    <configurationParameterSettings/>
+    <description />
+    <version>2.4.0</version>
+    <vendor />
+    <configurationParameters />
+    <configurationParameterSettings />
     <typeSystemDescription>
       <imports>
-        <import name="de.julielab.jcore.types.jcore-semantics-biology-types"/>
+        <import name="de.julielab.jcore.types.jcore-semantics-biology-types" />
       </imports>
     </typeSystemDescription>
-    <typePriorities/>
-    <fsIndexCollection/>
+    <typePriorities />
+    <fsIndexCollection />
     <capabilities>
       <capability>
         <inputs>
@@ -26,7 +26,7 @@
           <type allAnnotatorFeatures="true">de.julielab.jcore.types.EventMention</type>
           <type allAnnotatorFeatures="true">de.julielab.jcore.types.ArgumentMention</type>
         </outputs>
-        <languagesSupported/>
+        <languagesSupported />
       </capability>
     </capabilities>
   <operationalProperties>
@@ -47,7 +47,7 @@
     <externalResources>
       <externalResource>
         <name>TrainedDB</name>
-        <description/>
+        <description />
         <fileResourceSpecifier>
           <fileUrl>file:de/julielab/jcore/ae/biosem/conf/biosemannotator-st11.properties</fileUrl>
         </fileResourceSpecifier>

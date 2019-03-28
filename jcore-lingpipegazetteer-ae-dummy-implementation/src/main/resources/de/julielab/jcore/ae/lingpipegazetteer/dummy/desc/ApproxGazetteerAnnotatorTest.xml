@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+<?xml version='1.0' encoding='UTF-8'?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
   <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
   <primitive>true</primitive>
   <annotatorImplementationName>de.julielab.jcore.ae.lingpipegazetteer.uima.GazetteerAnnotator</annotatorImplementationName>
   <analysisEngineMetaData>
     <name>JCoRe Lingpipe Gazetteer AE Dummy</name>
-    <description/>
-    <version>2.1.0</version>
+    <description />
+    <version>2.4.0</version>
     <vendor>JULIE Lab Jena, Germany</vendor>
     <configurationParameters>
       <configurationParameter>
@@ -63,13 +64,13 @@
     </configurationParameterSettings>
     <typeSystemDescription>
       <imports>
-        <import name="de.julielab.jcore.types.jcore-morpho-syntax-types"/>
-        <import name="de.julielab.jcore.types.jcore-semantics-mention-types"/>
+        <import name="de.julielab.jcore.types.jcore-morpho-syntax-types" />
+        <import name="de.julielab.jcore.types.jcore-semantics-mention-types" />
       </imports>
     </typeSystemDescription>
-    <typePriorities/>
-    <fsIndexCollection/>
-    <capabilities/>
+    <typePriorities />
+    <fsIndexCollection />
+    <capabilities />
     <operationalProperties>
       <modifiesCas>true</modifiesCas>
       <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
