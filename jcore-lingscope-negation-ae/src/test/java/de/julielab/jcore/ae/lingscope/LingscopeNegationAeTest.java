@@ -8,7 +8,8 @@ import org.apache.uima.fit.factory.JCasFactory;
 import org.apache.uima.fit.util.JCasUtil;
 import org.apache.uima.jcas.JCas;
 import org.junit.Test;
-import static org.assertj.core.api.Assertions.*;
+
+import static org.assertj.core.api.Assertions.assertThat;
 public class LingscopeNegationAeTest {
     @Test
     public void testWithoutLikelihoodDict() throws Exception {

@@ -1,9 +1,6 @@
 package de.julielab.jcore.ae.biosem.bionlpst09;
 
-import static org.junit.Assert.assertTrue;
-
-import java.io.FileInputStream;
-
+import de.julielab.jcore.types.EventMention;
 import org.apache.uima.analysis_engine.AnalysisEngine;
 import org.apache.uima.cas.FSIterator;
 import org.apache.uima.cas.impl.XmiCasDeserializer;
@@ -13,7 +10,9 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.tcas.Annotation;
 import org.junit.Test;
 
-import de.julielab.jcore.types.EventMention;
+import java.io.FileInputStream;
+
+import static org.junit.Assert.assertTrue;
 
 /**
  * With 'difficult document' we mean a document that used to make problems with BioSem

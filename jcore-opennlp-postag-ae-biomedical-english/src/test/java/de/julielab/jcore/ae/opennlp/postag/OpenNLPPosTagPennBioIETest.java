@@ -1,7 +1,7 @@
 package de.julielab.jcore.ae.opennlp.postag;
 
-import static org.junit.Assert.*;
-
+import de.julielab.jcore.types.Sentence;
+import de.julielab.jcore.types.Token;
 import org.apache.uima.analysis_engine.AnalysisEngine;
 import org.apache.uima.cas.FSIterator;
 import org.apache.uima.fit.factory.AnalysisEngineFactory;
@@ -10,8 +10,8 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.tcas.Annotation;
 import org.junit.Test;
 
-import de.julielab.jcore.types.Sentence;
-import de.julielab.jcore.types.Token;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class OpenNLPPosTagPennBioIETest {
 	@Test

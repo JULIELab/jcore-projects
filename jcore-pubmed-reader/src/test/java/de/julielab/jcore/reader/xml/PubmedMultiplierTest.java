@@ -12,10 +12,8 @@ import org.apache.uima.collection.EntityProcessStatus;
 import org.apache.uima.collection.StatusCallbackListener;
 import org.apache.uima.collection.metadata.CpeDescriptorException;
 import org.apache.uima.fit.cpe.CpeBuilder;
-import org.apache.uima.fit.cpe.CpePipeline;
 import org.apache.uima.fit.factory.AnalysisEngineFactory;
 import org.apache.uima.fit.factory.CollectionReaderFactory;
-import org.apache.uima.fit.pipeline.SimplePipeline;
 import org.apache.uima.jcas.JCas;
 import org.junit.Test;
 import org.xml.sax.SAXException;
@@ -25,8 +23,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.apache.uima.fit.factory.AnalysisEngineFactory.createEngineDescription;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Tests the multiplier reader together with the multiplier in a simple CPE.

@@ -1,10 +1,6 @@
 package de.julielab.jcore.ae.jsbd;
 
-import static org.junit.Assert.assertTrue;
-
-import java.io.File;
-
-import org.apache.uima.UIMAFramework;
+import de.julielab.jcore.types.Sentence;
 import org.apache.uima.analysis_engine.AnalysisEngine;
 import org.apache.uima.cas.FSIterator;
 import org.apache.uima.fit.factory.AnalysisEngineFactory;
@@ -18,7 +14,7 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import de.julielab.jcore.types.Sentence;
+import static org.junit.Assert.assertTrue;
 
 public class TestPipeline {
 

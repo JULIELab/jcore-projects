@@ -1,9 +1,5 @@
 package de.julielab.jcore.ae.jnet;
 
-import static org.junit.Assert.assertTrue;
-
-import java.io.File;
-
 import org.apache.uima.UIMAFramework;
 import org.apache.uima.analysis_engine.AnalysisEngine;
 import org.apache.uima.resource.ResourceSpecifier;
@@ -11,6 +7,10 @@ import org.apache.uima.util.XMLInputSource;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.File;
+
+import static org.junit.Assert.assertTrue;
 
 public class TestPipeline {
 

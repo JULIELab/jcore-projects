@@ -1,10 +1,11 @@
 package de.julielab.jcore.reader.xml;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
-
+import de.julielab.jcore.types.AbstractText;
+import de.julielab.jcore.types.AuthorInfo;
+import de.julielab.jcore.types.Keyword;
+import de.julielab.jcore.types.pubmed.Header;
+import de.julielab.jcore.types.pubmed.ManualDescriptor;
+import de.julielab.jcore.types.pubmed.OtherID;
 import org.apache.uima.cas.FSIterator;
 import org.apache.uima.collection.CollectionReader;
 import org.apache.uima.collection.CollectionReaderDescription;
@@ -16,12 +17,7 @@ import org.apache.uima.jcas.cas.FSArray;
 import org.apache.uima.jcas.tcas.Annotation;
 import org.junit.Test;
 
-import de.julielab.jcore.types.AbstractText;
-import de.julielab.jcore.types.AuthorInfo;
-import de.julielab.jcore.types.Keyword;
-import de.julielab.jcore.types.pubmed.Header;
-import de.julielab.jcore.types.pubmed.ManualDescriptor;
-import de.julielab.jcore.types.pubmed.OtherID;
+import static org.junit.Assert.*;
 
 public class MedlineReaderTest {
 	@Test

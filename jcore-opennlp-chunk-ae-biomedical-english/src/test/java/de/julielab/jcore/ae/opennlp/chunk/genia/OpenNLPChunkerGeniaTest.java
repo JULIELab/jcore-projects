@@ -1,8 +1,6 @@
 package de.julielab.jcore.ae.opennlp.chunk.genia;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
+import de.julielab.jcore.types.*;
 import org.apache.uima.analysis_engine.AnalysisEngine;
 import org.apache.uima.cas.FSIterator;
 import org.apache.uima.fit.factory.AnalysisEngineFactory;
@@ -12,13 +10,8 @@ import org.apache.uima.jcas.cas.FSArray;
 import org.apache.uima.jcas.tcas.Annotation;
 import org.junit.Test;
 
-import de.julielab.jcore.types.Chunk;
-import de.julielab.jcore.types.ChunkNP;
-import de.julielab.jcore.types.ChunkPP;
-import de.julielab.jcore.types.ChunkVP;
-import de.julielab.jcore.types.GeniaPOSTag;
-import de.julielab.jcore.types.Sentence;
-import de.julielab.jcore.types.Token;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class OpenNLPChunkerGeniaTest {
 	@Test

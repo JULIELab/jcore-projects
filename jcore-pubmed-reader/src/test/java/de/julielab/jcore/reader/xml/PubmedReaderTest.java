@@ -1,7 +1,9 @@
 package de.julielab.jcore.reader.xml;
 
-import static org.junit.Assert.*;
-
+import de.julielab.jcore.types.AuthorInfo;
+import de.julielab.jcore.types.Keyword;
+import de.julielab.jcore.types.pubmed.Header;
+import de.julielab.jcore.types.pubmed.ManualDescriptor;
 import org.apache.uima.cas.FSIterator;
 import org.apache.uima.collection.CollectionReader;
 import org.apache.uima.collection.CollectionReaderDescription;
@@ -13,10 +15,7 @@ import org.apache.uima.jcas.cas.FSArray;
 import org.apache.uima.jcas.tcas.Annotation;
 import org.junit.Test;
 
-import de.julielab.jcore.types.AuthorInfo;
-import de.julielab.jcore.types.Keyword;
-import de.julielab.jcore.types.pubmed.Header;
-import de.julielab.jcore.types.pubmed.ManualDescriptor;
+import static org.junit.Assert.*;
 
 public class PubmedReaderTest {
     @Test

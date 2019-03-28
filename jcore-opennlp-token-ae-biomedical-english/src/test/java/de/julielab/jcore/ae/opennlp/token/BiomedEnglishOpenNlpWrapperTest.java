@@ -1,9 +1,7 @@
 package de.julielab.jcore.ae.opennlp.token;
 
-import static org.junit.Assert.assertEquals;
-
-import java.util.Collection;
-
+import de.julielab.jcore.types.Sentence;
+import de.julielab.jcore.types.Token;
 import org.apache.uima.analysis_engine.AnalysisEngine;
 import org.apache.uima.fit.factory.AnalysisEngineFactory;
 import org.apache.uima.fit.factory.JCasFactory;
@@ -11,8 +9,9 @@ import org.apache.uima.fit.util.JCasUtil;
 import org.apache.uima.jcas.JCas;
 import org.junit.Test;
 
-import de.julielab.jcore.types.Sentence;
-import de.julielab.jcore.types.Token;
+import java.util.Collection;
+
+import static org.junit.Assert.assertEquals;
 
 public class BiomedEnglishOpenNlpWrapperTest {
     @Test
