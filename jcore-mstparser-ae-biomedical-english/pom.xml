@@ -1,35 +1,44 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <artifactId>jcore-mstparser-ae-biomedical-english</artifactId>
-  <packaging>jar</packaging>
-  <name>JCoRe MST Parser AE, Biomedical English</name>
-  <description>This project employs the jcore-mstparser-ae (Dependency Parser) with a model trained on the GENIA corpus.</description>
-  <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-mstparser-ae-biomedical-english</url>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>jcore-mstparser-ae-biomedical-english</artifactId>
+    <packaging>jar</packaging>
+    <name>JCoRe MST Parser AE, Biomedical English</name>
+    <description>This project employs the jcore-mstparser-ae (Dependency Parser) with a model trained on the GENIA
+        corpus.
+    </description>
+    <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-mstparser-ae-biomedical-english</url>
 
-  <parent>
-    <groupId>de.julielab</groupId>
-    <artifactId>jcore-projects</artifactId>
-    <version>2.5.0-SNAPSHOT</version>
-  </parent>
-   <organization>
-   	<name>JULIE Lab Jena, Germany</name>
-   	<url>http://www.julielab.de</url>
-   </organization>
-   <dependencies>
-   	<dependency>
-   		<groupId>de.julielab</groupId>
-   		<artifactId>jcore-mstparser-ae</artifactId>
-   		<version>2.5.0-SNAPSHOT</version>
-   	</dependency>
-	   <dependency>
-		   <groupId>junit</groupId>
-		   <artifactId>junit</artifactId>
-	   </dependency><dependency>
-   		<groupId>org.slf4j</groupId>
-   		<artifactId>slf4j-log4j12</artifactId>
-   		<version>1.8.0-beta2</version>
-   		<scope>test</scope>
-   	</dependency>
-   </dependencies>
+    <parent>
+        <groupId>de.julielab</groupId>
+        <artifactId>jcore-projects</artifactId>
+        <version>2.5.0-SNAPSHOT</version>
+    </parent>
+    <organization>
+        <name>JULIE Lab Jena, Germany</name>
+        <url>http://www.julielab.de</url>
+    </organization>
+    <dependencies>
+        <dependency>
+            <groupId>de.julielab</groupId>
+            <artifactId>jcore-mstparser-ae</artifactId>
+            <version>2.5.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.8.0-beta2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>de.julielab</groupId>
+            <artifactId>jcore-utilities</artifactId>
+            <version>${jcore-utilities-version}</version>
+        </dependency>
+    </dependencies>
 </project>
