@@ -40,6 +40,9 @@ public class TestModel {
 
         final Collection<DependencyRelation> depRels = JCasUtil.select(jCas, DependencyRelation.class);
         assertEquals(9, depRels.size());
+        for (DependencyRelation depRel : depRels) {
+            System.out.println(depRel.getCoveredText() + " " + depRel.getLabel());
+        }
     }
 
     private void addToken(JCas jCas, int begin, int end, String pos) {

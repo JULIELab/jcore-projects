@@ -3,6 +3,7 @@ package de.julielab.jcore.reader.xml;
 import de.julielab.jcore.types.AbstractText;
 import de.julielab.jcore.types.AuthorInfo;
 import de.julielab.jcore.types.Keyword;
+import de.julielab.jcore.types.Title;
 import de.julielab.jcore.types.pubmed.Header;
 import de.julielab.jcore.types.pubmed.ManualDescriptor;
 import de.julielab.jcore.types.pubmed.OtherID;
@@ -133,5 +134,21 @@ public class MedlineReaderTest {
 		assertNotNull(otherId);
 		assertEquals("PMC4588405", otherId.getId());
 		assertEquals("NLM", otherId.getSource());
+	}
+
+	@Test
+	public void testVernacularTitle() throws Exception {
+		JCas jCas = JCasFactory.createJCas("de.julielab.jcore.types.jcore-document-meta-pubmed-types",
+				"de.julielab.jcore.types.jcore-document-structure-types");
+		CollectionReaderDescription medlineReaderDescription = CollectionReaderFactory.createReaderDescriptionFromPath(
+				"src/main/resources/de/julielab/jcore/reader/xml/desc/jcore-medline-reader.xml");
+		CollectionReader medlineReader = CollectionReaderFactory.createReader(medlineReaderDescription,
+				XMLReader.PARAM_INPUT_FILE, "src/test/resources/medlineDocs/30540132.xml");
+		assertTrue(medlineReader.hasNext());
+		medlineReader.getNext(jCas.getCas());
+
+		assertFalse("Document text is empty", jCas.getDocumentText().isEmpty());
+		final Title title = JCasUtil.selectSingle(jCas, Title.class);
+		assertEquals("document_vernacular", title.getTitleType());
 	}
 }

@@ -11,18 +11,10 @@
 		<partOfDocumentText id="2">
 			<xPath>/MedlineCitation/OtherAbstract</xPath>
 		</partOfDocumentText>
+		<partOfDocumentText id="3">
+			<xPath>/MedlineCitation/Article/VernacularTitle</xPath>
+		</partOfDocumentText>
 	</documentText>
-
-	<tsType>
-		<tsFullClassName>
-			de.julielab.jcore.types.AbstractText
-		</tsFullClassName>
-		<offset>
-			<partOfDocumentText>
-				<id>2</id>
-			</partOfDocumentText>
-		</offset>
-	</tsType>
 
 	<tsType>
 		<tsFullClassName>de.julielab.jcore.types.Title</tsFullClassName>
@@ -39,6 +31,40 @@
 			</valueMapping>
 		</tsFeature>
 	</tsType>
+
+	<tsType>
+		<tsFullClassName>
+			de.julielab.jcore.types.pubmed.AbstractText
+		</tsFullClassName>
+		<offset>
+			<partOfDocumentText>
+				<id>2</id>
+			</partOfDocumentText>
+		</offset>
+		<tsFeature>
+			<tsFeatureName>abstractType</tsFeatureName>
+			<tsFullClassName>java.lang.String</tsFullClassName>
+			<valueMapping>
+				<default>other</default>
+			</valueMapping>
+		</tsFeature>
+	</tsType>
+
+    <tsType>
+        <tsFullClassName>de.julielab.jcore.types.Title</tsFullClassName>
+        <offset>
+            <partOfDocumentText>
+                <id>3</id>
+            </partOfDocumentText>
+        </offset>
+        <tsFeature>
+            <tsFeatureName>titleType</tsFeatureName>
+            <tsFullClassName>java.lang.String</tsFullClassName>
+            <valueMapping>
+                <default>document_vernacular</default>
+            </valueMapping>
+        </tsFeature>
+    </tsType>
 
 	<tsType>
 		<tsFullClassName>
