@@ -24,7 +24,7 @@ public class MedlineReaderTest {
 	@Test
 	public void testMedlineReader() throws Exception {
 		JCas jCas = JCasFactory.createJCas("de.julielab.jcore.types.jcore-document-meta-pubmed-types",
-				"de.julielab.jcore.types.jcore-document-structure-types");
+				"de.julielab.jcore.types.jcore-document-structure-pubmed-types");
 		CollectionReaderDescription medlineReaderDescription = CollectionReaderFactory.createReaderDescriptionFromPath(
 				"src/main/resources/de/julielab/jcore/reader/xml/desc/jcore-medline-reader.xml");
 		CollectionReader medlineReader = CollectionReaderFactory.createReader(medlineReaderDescription,
@@ -45,7 +45,7 @@ public class MedlineReaderTest {
 	@Test
 	public void testKeywords() throws Exception {
 		JCas jCas = JCasFactory.createJCas("de.julielab.jcore.types.jcore-document-meta-pubmed-types",
-				"de.julielab.jcore.types.jcore-document-structure-types");
+				"de.julielab.jcore.types.jcore-document-structure-pubmed-types");
 		CollectionReaderDescription medlineReaderDescription = CollectionReaderFactory.createReaderDescriptionFromPath(
 				"src/main/resources/de/julielab/jcore/reader/xml/desc/jcore-medline-reader.xml");
 		CollectionReader medlineReader = CollectionReaderFactory.createReader(medlineReaderDescription,
@@ -76,7 +76,7 @@ public class MedlineReaderTest {
 	@Test
 	public void testAffiliations() throws Exception {
 		JCas jCas = JCasFactory.createJCas("de.julielab.jcore.types.jcore-document-meta-pubmed-types",
-				"de.julielab.jcore.types.jcore-document-structure-types");
+				"de.julielab.jcore.types.jcore-document-structure-pubmed-types");
 		CollectionReaderDescription medlineReaderDescription = CollectionReaderFactory.createReaderDescriptionFromPath(
 				"src/main/resources/de/julielab/jcore/reader/xml/desc/jcore-medline-reader.xml");
 		CollectionReader medlineReader = CollectionReaderFactory.createReader(medlineReaderDescription,
@@ -117,7 +117,7 @@ public class MedlineReaderTest {
 	@Test
 	public void testOtherId() throws Exception {
 		JCas jCas = JCasFactory.createJCas("de.julielab.jcore.types.jcore-document-meta-pubmed-types",
-				"de.julielab.jcore.types.jcore-document-structure-types");
+				"de.julielab.jcore.types.jcore-document-structure-pubmed-types");
 		CollectionReaderDescription medlineReaderDescription = CollectionReaderFactory.createReaderDescriptionFromPath(
 				"src/main/resources/de/julielab/jcore/reader/xml/desc/jcore-medline-reader.xml");
 		CollectionReader medlineReader = CollectionReaderFactory.createReader(medlineReaderDescription,
