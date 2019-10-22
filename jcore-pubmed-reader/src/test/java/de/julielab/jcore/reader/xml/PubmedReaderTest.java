@@ -21,7 +21,7 @@ public class PubmedReaderTest {
     @Test
     public void testPubmedReader() throws Exception {
         JCas jCas = JCasFactory.createJCas("de.julielab.jcore.types.jcore-document-meta-pubmed-types",
-                "de.julielab.jcore.types.jcore-document-structure-types");
+                "de.julielab.jcore.types.jcore-document-structure-pubmed-types");
         CollectionReaderDescription pubmedReaderDescription = CollectionReaderFactory.createReaderDescriptionFromPath(
                 "src/main/resources/de/julielab/jcore/reader/xml/desc/jcore-pubmed-reader.xml");
         CollectionReader pubmedReader = CollectionReaderFactory.createReader(pubmedReaderDescription,
@@ -37,7 +37,7 @@ public class PubmedReaderTest {
     @Test
     public void testKeywords() throws Exception {
         JCas jCas = JCasFactory.createJCas("de.julielab.jcore.types.jcore-document-meta-pubmed-types",
-                "de.julielab.jcore.types.jcore-document-structure-types");
+                "de.julielab.jcore.types.jcore-document-structure-pubmed-types");
         CollectionReaderDescription medlineReaderDescription = CollectionReaderFactory.createReaderDescriptionFromPath(
                 "src/main/resources/de/julielab/jcore/reader/xml/desc/jcore-pubmed-reader.xml");
         CollectionReader medlineReader = CollectionReaderFactory.createReader(medlineReaderDescription,
@@ -68,7 +68,7 @@ public class PubmedReaderTest {
     @Test
     public void testAffiliations() throws Exception {
         JCas jCas = JCasFactory.createJCas("de.julielab.jcore.types.jcore-document-meta-pubmed-types",
-                "de.julielab.jcore.types.jcore-document-structure-types");
+                "de.julielab.jcore.types.jcore-document-structure-pubmed-types");
         CollectionReaderDescription medlineReaderDescription = CollectionReaderFactory.createReaderDescriptionFromPath(
                 "src/main/resources/de/julielab/jcore/reader/xml/desc/jcore-pubmed-reader.xml");
         CollectionReader medlineReader = CollectionReaderFactory.createReader(medlineReaderDescription,
