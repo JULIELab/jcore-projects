@@ -1,5 +1,7 @@
 package de.julielab.jcore.reader.xml;
 
+import de.julielab.jcore.types.AbstractText;
+import de.julielab.jcore.types.Header;
 import de.julielab.jcore.utility.JCoReTools;
 import org.apache.uima.UIMAException;
 import org.apache.uima.analysis_component.JCasAnnotator_ImplBase;
@@ -14,6 +16,7 @@ import org.apache.uima.collection.metadata.CpeDescriptorException;
 import org.apache.uima.fit.cpe.CpeBuilder;
 import org.apache.uima.fit.factory.AnalysisEngineFactory;
 import org.apache.uima.fit.factory.CollectionReaderFactory;
+import org.apache.uima.fit.util.JCasUtil;
 import org.apache.uima.jcas.JCas;
 import org.junit.Test;
 import org.xml.sax.SAXException;
