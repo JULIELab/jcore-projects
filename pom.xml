@@ -8,6 +8,7 @@
     </parent>
     <artifactId>jcore-projects</artifactId>
     <packaging>pom</packaging>
+    <version>2.5.1-SNAPSHOT</version>
     <name>JCoRe Projects</name>
     <description>The POM for the JCoRe Projects.</description>
     <organization>
