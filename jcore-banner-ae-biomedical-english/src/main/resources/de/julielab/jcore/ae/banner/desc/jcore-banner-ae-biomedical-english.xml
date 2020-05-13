@@ -6,7 +6,7 @@
     <analysisEngineMetaData>
         <name>JCoRe BANNER AE for Biomedical English</name>
         <description>This component uses the BANNER named entity recognizer with a model trained on the complete (train and test) dataset of the BioCreative II gene mention challenge.</description>
-        <version>2.5.0</version>
+        <version>2.5.1-SNAPSHOT</version>
         <vendor />
         <configurationParameters>
             <configurationParameter>
