@@ -1,74 +1,80 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <collectionReaderDescription xmlns="http://uima.apache.org/resourceSpecifier">
-  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
-  <implementationName>de.julielab.jcore.reader.xml.XMLReader</implementationName>
-  <processingResourceMetaData>
-    <name>JCoRe PubMed Reader, single article XML</name>
-    <description>Leveraging the JCoRe XML Reader, this project employs a PubMed-enabled mapping file to map PubMed XML documents to CAS instances. The input is a directory of single XML files, each containing exactly one XML PubmedArticle. The XML format is the one used by NCBI when displaying results in PubMed as XML.</description>
-    <version>2.5.0-SNAPSHOT</version>
-    <vendor>JULIE Lab, Germany</vendor>
-    <configurationParameters>
-      <configurationParameter>
-        <name>InputDirectory</name>
-        <description>Directory of PubMed XML files to read in. Each file is assumed to contain a single PubmedArticle XML document.</description>
-        <type>String</type>
-        <multiValued>false</multiValued>
-        <mandatory>true</mandatory>
-      </configurationParameter>
-      <configurationParameter>
-        <name>MappingFile</name>
-        <description>The mapping file that determines how PubMed XML elements are mapped to CAS annotations.</description>
-        <type>String</type>
-        <multiValued>false</multiValued>
-        <mandatory>true</mandatory>
-      </configurationParameter>
-    </configurationParameters>
-    <configurationParameterSettings>
-      <nameValuePair>
-        <name>InputDirectory</name>
-        <value>
-          <string>pubmed-xml</string>
-        </value>
-      </nameValuePair>
-      <nameValuePair>
-        <name>MappingFile</name>
-        <value>
-          <string>/de/julielab/jcore/reader/xml/mapping/pubmedMappingFile.xml</string>
-        </value>
-      </nameValuePair>
-    </configurationParameterSettings>
-    <typeSystemDescription>
-      <imports>
-        <import name="de.julielab.jcore.types.jcore-document-meta-pubmed-types" />
-        <import name="de.julielab.jcore.types.jcore-document-structure-types" />
-      </imports>
-    </typeSystemDescription>
-    <typePriorities />
-    <fsIndexCollection />
-    <capabilities>
-      <capability>
-        <inputs />
-        <outputs>
-          <type allAnnotatorFeatures="true">de.julielab.jcore.types.AbstractText</type>
-          <type allAnnotatorFeatures="true">de.julielab.jcore.types.Title</type>
-          <type allAnnotatorFeatures="true">de.julielab.jcore.types.pubmed.Header</type>
-          <type allAnnotatorFeatures="true">de.julielab.jcore.types.AuthorInfo</type>
-          <type allAnnotatorFeatures="true">de.julielab.jcore.types.Journal</type>
-          <type allAnnotatorFeatures="true">de.julielab.jcore.types.Date</type>
-          <type allAnnotatorFeatures="true">de.julielab.jcore.types.pubmed.ManualDescriptor</type>
-          <type allAnnotatorFeatures="true">de.julielab.jcore.types.Keyword</type>
-          <type allAnnotatorFeatures="true">de.julielab.jcore.types.Chemical</type>
-          <type allAnnotatorFeatures="true">de.julielab.jcore.types.DBInfo</type>
-          <type allAnnotatorFeatures="true">de.julielab.jcore.types.MeshHeading</type>
-        </outputs>
-        <languagesSupported />
-      </capability>
-    </capabilities>
-    <operationalProperties>
-      <modifiesCas>true</modifiesCas>
-      <multipleDeploymentAllowed>false</multipleDeploymentAllowed>
-      <outputsNewCASes>true</outputsNewCASes>
-    </operationalProperties>
-  </processingResourceMetaData>
-  <resourceManagerConfiguration />
+    <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+    <implementationName>de.julielab.jcore.reader.xml.XMLReader</implementationName>
+    <processingResourceMetaData>
+        <name>JCoRe PubMed Reader, single article XML</name>
+        <description>Leveraging the JCoRe XML Reader, this project employs a PubMed-enabled mapping file to map PubMed
+            XML documents to CAS instances. The input is a directory of single XML files, each containing exactly one
+            XML PubmedArticle. The XML format is the one used by NCBI when displaying results in PubMed as XML.
+        </description>
+        <version>2.5.0</version>
+        <vendor>JULIE Lab, Germany</vendor>
+        <configurationParameters>
+            <configurationParameter>
+                <name>InputDirectory</name>
+                <description>Directory of PubMed XML files to read in. Each file is assumed to contain a single
+                    PubmedArticle XML document.
+                </description>
+                <type>String</type>
+                <multiValued>false</multiValued>
+                <mandatory>true</mandatory>
+            </configurationParameter>
+            <configurationParameter>
+                <name>MappingFile</name>
+                <description>The mapping file that determines how PubMed XML elements are mapped to CAS annotations.
+                </description>
+                <type>String</type>
+                <multiValued>false</multiValued>
+                <mandatory>true</mandatory>
+            </configurationParameter>
+        </configurationParameters>
+        <configurationParameterSettings>
+            <nameValuePair>
+                <name>InputDirectory</name>
+                <value>
+                    <string>pubmed-xml</string>
+                </value>
+            </nameValuePair>
+            <nameValuePair>
+                <name>MappingFile</name>
+                <value>
+                    <string>/de/julielab/jcore/reader/xml/mapping/pubmedMappingFile.xml</string>
+                </value>
+            </nameValuePair>
+        </configurationParameterSettings>
+        <typeSystemDescription>
+            <imports>
+                <import name="de.julielab.jcore.types.jcore-document-meta-pubmed-types" />
+                <import name="de.julielab.jcore.types.jcore-document-structure-types" />
+            </imports>
+        </typeSystemDescription>
+        <typePriorities />
+        <fsIndexCollection />
+        <capabilities>
+            <capability>
+                <inputs />
+                <outputs>
+                    <type allAnnotatorFeatures="true">de.julielab.jcore.types.AbstractText</type>
+                    <type allAnnotatorFeatures="true">de.julielab.jcore.types.Title</type>
+                    <type allAnnotatorFeatures="true">de.julielab.jcore.types.pubmed.Header</type>
+                    <type allAnnotatorFeatures="true">de.julielab.jcore.types.AuthorInfo</type>
+                    <type allAnnotatorFeatures="true">de.julielab.jcore.types.Journal</type>
+                    <type allAnnotatorFeatures="true">de.julielab.jcore.types.Date</type>
+                    <type allAnnotatorFeatures="true">de.julielab.jcore.types.pubmed.ManualDescriptor</type>
+                    <type allAnnotatorFeatures="true">de.julielab.jcore.types.Keyword</type>
+                    <type allAnnotatorFeatures="true">de.julielab.jcore.types.Chemical</type>
+                    <type allAnnotatorFeatures="true">de.julielab.jcore.types.DBInfo</type>
+                    <type allAnnotatorFeatures="true">de.julielab.jcore.types.MeshHeading</type>
+                </outputs>
+                <languagesSupported />
+            </capability>
+        </capabilities>
+        <operationalProperties>
+            <modifiesCas>true</modifiesCas>
+            <multipleDeploymentAllowed>false</multipleDeploymentAllowed>
+            <outputsNewCASes>true</outputsNewCASes>
+        </operationalProperties>
+    </processingResourceMetaData>
+    <resourceManagerConfiguration />
 </collectionReaderDescription>

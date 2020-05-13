@@ -4,7 +4,8 @@
     <implementationName>de.julielab.jcore.reader.xml.XMLDBReader</implementationName>
     <processingResourceMetaData>
         <name>JCoRe PubMed XML Database Reader</name>
-        <description>A collection reader that employs the jcore-xml-mapper to parse PubMed XML documents from a PostgreSQL
+        <description>A collection reader that employs the jcore-xml-mapper to parse PubMed XML documents from a
+            PostgreSQL
             database into CAS instances. For this purpose, the reader requires a mapping file for the jcore-xml-mapper
             that defines how to map the document XML structure onto CAS types. Which exact data is read from the
             database table is determines by the table schema that is configured as active in the corpus storage system
@@ -14,6 +15,7 @@
             must be mapped via the 'RowMapping'. This mechanism and this component are part of the Jena Document
             Information System, JeDIS.
         </description>
+        <version>2.5.0</version>
         <vendor>JULIE Lab Jena, Germany</vendor>
         <configurationParameters>
             <configurationParameter>
@@ -219,5 +221,5 @@
             <multipleDeploymentAllowed>false</multipleDeploymentAllowed>
             <outputsNewCASes>true</outputsNewCASes>
         </operationalProperties>
-    <version>2.5.0-SNAPSHOT</version></processingResourceMetaData>
+    </processingResourceMetaData>
 </collectionReaderDescription>

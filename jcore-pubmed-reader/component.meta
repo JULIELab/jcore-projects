@@ -11,11 +11,11 @@
         },
         {
             "category": "reader",
-            "location": "de.julielab.jcore.reader.xml.desc.jcore-pubmed-multiplier-reader"
+            "location": "de.julielab.jcore.reader.xml.desc.jcore-pubmed-reader"
         },
         {
             "category": "reader",
-            "location": "de.julielab.jcore.reader.xml.desc.jcore-pubmed-reader"
+            "location": "de.julielab.jcore.reader.xml.desc.jcore-pubmed-multiplier-reader"
         }
     ],
     "exposable": true,
@@ -23,7 +23,7 @@
     "maven-artifact": {
         "artifactId": "jcore-pubmed-reader",
         "groupId": "de.julielab",
-        "version": "2.5.0-SNAPSHOT"
+        "version": "2.5.0"
     },
     "name": "JCoRe PubMed Reader"
 }

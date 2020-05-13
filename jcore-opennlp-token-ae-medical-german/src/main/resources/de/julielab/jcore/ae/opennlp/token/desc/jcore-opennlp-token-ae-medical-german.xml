@@ -5,8 +5,8 @@
   <analysisEngineMetaData>
     <name>jcore-opennlp-token-ae-medical-german</name>
     <description />
-    <version>2.5.0-SNAPSHOT</version>
-    <vendor />
+    <version>2.5.0</version>
+        <vendor />
     <configurationParameters>
       <configurationParameter>
         <name>ModelFile</name>

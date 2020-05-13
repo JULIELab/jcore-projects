@@ -5,8 +5,8 @@
   <analysisEngineMetaData>
     <name>JCoRe BioSEM Event Annotator</name>
     <description />
-    <version>2.5.0-SNAPSHOT</version>
-    <vendor />
+    <version>2.5.0</version>
+        <vendor />
     <configurationParameters />
     <configurationParameterSettings />
     <typeSystemDescription>
