@@ -14,7 +14,7 @@
     "maven-artifact": {
         "artifactId": "jcore-jsbd-ae-medical-german",
         "groupId": "de.julielab",
-        "version": "2.5.1-SNAPSHOT"
+        "version": "2.5.1"
     },
     "name": "JCoRe Sentence Annotator, Medical German"
 }

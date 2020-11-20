@@ -5,7 +5,7 @@
   <analysisEngineMetaData>
     <name>jcore-opennlp-token-ae-biomed-english</name>
     <description />
-    <version>2.5.1-SNAPSHOT</version>
+    <version>2.5.1</version>
         <vendor />
     <configurationParameters>
       <configurationParameter>

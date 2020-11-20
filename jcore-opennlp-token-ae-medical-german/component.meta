@@ -14,7 +14,7 @@
     "maven-artifact": {
         "artifactId": "jcore-opennlp-token-ae-medical-german",
         "groupId": "de.julielab",
-        "version": "2.5.1-SNAPSHOT"
+        "version": "2.5.1"
     },
     "name": "JCoRe OpenNLP Tokenizer, Medical German"
 }
