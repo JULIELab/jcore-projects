@@ -9,12 +9,13 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.tcas.Annotation;
 import org.apache.uima.resource.ResourceSpecifier;
 import org.apache.uima.util.XMLInputSource;
-import org.junit.Before;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 public class TestPipeline {
 
@@ -33,20 +34,16 @@ public class TestPipeline {
             + " Die Patientin wurde insgesamt 14 Tage mit Binotal und Certomycin behandelt."
             + " Die Klappenfunktion ist echokardiographisch gut, die LV-Funktion mit einer EF von ca. 30 % weiterhin eingeschränkt.";
 
-    private XMLInputSource taggerXML = null;
-    private ResourceSpecifier taggerSpec = null;
-    private AnalysisEngine entityAnnotator = null;
+    private static AnalysisEngine entityAnnotator = null;
 
     /**
      * test whether Annotator can be initialized properly from given descriptor
      */
-    @Before
-    public void testInitialize() {
+    @BeforeAll
+    public static void testInitialize() {
         LOGGER.info("testInitialize()");
 
         try {
-//            taggerXML = new XMLInputSource(ENTITY_ANNOTATOR_DESC);
-//            taggerSpec = UIMAFramework.getXMLParser().parseResourceSpecifier(taggerXML);
             entityAnnotator = AnalysisEngineFactory.createEngine(ENTITY_ANNOTATOR_DESC);
         } catch (final Exception e) {
         	System.out.println(e);
