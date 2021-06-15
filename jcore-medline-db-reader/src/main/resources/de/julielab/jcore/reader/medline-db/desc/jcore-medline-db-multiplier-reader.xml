@@ -16,7 +16,7 @@
             <configurationParameter>
                 <name>ResetTable</name>
                 <description>If set to true and the parameter 'Table' is set to a subset table, the subset table will be
-                    reset atthe initialization of the reader to be ready for processing of the whole subset. Do not use
+                    reset at the initialization of the reader to be ready for processing of the whole subset. Do not use
                     when multiple readers read the same subset table.
                 </description>
                 <type>Boolean</type>
