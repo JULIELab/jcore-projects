@@ -14,7 +14,7 @@
     "maven-artifact": {
         "artifactId": "jcore-linnaeus-species-ae-proxies-dict",
         "groupId": "de.julielab",
-        "version": "2.5.1"
+        "version": "2.6.0-SNAPSHOT"
     },
     "name": "JCoRe Linnaeus Species AE Proxies Dictionary"
 }

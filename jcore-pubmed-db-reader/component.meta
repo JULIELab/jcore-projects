@@ -24,7 +24,7 @@
     "maven-artifact": {
         "artifactId": "jcore-pubmed-db-reader",
         "groupId": "de.julielab",
-        "version": "2.5.1"
+        "version": "2.6.0-SNAPSHOT"
     },
     "name": "JCoRe PubMed DB Reader"
 }

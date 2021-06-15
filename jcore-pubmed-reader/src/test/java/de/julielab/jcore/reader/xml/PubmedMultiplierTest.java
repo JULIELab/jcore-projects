@@ -18,7 +18,7 @@ import org.apache.uima.fit.factory.AnalysisEngineFactory;
 import org.apache.uima.fit.factory.CollectionReaderFactory;
 import org.apache.uima.fit.util.JCasUtil;
 import org.apache.uima.jcas.JCas;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.xml.sax.SAXException;
 
 import java.io.IOException;
@@ -26,8 +26,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * Tests the multiplier reader together with the multiplier in a simple CPE.
@@ -82,8 +82,6 @@ public class PubmedMultiplierTest {
         assertEquals(177, seenPmids.size());
         for (String pmid : seenPmids)
             assertTrue(pmid.matches("[0-9]+"));
-
-
     }
 
     public static class TestAe extends JCasAnnotator_ImplBase {

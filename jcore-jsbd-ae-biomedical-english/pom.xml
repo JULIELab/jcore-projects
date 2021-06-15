@@ -1,101 +1,110 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-	<modelVersion>4.0.0</modelVersion>
-	<artifactId>jcore-jsbd-ae-biomedical-english</artifactId>
-	<packaging>jar</packaging>
-	<name>JCoRe Sentence Annotator, Biomedical English</name>
-	<description>UIMA Wrapper for the JCoRe Sentence Boundary Detector (jcore-jsbd-ae) with a model trained on data from both the GENIA and PennBioIE corpus as well as additional material from MedLine abstracts.</description>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>jcore-jsbd-ae-biomedical-english</artifactId>
+    <packaging>jar</packaging>
+    <name>JCoRe Sentence Annotator, Biomedical English</name>
+    <description>UIMA Wrapper for the JCoRe Sentence Boundary Detector (jcore-jsbd-ae) with a model trained on data from
+        both the GENIA and PennBioIE corpus as well as additional material from MedLine abstracts.
+    </description>
 
-	<parent>
-		<groupId>de.julielab</groupId>
-		<artifactId>jcore-projects</artifactId>
-		<version>2.5.1</version>
-	</parent>
+    <parent>
+        <groupId>de.julielab</groupId>
+        <artifactId>jcore-projects</artifactId>
+        <version>2.6.0-SNAPSHOT</version>
+    </parent>
 
-	<build>
-		<plugins>
-			<plugin>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<version>3.3.0</version>
-				<configuration>
-					<descriptorRefs>
-						<descriptorRef>jar-with-dependencies</descriptorRef>
-					</descriptorRefs>
-					<archive>
-						<manifest>
-							<mainClass>de.julielab.jcore.ae.jsbd.SentenceSplitterApplication</mainClass>
-						</manifest>
-					</archive>
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <mainClass>de.julielab.jcore.ae.jsbd.SentenceSplitterApplication</mainClass>
+                        </manifest>
+                    </archive>
 
-					<finalName>jsbd-${project.version}</finalName>
-				</configuration>
-				<executions>
-					<execution>
-						<id>make-assembly</id>
-						<phase>package</phase>
-						<goals>
-							<goal>single</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.eclipse.m2e</groupId>
-					<artifactId>lifecycle-mapping</artifactId>
-					<version>1.0.0</version>
-					<configuration>
-						<lifecycleMappingMetadata>
-							<pluginExecutions>
-								<pluginExecution>
-									<pluginExecutionFilter>
-										<groupId>org.apache.maven.plugins</groupId>
-										<artifactId>maven-dependency-plugin</artifactId>
-										<versionRange>[1.0.0,)</versionRange>
-										<goals>
-											<goal>copy-dependencies</goal>
-										</goals>
-									</pluginExecutionFilter>
-									<action>
-										<ignore />
-									</action>
-								</pluginExecution>
-							</pluginExecutions>
-						</lifecycleMappingMetadata>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-	</build>
-	<organization>
-		<name>JULIE Lab Jena, Germany</name>
-		<url>http://www.julielab.de</url>
-	</organization>
-	<dependencies>
-		<dependency>
-			<groupId>de.julielab</groupId>
-			<artifactId>jcore-jsbd-ae</artifactId>
-			<version>2.5.0</version>
-		</dependency>
-		<dependency>
-			<groupId>ch.qos.logback</groupId>
-			<artifactId>logback-classic</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>de.julielab</groupId>
-			<artifactId>jcore-pmc-reader</artifactId>
-			<version>2.5.0</version>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
-<licenses> 
-<license> 
-<name>BSD-2-Clause</name> 
-<url>https://opensource.org/licenses/BSD-2-Clause</url> 
-</license> 
-</licenses>	<url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-jsbd-ae-biomedical-english</url>
+                    <finalName>jsbd-${project.version}</finalName>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.eclipse.m2e</groupId>
+                    <artifactId>lifecycle-mapping</artifactId>
+                    <version>1.0.0</version>
+                    <configuration>
+                        <lifecycleMappingMetadata>
+                            <pluginExecutions>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>org.apache.maven.plugins</groupId>
+                                        <artifactId>maven-dependency-plugin</artifactId>
+                                        <versionRange>[1.0.0,)</versionRange>
+                                        <goals>
+                                            <goal>copy-dependencies</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore/>
+                                    </action>
+                                </pluginExecution>
+                            </pluginExecutions>
+                        </lifecycleMappingMetadata>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+    <organization>
+        <name>JULIE Lab Jena, Germany</name>
+        <url>http://www.julielab.de</url>
+    </organization>
+    <dependencies>
+        <dependency>
+            <groupId>de.julielab</groupId>
+            <artifactId>jcore-jsbd-ae</artifactId>
+            <version>${jcore-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>de.julielab</groupId>
+            <artifactId>jcore-pmc-reader</artifactId>
+            <version>${jcore-version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+        </dependency>
+
+    </dependencies>
+    <licenses>
+        <license>
+            <name>BSD-2-Clause</name>
+            <url>https://opensource.org/licenses/BSD-2-Clause</url>
+        </license>
+    </licenses>
+    <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-jsbd-ae-biomedical-english</url>
 </project>

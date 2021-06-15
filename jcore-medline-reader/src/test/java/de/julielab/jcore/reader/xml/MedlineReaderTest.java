@@ -16,9 +16,10 @@ import org.apache.uima.fit.util.JCasUtil;
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.cas.FSArray;
 import org.apache.uima.jcas.tcas.Annotation;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
+
 
 public class MedlineReaderTest {
 	@Test
@@ -147,7 +148,7 @@ public class MedlineReaderTest {
 		assertTrue(medlineReader.hasNext());
 		medlineReader.getNext(jCas.getCas());
 
-		assertFalse("Document text is empty", jCas.getDocumentText().isEmpty());
+		assertFalse(jCas.getDocumentText().isEmpty(), "Document text is empty");
 		final Title title = JCasUtil.selectSingle(jCas, Title.class);
 		assertEquals("document_vernacular", title.getTitleType());
 	}

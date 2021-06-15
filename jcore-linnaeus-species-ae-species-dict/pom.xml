@@ -4,7 +4,7 @@
     <parent>
         <groupId>de.julielab</groupId>
         <artifactId>jcore-projects</artifactId>
-        <version>2.5.1</version>
+        <version>2.6.0-SNAPSHOT</version>
     </parent>
     <artifactId>jcore-linnaeus-species-ae-species-dict</artifactId>
     <name>JCoRe Linnaeus Species AE with Species Dictionary</name>
@@ -18,11 +18,11 @@
         <dependency>
             <groupId>de.julielab</groupId>
             <artifactId>jcore-linnaeus-species-ae</artifactId>
-            <version>2.5.0</version>
+            <version>${jcore-version}</version>
         </dependency>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
@@ -30,9 +30,10 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-<licenses> 
-<license> 
-<name>BSD-2-Clause</name> 
-<url>https://opensource.org/licenses/BSD-2-Clause</url> 
-</license> 
-</licenses></project>
+    <licenses>
+        <license>
+            <name>BSD-2-Clause</name>
+            <url>https://opensource.org/licenses/BSD-2-Clause</url>
+        </license>
+    </licenses>
+</project>
