@@ -2,7 +2,7 @@
     "categories": [
         "ae"
     ],
-    "description": "This project employs the jcore-mstparser-ae (Dependency Parser) with a model trained on the GENIA corpus.",
+    "description": "This project employs the jcore-mstparser-ae (Dependency Parser) with a model trained on the GENIA\n        corpus.\n    ",
     "descriptors": [
         {
             "category": "ae",
@@ -14,7 +14,7 @@
     "maven-artifact": {
         "artifactId": "jcore-mstparser-ae-biomedical-english",
         "groupId": "de.julielab",
-        "version": "2.4.0"
+        "version": "2.5.1"
     },
     "name": "JCoRe MST Parser AE, Biomedical English"
 }

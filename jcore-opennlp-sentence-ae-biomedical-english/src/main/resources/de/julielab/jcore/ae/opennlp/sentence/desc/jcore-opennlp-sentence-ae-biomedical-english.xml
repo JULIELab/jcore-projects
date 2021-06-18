@@ -6,8 +6,8 @@
 <analysisEngineMetaData>
 <name>JCoRe OpenNLP Sentence Splitter AE Biomed English</name>
 <description>Descriptor for OpenNLP Sentence Splitter using a model trained on Genia and PennBio</description>
-<version>2.4.0</version>
-<vendor>JULIE Lab Jena, Germany</vendor>
+<version>2.5.1</version>
+        <vendor>JULIE Lab Jena, Germany</vendor>
 <configurationParameters>
 <configurationParameter>
 <name>modelFile</name>

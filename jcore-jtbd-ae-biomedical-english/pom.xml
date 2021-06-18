@@ -9,7 +9,7 @@
 
 	<parent>
 		<groupId>de.julielab</groupId>
-		<version>2.4.0</version>
+		<version>2.5.1</version>
 		<artifactId>jcore-projects</artifactId>
 	</parent>
 
@@ -79,7 +79,7 @@
 		<dependency>
 			<groupId>de.julielab</groupId>
 			<artifactId>jcore-jtbd-ae</artifactId>
-			<version>2.4.0</version>
+			<version>2.5.0</version>
 		</dependency>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
@@ -87,5 +87,10 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	<url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-jtbd-ae-biomedical-english</url>
+<licenses> 
+<license> 
+<name>BSD-2-Clause</name> 
+<url>https://opensource.org/licenses/BSD-2-Clause</url> 
+</license> 
+</licenses>	<url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-jtbd-ae-biomedical-english</url>
 </project>

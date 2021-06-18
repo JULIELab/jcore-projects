@@ -1,0 +1,69 @@
+<MedlineCitation Status="MEDLINE" Owner="NLM">
+    <PMID Version="1">30540132</PMID>
+    <DateCompleted>
+        <Year>2019</Year>
+        <Month>02</Month>
+        <Day>12</Day>
+    </DateCompleted>
+    <DateRevised>
+        <Year>2019</Year>
+        <Month>02</Month>
+        <Day>15</Day>
+    </DateRevised>
+    <Article PubModel="Print">
+        <Journal>
+            <ISSN IssnType="Print">0995-3914</ISSN>
+            <JournalIssue CitedMedium="Print">
+                <Volume>30</Volume>
+                <Issue>4</Issue>
+                <PubDate>
+                    <MedlineDate>2018 July August</MedlineDate>
+                </PubDate>
+            </JournalIssue>
+            <Title>Sante publique (Vandoeuvre-les-Nancy, France)</Title>
+            <ISOAbbreviation>Sante Publique</ISOAbbreviation>
+        </Journal>
+        <ArticleTitle/>
+        <Pagination>
+            <MedlinePgn>443-444</MedlinePgn>
+        </Pagination>
+        <ELocationID EIdType="doi" ValidYN="Y">10.3917/spub.185.0443</ELocationID>
+        <AuthorList CompleteYN="Y">
+            <Author ValidYN="Y">
+                <LastName>Couteron</LastName>
+                <ForeName>Jean-Pierre</ForeName>
+                <Initials>JP</Initials>
+            </Author>
+        </AuthorList>
+        <Language>fre</Language>
+        <PublicationTypeList>
+            <PublicationType UI="D016421">Editorial</PublicationType>
+        </PublicationTypeList>
+        <VernacularTitle>Pour une politique de santé publique adaptée aux consommateurs et à leurs consommations
+            d'alcool.
+        </VernacularTitle>
+    </Article>
+    <MedlineJournalInfo>
+        <Country>France</Country>
+        <MedlineTA>Sante Publique</MedlineTA>
+        <NlmUniqueID>9216153</NlmUniqueID>
+        <ISSNLinking>0995-3914</ISSNLinking>
+    </MedlineJournalInfo>
+    <CitationSubset>IM</CitationSubset>
+    <MeshHeadingList>
+        <MeshHeading>
+            <DescriptorName UI="D000428" MajorTopicYN="Y">Alcohol Drinking</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+            <DescriptorName UI="D006291" MajorTopicYN="Y">Health Policy</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+            <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+            <DescriptorName UI="D011634" MajorTopicYN="Y">Public Health</DescriptorName>
+        </MeshHeading>
+    </MeshHeadingList>
+</MedlineCitation>
+
+

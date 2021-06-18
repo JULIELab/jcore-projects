@@ -5,8 +5,8 @@
   <processingResourceMetaData>
     <name>JCoRe PubMed Reader for ArticleSet Multiplier</name>
     <description />
-    <version>2.4.0</version>
-    <vendor />
+    <version>2.5.1</version>
+        <vendor />
     <configurationParameters>
       <configurationParameter>
         <name>InputDirectory</name>

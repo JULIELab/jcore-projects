@@ -6,8 +6,8 @@
   <analysisEngineMetaData>
     <name>JCoRe MST Parser Annotator</name>
     <description>specialized package with a model trained on the GENIA conll corpus</description>
-    <version>2.4.0</version>
-    <vendor>JULIE Lab Jena, Germany</vendor>
+    <version>2.5.1</version>
+        <vendor>JULIE Lab Jena, Germany</vendor>
     <configurationParameters>
       <configurationParameter>
         <name>NumMaxTokens</name>
