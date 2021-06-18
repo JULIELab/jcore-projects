@@ -1,103 +1,96 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-    <modelVersion>4.0.0</modelVersion>
-    <artifactId>jcore-jtbd-ae-medical-german</artifactId>
-    <packaging>jar</packaging>
-    <description>UIMA Wrapper for the JCoRe Token Boundary Detector with a model trained on the confidential FraMed
-        corpus.
-    </description>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>jcore-jtbd-ae-medical-german</artifactId>
+	<packaging>jar</packaging>
+	<description>UIMA Wrapper for the JCoRe Token Boundary Detector with a model trained on the confidential FraMed corpus.
+</description>
 
-    <parent>
-        <groupId>de.julielab</groupId>
-        <version>2.6.0-SNAPSHOT</version>
-        <artifactId>jcore-projects</artifactId>
-    </parent>
+	<parent>
+		<groupId>de.julielab</groupId>
+		<version>2.5.1</version>
+		<artifactId>jcore-projects</artifactId>
+	</parent>
 
-    <build>
-        <plugins>
-            <plugin>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <version>2.4</version>
-                <configuration>
-                    <descriptorRefs>
-                        <descriptorRef>jar-with-dependencies</descriptorRef>
-                    </descriptorRefs>
-                    <archive>
-                        <manifest>
-                            <mainClass>de.julielab.jcore.ae.jtbd.TokenizerApplication</mainClass>
-                        </manifest>
-                    </archive>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+					<archive>
+						<manifest>
+							<mainClass>de.julielab.jcore.ae.jtbd.TokenizerApplication</mainClass>
+						</manifest>
+					</archive>
 
-                    <finalName>jtbd-${project.version}</finalName>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>make-assembly</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.eclipse.m2e</groupId>
-                    <artifactId>lifecycle-mapping</artifactId>
-                    <version>1.0.0</version>
-                    <configuration>
-                        <lifecycleMappingMetadata>
-                            <pluginExecutions>
-                                <pluginExecution>
-                                    <pluginExecutionFilter>
-                                        <groupId>org.apache.maven.plugins</groupId>
-                                        <artifactId>maven-dependency-plugin</artifactId>
-                                        <versionRange>[1.0.0,)</versionRange>
-                                        <goals>
-                                            <goal>copy-dependencies</goal>
-                                        </goals>
-                                    </pluginExecutionFilter>
-                                    <action>
-                                        <ignore/>
-                                    </action>
-                                </pluginExecution>
-                            </pluginExecutions>
-                        </lifecycleMappingMetadata>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-    </build>
-    <name>JCoRe Token Annotator, Medical German</name>
-    <organization>
-        <name>JULIE Lab Jena, Germany</name>
-        <url>http://www.julielab.de</url>
-    </organization>
-    <dependencies>
-        <dependency>
-            <groupId>de.julielab</groupId>
-            <artifactId>jcore-jtbd-ae</artifactId>
-            <version>${jcore-version}</version>
-        </dependency>
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-        </dependency>
-    </dependencies>
-    <licenses>
-        <license>
-            <name>BSD-2-Clause</name>
-            <url>https://opensource.org/licenses/BSD-2-Clause</url>
-        </license>
-    </licenses>
-    <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-jtbd-ae-medical-german</url>
+					<finalName>jtbd-${project.version}</finalName>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>org.apache.maven.plugins</groupId>
+										<artifactId>maven-dependency-plugin</artifactId>
+										<versionRange>[1.0.0,)</versionRange>
+										<goals>
+											<goal>copy-dependencies</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore />
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+	<name>JCoRe Token Annotator, Medical German</name>
+	<organization>
+		<name>JULIE Lab Jena, Germany</name>
+		<url>http://www.julielab.de</url>
+	</organization>
+	<dependencies>
+		<dependency>
+			<groupId>de.julielab</groupId>
+			<artifactId>jcore-jtbd-ae</artifactId>
+			<version>2.5.0</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+<licenses> 
+<license> 
+<name>BSD-2-Clause</name> 
+<url>https://opensource.org/licenses/BSD-2-Clause</url> 
+</license> 
+</licenses>	<url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-jtbd-ae-medical-german</url>
 </project>

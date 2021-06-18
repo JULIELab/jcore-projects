@@ -1,8 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <artifactId>jcore-opennlp-sentence-ae-biomedical-english</artifactId>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>jcore-opennlp-sentence-ae-biomedical-english</artifactId>
     <build>
         <pluginManagement>
             <plugins>
@@ -13,7 +12,7 @@
                     <configuration>
                         <lifecycleMappingMetadata>
                             <pluginExecutions>
-
+                                
                                 <pluginExecution>
                                     <pluginExecutionFilter>
                                         <groupId>org.apache.maven.plugins</groupId>
@@ -24,7 +23,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore/>
+                                        <ignore />
                                     </action>
                                 </pluginExecution>
                             </pluginExecutions>
@@ -34,40 +33,36 @@
             </plugins>
         </pluginManagement>
     </build>
-    <parent>
-        <groupId>de.julielab</groupId>
-        <artifactId>jcore-projects</artifactId>
-        <version>2.6.0-SNAPSHOT</version>
-    </parent>
-    <name>JCoRe OpenNLP Sentence Splitter, Biomedical English</name>
-    <description>This project employs the UIMA wrapper (jcore-opennlp-sentence-ae) with a model trained on the PennBioIE
-        and Genia corpora.
-    </description>
-    <organization>
-        <name>JULIE Lab Jena, Germany</name>
-        <url>http://www.julielab.de</url>
-    </organization>
-    <dependencies>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
+  <parent>
+  	<groupId>de.julielab</groupId>
+  	<artifactId>jcore-projects</artifactId>
+  	<version>2.5.1</version>
+  </parent>
+  <name>JCoRe OpenNLP Sentence Splitter, Biomedical English</name>
+  <description>This project employs the UIMA wrapper (jcore-opennlp-sentence-ae) with a model trained on the PennBioIE and Genia corpora.</description>
+  <organization>
+  	<name>JULIE Lab Jena, Germany</name>
+  	<url>http://www.julielab.de</url>
+  </organization>
+  <dependencies>
+      <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+      </dependency><dependency>
+        	<groupId>de.julielab</groupId>
+        	<artifactId>jcore-types</artifactId>
+        	<version>${jcore-types-version}</version>
         </dependency>
-        <dependency>
-            <groupId>de.julielab</groupId>
-            <artifactId>jcore-types</artifactId>
-            <version>${jcore-types-version}</version>
-        </dependency>
-        <dependency>
-            <groupId>de.julielab</groupId>
-            <artifactId>jcore-opennlp-sentence-ae</artifactId>
-            <version>${jcore-version}</version>
-        </dependency>
-    </dependencies>
-    <licenses>
-        <license>
-            <name>BSD-2-Clause</name>
-            <url>https://opensource.org/licenses/BSD-2-Clause</url>
-        </license>
-    </licenses>
-    <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-opennlp-sentence-ae-biomedical-english</url>
+  	<dependency>
+  		<groupId>de.julielab</groupId>
+  		<artifactId>jcore-opennlp-sentence-ae</artifactId>
+  		<version>2.5.0</version>
+  	</dependency>
+  </dependencies>
+<licenses> 
+<license> 
+<name>BSD-2-Clause</name> 
+<url>https://opensource.org/licenses/BSD-2-Clause</url> 
+</license> 
+</licenses>  <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-opennlp-sentence-ae-biomedical-english</url>
 </project>

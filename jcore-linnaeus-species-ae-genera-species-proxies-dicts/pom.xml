@@ -1,36 +1,26 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <artifactId>jcore-linnaeus-species-ae-genera-species-proxies-dicts</artifactId>
-    <name>JCoRe Linnaeus Species AE Genera and Species Proxies Dictionaries</name>
-    <description>This project is a resource for the JCoRe Linnaeus Annotator. The dictionaries contained herein are used
-        for the recognition of concrete species names in text, e.g. &quot;human&quot;, &quot;mouse&quot;, &quot;n.
-        furzeri&quot;, &quot;c. elegans&quot; etc as well as species hints, i.e. indirect clues to a species like the
-        word &quot;patient&quot; which most likely refers to a human. Additionally to such rather clear proxies, this
-        project also includes a small dictionary containing maximum-frequency-proxies for genus expressions like &quot;Drosophila&quot;
-        which will be mapped to &quot;D. melanogaster&quot;. For the task of only finding concrete species names in
-        text, there is the project jcore-linnaeus-species-ae-species-dict.
-    </description>
-    <dependencies>
-        <dependency>
-            <groupId>de.julielab</groupId>
-            <artifactId>jcore-linnaeus-species-ae-proxies-dict</artifactId>
-            <version>2.6.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-        </dependency>
-    </dependencies>
-    <licenses>
-        <license>
-            <name>BSD-2-Clause</name>
-            <url>https://opensource.org/licenses/BSD-2-Clause</url>
-        </license>
-    </licenses>
-    <parent>
-        <groupId>de.julielab</groupId>
-        <artifactId>jcore-projects</artifactId>
-        <version>2.6.0-SNAPSHOT</version>
-    </parent>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>jcore-linnaeus-species-ae-genera-species-proxies-dicts</artifactId>
+  <name>JCoRe Linnaeus Species AE Genera and Species Proxies Dictionaries</name>
+  <description>This project is a resource for the JCoRe Linnaeus Annotator. The dictionaries contained herein are used for the recognition of concrete species names in text, e.g. &quot;human&quot;, &quot;mouse&quot;, &quot;n. furzeri&quot;, &quot;c. elegans&quot; etc as well as species hints, i.e. indirect clues to a species like the word &quot;patient&quot; which most likely refers to a human. Additionally to such rather clear proxies, this project also includes a small dictionary containing maximum-frequency-proxies for genus expressions like &quot;Drosophila&quot; which will be mapped to &quot;D. melanogaster&quot;. For the task of only finding concrete species names in text, there is the project jcore-linnaeus-species-ae-species-dict.</description>
+  <dependencies>
+  	<dependency>
+  		<groupId>de.julielab</groupId>
+  		<artifactId>jcore-linnaeus-species-ae-proxies-dict</artifactId>
+  		<version>2.5.1</version>
+  	</dependency>
+      <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+      </dependency></dependencies>
+<licenses> 
+<license> 
+<name>BSD-2-Clause</name> 
+<url>https://opensource.org/licenses/BSD-2-Clause</url> 
+</license> 
+</licenses>  <parent>
+  	<groupId>de.julielab</groupId>
+  	<artifactId>jcore-projects</artifactId>
+  	<version>2.5.1</version>
+  </parent>
 </project>

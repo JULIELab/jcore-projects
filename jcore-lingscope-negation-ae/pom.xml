@@ -9,14 +9,14 @@
     <parent>
         <groupId>de.julielab</groupId>
         <artifactId>jcore-projects</artifactId>
-        <version>2.6.0-SNAPSHOT</version>
+        <version>2.5.1</version>
     </parent>
 
     <dependencies>
         <dependency>
             <groupId>de.julielab</groupId>
             <artifactId>jcore-lingscope-ae</artifactId>
-            <version>${jcore-version}</version>
+            <version>2.5.0</version>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
@@ -47,17 +47,16 @@
             <version>${jcore-types-version}</version>
         </dependency>
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
         </dependency>
     </dependencies>
-    <licenses>
-        <license>
-            <name>BSD-2-Clause</name>
-            <url>https://opensource.org/licenses/BSD-2-Clause</url>
-        </license>
-    </licenses>
-    <name>JCoRe Lingscope Negation AE</name>
+<licenses> 
+<license> 
+<name>BSD-2-Clause</name> 
+<url>https://opensource.org/licenses/BSD-2-Clause</url> 
+</license> 
+</licenses>    <name>JCoRe Lingscope Negation AE</name>
     <organization>
         <name>JULIE Lab Jena, Germany</name>
         <url>http://www.julielab.de</url>

@@ -8,11 +8,11 @@ import org.apache.uima.fit.factory.AnalysisEngineFactory;
 import org.apache.uima.fit.factory.JCasFactory;
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.tcas.Annotation;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.io.FileInputStream;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.Assert.assertTrue;
 
 /**
  * With 'difficult document' we mean a document that used to make problems with BioSem

@@ -13,10 +13,9 @@ import org.apache.uima.fit.util.JCasUtil;
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.cas.FSArray;
 import org.apache.uima.jcas.tcas.Annotation;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
+import static org.junit.Assert.*;
 
 public class PubmedReaderTest {
     @Test
@@ -27,12 +26,12 @@ public class PubmedReaderTest {
                 "src/main/resources/de/julielab/jcore/reader/xml/desc/jcore-pubmed-reader.xml");
         CollectionReader pubmedReader = CollectionReaderFactory.createReader(pubmedReaderDescription,
                 XMLReader.PARAM_INPUT_FILE, "src/test/resources/pubmedDocs/7723770.xml");
-        assertTrue(pubmedReader.hasNext(), "Assertion failure");
+        assertTrue("Assertion failure", pubmedReader.hasNext());
         pubmedReader.getNext(jCas.getCas());
 
-        assertEquals("7723770", JCasUtil.selectSingle(jCas, Header.class).getDocId(), "Assertion failure");
-        assertNotNull(jCas.getDocumentText(), "Assertion failure");
-        assertTrue(jCas.getDocumentText().length() > 0, "Assertion failure");
+        assertEquals("Assertion failure", "7723770", JCasUtil.selectSingle(jCas, Header.class).getDocId());
+        assertNotNull("Assertion failure", jCas.getDocumentText());
+        assertTrue("Assertion failure", jCas.getDocumentText().length() > 0);
     }
 
     @Test
