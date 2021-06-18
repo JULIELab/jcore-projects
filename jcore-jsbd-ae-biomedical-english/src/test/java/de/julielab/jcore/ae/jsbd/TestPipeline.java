@@ -9,15 +9,14 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.tcas.Annotation;
 import org.apache.uima.resource.ResourceSpecifier;
 import org.apache.uima.util.XMLInputSource;
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.Before;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.File;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
+import static org.junit.Assert.assertTrue;
 
 public class TestPipeline {
 
@@ -42,7 +41,7 @@ public class TestPipeline {
     /**
      * test whether Annotator can be initialized properly from given descriptor
      */
-    @BeforeEach
+    @Before
     public void testInitialize() {
         LOGGER.info("testInitialize()");
 
