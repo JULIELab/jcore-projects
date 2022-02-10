@@ -20,7 +20,8 @@ public class BannerAETest {
         // just tag a single sentence with a test model that actually used that sentence as training data.
         JCas jcas = JCasFactory.createJCas("de.julielab.jcore.types.jcore-morpho-syntax-types",
                 "de.julielab.jcore.types.jcore-document-meta-types",
-                "de.julielab.jcore.types.jcore-semantics-biology-types");
+                "de.julielab.jcore.types.jcore-semantics-biology-types",
+                "de.julielab.jcore.types.jcore-document-structure-pubmed-types");
         // this is sentence P00055040A0000 from the test BC2GM train data in the jcore-banner-ae project
         jcas.setDocumentText(
                 "Ten out-patients with pustulosis palmaris et plantaris were examined with direct immunofluorescence (IF) technique for deposition of fibrinogen, fibrin or its degradation products (FR-antigen) in affected and unaffected skin, together with heparin-precipitable fraction (HPF), cryoglobulin and total plasma fibrinogen in the blood.");
