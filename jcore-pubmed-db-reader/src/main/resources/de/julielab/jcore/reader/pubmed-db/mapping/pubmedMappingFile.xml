@@ -287,7 +287,7 @@
 			<tsFeature>
 				<tsFullClassName>de.julielab.jcore.types.pubmed.OtherID
 				</tsFullClassName>
-				<xPath>/PubmedArticle/PubmedData/ArticleIdList/ArticleId</xPath>
+				<xPath>/PubmedArticle/PubmedData/ArticleIdList/ArticleId[not(@IdType="pubmed")]</xPath>
 				<isType>true</isType>
 				<tsFeature>
 					<tsFeatureName>id</tsFeatureName>

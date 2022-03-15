@@ -46,7 +46,7 @@
         <typeSystemDescription>
             <imports>
                 <import name="de.julielab.jcore.types.jcore-document-meta-pubmed-types" />
-                <import name="de.julielab.jcore.types.jcore-document-structure-types" />
+                <import name="de.julielab.jcore.types.jcore-document-structure-pubmed-types" />
             </imports>
         </typeSystemDescription>
         <typePriorities />

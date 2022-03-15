@@ -7,8 +7,21 @@
     <description />
     <version>2.6.0-SNAPSHOT</version>
         <vendor />
-    <configurationParameters />
-    <configurationParameterSettings />
+    <configurationParameters>
+      <configurationParameter>
+        <name>ComponentId</name>
+        <description>Optional. If set, the 'componentId' feature of the created annotations will be set to the value of this parameter.</description>
+        <type>String</type>
+      </configurationParameter>
+    </configurationParameters>
+    <configurationParameterSettings>
+      <nameValuePair>
+        <name>ComponentId</name>
+        <value>
+          <string>BioSemEventAnnotatorST11</string>
+        </value>
+      </nameValuePair>
+    </configurationParameterSettings>
     <typeSystemDescription>
       <imports>
         <import name="de.julielab.jcore.types.jcore-semantics-biology-types" />
