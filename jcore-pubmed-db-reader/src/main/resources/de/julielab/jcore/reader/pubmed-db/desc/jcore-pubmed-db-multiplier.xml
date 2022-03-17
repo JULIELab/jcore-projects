@@ -66,7 +66,14 @@
                 <mandatory>false</mandatory>
             </configurationParameter>
         </configurationParameters>
-        <configurationParameterSettings/>
+        <configurationParameterSettings>
+            <nameValuePair>
+                <name>MappingFile</name>
+                <value>
+                    <string>de/julielab/jcore/reader/pubmed-db/mapping/pubmedMappingFile.xml</string>
+                </value>
+            </nameValuePair>
+        </configurationParameterSettings>
         <typeSystemDescription>
             <imports>
                 <import name="de.julielab.jcore.types.casmultiplier.jcore-dbtable-multiplier-types" />
