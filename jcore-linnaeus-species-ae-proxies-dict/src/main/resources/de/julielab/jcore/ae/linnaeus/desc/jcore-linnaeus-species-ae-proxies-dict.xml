@@ -16,11 +16,11 @@
         <fsIndexCollection />
         <capabilities>
             <capability>
-                <inputs>
+                <inputs/>
+                <outputs>
                     <type>de.julielab.jcore.types.Organism</type>
                     <type>de.julielab.jcore.types.ResourceEntry</type>
-                </inputs>
-                <outputs />
+                </outputs>
                 <languagesSupported />
             </capability>
         </capabilities>

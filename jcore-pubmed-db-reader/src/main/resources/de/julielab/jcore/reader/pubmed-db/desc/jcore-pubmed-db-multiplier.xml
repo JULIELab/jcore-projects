@@ -4,7 +4,7 @@
     <primitive>true</primitive>
     <annotatorImplementationName>de.julielab.jcore.reader.xml.XMLDBMultiplier</annotatorImplementationName>
     <analysisEngineMetaData>
-        <name>JCoRe XML Database Multiplier</name>
+        <name>JCoRe PubMed XML Database Multiplier</name>
         <description>This CAS multiplier receives information about documents to be read from an instance of the XML Database Multiplier reader from the jcore-db-reader project. The multiplier employs the jcore-xml-mapper to map the document XML structure into CAS instances. It also supports additional tables sent by the DB Multiplier Reader that are then joined to the main table. This mechanism is used to load separate data from additional database tables and populate the CAS with them via the 'RowMapping' parameter. This component is part of the Jena Document Information System, JeDIS.</description>
         <vendor>JULIE Lab Jena, Germany</vendor>
         <copyright>JULIE Lab Jena, Germany</copyright>
