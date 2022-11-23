@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<banner-configuration>
+  <banner>
+    <eval>
+      <datasetName>de.julielab.jcore.banner.dataset.JCoReEntityDataset</datasetName>
+      <dataset>
+        <sentenceFilename>/var/data/data_corpora/genomics/Genes/banner-tagging/data/conversions/ProGene/progene_sentences.tsv</sentenceFilename>
+        <mentionTestFilename>/var/data/data_corpora/genomics/Genes/banner-tagging/data/conversions/ProGene/progene_genes.tsv</mentionTestFilename>
+      </dataset>
+      <idInputFilename>output/ids.txt</idInputFilename>
+      <rawInputFilename>output/raw.txt</rawInputFilename>
+      <trainingInputFilename>output/training.txt</trainingInputFilename>
+      <outputFilename>output/output.txt</outputFilename>
+      <inContextAnalysisFilename>output/contextAnalysis.html</inContextAnalysisFilename>
+      <mentionFilename>output/mention.txt</mentionFilename>
+      <modelFilename>de/julielab/jcore/ae/banner/resources/banner-progene-dictbannerdefaultbin</modelFilename>
+      <lemmatiserDataDirectory>nlpdata/lemmatiser</lemmatiserDataDirectory>
+      <posTaggerDataDirectory>nlpdata/tagger</posTaggerDataDirectory>
+      <posTagger>dragon.nlp.tool.HeppleTagger</posTagger>
+      <tokenizer>banner.tokenization.SimpleTokenizer</tokenizer>
+      <useParenthesisPostProcessing>true</useParenthesisPostProcessing>
+      <useLocalAbbreviationPostProcessing>true</useLocalAbbreviationPostProcessing>
+      <useNumericNormalization>true</useNumericNormalization>
+      <tagFormat>IOB</tagFormat>
+      <crfOrder>2</crfOrder>
+      <mentionTypes>Required</mentionTypes>
+      <sameTypeOverlapOption>Exception</sameTypeOverlapOption>
+      <differentTypeOverlapOption>Exception</differentTypeOverlapOption>
+      <dictionaryTagger>banner.tagging.dictionary.DictionaryTagger</dictionaryTagger>
+    </eval>
+    <tagging>
+      <dictionary>
+        <DictionaryTagger>
+          <filterContainedMentions>true</filterContainedMentions>
+          <normalizeMixedCase>false</normalizeMixedCase>
+          <normalizeDigits>false</normalizeDigits>
+          <canonize>false</canonize>
+          <generate2PartVariations>true</generate2PartVariations>
+          <dropEndParentheticals>false</dropEndParentheticals>
+          <dictionaryFile>/dict/single.txt</dictionaryFile>
+          <dictionaryType>protein</dictionaryType>
+        </DictionaryTagger>
+      </dictionary>
+    </tagging>
+  </banner>
+</banner-configuration>

@@ -51,7 +51,7 @@
   <externalResourceDependencies>
     <externalResourceDependency>
       <key>TrainedDB</key>
-      <description>The BioSem database in which triggers and event rules have been learned. New predictions are mode based on the rules in this database.</description>
+      <description>The BioSem database in which triggers and event rules have been learned. New predictions are made based on the rules in this database.</description>
       <interfaceName>de.julielab.jcore.ae.biosem.DBUtilsProvider</interfaceName>
       <optional>false</optional>
     </externalResourceDependency>

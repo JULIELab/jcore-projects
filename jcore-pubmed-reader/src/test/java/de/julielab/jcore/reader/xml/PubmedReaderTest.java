@@ -36,6 +36,19 @@ public class PubmedReaderTest {
     }
 
     @Test
+    public void testRussianOtherAbstract() throws Exception {
+        JCas jCas = JCasFactory.createJCas("de.julielab.jcore.types.jcore-document-meta-pubmed-types",
+                "de.julielab.jcore.types.jcore-document-structure-pubmed-types");
+        CollectionReaderDescription pubmedReaderDescription = CollectionReaderFactory.createReaderDescriptionFromPath(
+                "src/main/resources/de/julielab/jcore/reader/xml/desc/jcore-pubmed-reader.xml");
+        CollectionReader pubmedReader = CollectionReaderFactory.createReader(pubmedReaderDescription,
+                XMLReader.PARAM_INPUT_FILE, "src/test/resources/pubmedDocs/36286696.xml");
+        pubmedReader.getNext(jCas.getCas());
+
+        assertEquals("36286696", JCasUtil.selectSingle(jCas, Header.class).getDocId(), "Assertion failure");
+    }
+
+    @Test
     public void testKeywords() throws Exception {
         JCas jCas = JCasFactory.createJCas("de.julielab.jcore.types.jcore-document-meta-pubmed-types",
                 "de.julielab.jcore.types.jcore-document-structure-pubmed-types");
