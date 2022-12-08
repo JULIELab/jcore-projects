@@ -2,7 +2,7 @@
     "categories": [
         "ae"
     ],
-    "description": "This project employs the OpenNLP wrapper (jcore-opennlp-parser-ae) with a model trained on the Genia corpus.",
+    "description": "This project employs the OpenNLP wrapper (jcore-opennlp-parser-ae) with a model trained on the Genia\n        corpus.\n    ",
     "descriptors": [
         {
             "category": "ae",
@@ -14,7 +14,7 @@
     "maven-artifact": {
         "artifactId": "jcore-opennlp-parser-ae-biomedical-english",
         "groupId": "de.julielab",
-        "version": "2.6.0-SNAPSHOT"
+        "version": "2.6.0"
     },
     "name": "JCoRe OpenNLP Parser, Biomedical English"
 }

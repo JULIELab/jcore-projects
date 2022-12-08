@@ -2,7 +2,7 @@
     "categories": [
         "ae"
     ],
-    "description": "This project employs the UIMA wrapper (jcore-opennlp-sentence-ae) with a model trained on the PennBioIE and Genia corpora.",
+    "description": "This project employs the UIMA wrapper (jcore-opennlp-sentence-ae) with a model trained on the PennBioIE\n        and Genia corpora.\n    ",
     "descriptors": [
         {
             "category": "ae",
@@ -14,7 +14,7 @@
     "maven-artifact": {
         "artifactId": "jcore-opennlp-sentence-ae-biomedical-english",
         "groupId": "de.julielab",
-        "version": "2.6.0-SNAPSHOT"
+        "version": "2.6.0"
     },
     "name": "JCoRe OpenNLP Sentence Splitter, Biomedical English"
 }

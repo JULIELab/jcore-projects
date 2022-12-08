@@ -149,6 +149,9 @@ public class MedlineReaderTest {
 		medlineReader.getNext(jCas.getCas());
 
 		assertFalse(jCas.getDocumentText().isEmpty(), "Document text is empty");
+		for (var t : JCasUtil.select(jCas, Title.class)) {
+			System.out.println(t.getCoveredText() + " " + t.getTitleType());
+		}
 		final Title title = JCasUtil.selectSingle(jCas, Title.class);
 		assertEquals("document_vernacular", title.getTitleType());
 	}

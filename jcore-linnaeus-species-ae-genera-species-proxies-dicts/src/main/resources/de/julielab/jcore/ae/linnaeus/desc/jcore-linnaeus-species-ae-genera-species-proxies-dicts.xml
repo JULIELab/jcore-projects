@@ -5,23 +5,23 @@
     <annotatorImplementationName>de.julielab.jcore.ae.linnaeus.LinnaeusSpeciesAnnotator</annotatorImplementationName>
     <analysisEngineMetaData>
         <name>JCore LINNAEUS Species AE</name>
-        <version>2.6.0-SNAPSHOT</version>
-        <configurationParameters/>
-        <configurationParameterSettings/>
+        <version>2.6.0</version>
+        <configurationParameters />
+        <configurationParameterSettings />
         <typeSystemDescription>
             <imports>
-                <import name="de.julielab.jcore.types.jcore-semantics-biology-types"/>
+                <import name="de.julielab.jcore.types.jcore-semantics-biology-types" />
             </imports>
         </typeSystemDescription>
-        <fsIndexCollection/>
+        <fsIndexCollection />
         <capabilities>
             <capability>
-                <inputs/>
+                <inputs />
                 <outputs>
                     <type>de.julielab.jcore.types.Organism</type>
                     <type>de.julielab.jcore.types.ResourceEntry</type>
                 </outputs>
-                <languagesSupported/>
+                <languagesSupported />
             </capability>
         </capabilities>
         <operationalProperties>

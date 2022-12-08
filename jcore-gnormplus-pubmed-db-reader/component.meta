@@ -3,7 +3,7 @@
         "multiplier",
         "reader"
     ],
-    "description": "This is the GNormPlus XML DB multiplier base component that is contained in the JCoRe GNormPlus AE project in jcore-base complemented by the pubmed XML mapping file. This is a drop-in replacement for the PubMed DB Multiplier that runs GNormPlus after the XML data has been added to the CAS. Note that running GNormPlus requires the presence of the GNormPlus resources and external programs in the working directory of the pipeline.",
+    "description": "This is the GNormPlus XML DB multiplier base component that is contained in the JCoRe GNormPlus AE\n        project in jcore-base complemented by the pubmed XML mapping file. This is a drop-in replacement for the PubMed\n        DB Multiplier that runs GNormPlus after the XML data has been added to the CAS. Note that running GNormPlus\n        requires the presence of the GNormPlus resources and external programs in the working directory of the pipeline.\n    ",
     "descriptors": [
         {
             "category": "multiplier",
@@ -15,7 +15,7 @@
     "maven-artifact": {
         "artifactId": "jcore-gnormplus-pubmed-db-reader",
         "groupId": "de.julielab",
-        "version": "2.6.0-SNAPSHOT"
+        "version": "2.6.0"
     },
     "name": "JCoRe GNormPlus PubMed Database Multiplier"
 }
