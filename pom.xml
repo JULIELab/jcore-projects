@@ -51,7 +51,6 @@
     <module>jcore-pubmed-db-reader</module>
     <module>jcore-pubmed-reader</module>
     <module>jcore-lingscope-negation-ae</module>
-    <module>jcore-banner-progene-ae</module>
     <module>jcore-gnormplus-pubmed-db-reader</module>
   </modules>
   <scm>
