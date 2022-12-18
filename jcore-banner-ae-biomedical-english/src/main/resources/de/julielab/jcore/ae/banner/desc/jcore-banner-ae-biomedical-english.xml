@@ -5,8 +5,10 @@
     <annotatorImplementationName>de.julielab.jcore.ae.banner.BANNERAnnotator</annotatorImplementationName>
     <analysisEngineMetaData>
         <name>JCoRe BANNER AE for Biomedical English</name>
-        <description>This component uses the BANNER named entity recognizer with a model trained on the complete (train and test) dataset of the BioCreative II gene mention challenge.</description>
-        <version>2.5.1</version>
+        <description>This component uses the BANNER named entity recognizer with a model trained on the complete (train
+            and test) dataset of the BioCreative II gene mention challenge.
+        </description>
+        <version>2.6.0</version>
         <vendor />
         <configurationParameters>
             <configurationParameter>
@@ -27,6 +29,13 @@
                 <multiValued>true</multiValued>
                 <mandatory>false</mandatory>
             </configurationParameter>
+            <configurationParameter>
+                <name>ComponentId</name>
+                <description>Specifies the value of the 'componentId' feature for created entity annotations. Defaults to the fully qualified name of this class.</description>
+                <type>String</type>
+                <multiValued>false</multiValued>
+                <mandatory>false</mandatory>
+            </configurationParameter>
         </configurationParameters>
         <configurationParameterSettings>
             <nameValuePair>
@@ -43,12 +52,19 @@
                     </array>
                 </value>
             </nameValuePair>
+            <nameValuePair>
+                <name>ComponentId</name>
+                <value>
+                    <string>BANNERAnnotatorBC2GM</string>
+                </value>
+            </nameValuePair>
         </configurationParameterSettings>
         <typeSystemDescription>
             <imports>
                 <import name="de.julielab.jcore.types.jcore-document-structure-types" />
                 <import name="de.julielab.jcore.types.jcore-morpho-syntax-types" />
                 <import name="de.julielab.jcore.types.jcore-semantics-biology-types" />
+                <import name="de.julielab.jcore.types.jcore-document-structure-pubmed-types" />
             </imports>
         </typeSystemDescription>
         <typePriorities />

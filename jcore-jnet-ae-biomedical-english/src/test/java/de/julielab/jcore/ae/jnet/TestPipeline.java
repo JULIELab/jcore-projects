@@ -10,7 +10,8 @@ import org.slf4j.LoggerFactory;
 
 import java.io.File;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 public class TestPipeline {
 
@@ -26,8 +27,8 @@ public class TestPipeline {
         LOGGER.debug("testInitialize()");
         AnalysisEngine entityAnnotator = null;
 
-        XMLInputSource taggerXML = null;
-        ResourceSpecifier taggerSpec = null;
+        XMLInputSource taggerXML;
+        ResourceSpecifier taggerSpec;
 
         try {
             taggerXML = new XMLInputSource(ENTITY_ANNOTATOR_DESC);

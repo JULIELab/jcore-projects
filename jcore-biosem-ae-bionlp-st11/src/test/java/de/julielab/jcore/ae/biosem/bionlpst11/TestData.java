@@ -1,11 +1,17 @@
 package de.julielab.jcore.ae.biosem.bionlpst11;
 
+import de.julielab.jcore.types.EventMention;
 import de.julielab.jcore.types.Gene;
 import org.apache.uima.analysis_engine.AnalysisEngine;
 import org.apache.uima.fit.factory.AnalysisEngineFactory;
 import org.apache.uima.fit.factory.JCasFactory;
+import org.apache.uima.fit.util.JCasUtil;
 import org.apache.uima.jcas.JCas;
 import org.junit.Test;
+
+import java.util.Collection;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestData {
     @Test
@@ -19,5 +25,8 @@ public class TestData {
         Gene g2 = new Gene(jCas, 15, 19);
         g2.addToIndexes();
         engine.process(jCas.getCas());
+        Collection<EventMention> events = JCasUtil.select(jCas, EventMention.class);
+        assertEquals(1, events.size());
+        assertEquals("BioSemEventAnnotatorST11", events.iterator().next().getComponentId());
     }
 }

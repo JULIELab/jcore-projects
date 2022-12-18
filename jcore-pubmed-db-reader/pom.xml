@@ -5,11 +5,11 @@
     <parent>
         <groupId>de.julielab</groupId>
         <artifactId>jcore-projects</artifactId>
-        <version>2.5.1</version>
+        <version>2.6.0</version>
     </parent>
     <artifactId>jcore-pubmed-db-reader</artifactId>
     <name>JCoRe PubMed DB Reader</name>
-    
+
     <description>An instantiation of the jcore-db-reader that uses the jcore-xml-mapper to retrieve and parse PubMed XML
         from a PostgreSQL database. The XML format of retrieved documents is expected to follow the PubMed/MEDLINE XML
         schema
@@ -20,22 +20,24 @@
         <dependency>
             <groupId>de.julielab</groupId>
             <artifactId>jcore-xml-db-reader</artifactId>
-            <version>2.5.0</version>
+            <version>2.6.3</version>
         </dependency>
         <dependency>
             <groupId>de.julielab</groupId>
             <artifactId>jcore-descriptor-creator</artifactId>
         </dependency>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-        </dependency></dependencies>
-<licenses> 
-<license> 
-<name>BSD-2-Clause</name> 
-<url>https://opensource.org/licenses/BSD-2-Clause</url> 
-</license> 
-</licenses>    <organization>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+        </dependency>
+    </dependencies>
+    <licenses>
+        <license>
+            <name>BSD-2-Clause</name>
+            <url>https://opensource.org/licenses/BSD-2-Clause</url>
+        </license>
+    </licenses>
+    <organization>
         <name>JULIE Lab, Germany</name>
         <url>http://www.julielab.de</url>
     </organization>

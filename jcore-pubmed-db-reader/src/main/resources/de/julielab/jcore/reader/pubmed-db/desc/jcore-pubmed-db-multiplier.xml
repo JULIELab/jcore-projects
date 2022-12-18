@@ -5,38 +5,66 @@
     <annotatorImplementationName>de.julielab.jcore.reader.xml.XMLDBMultiplier</annotatorImplementationName>
     <analysisEngineMetaData>
         <name>JCoRe PubMed XML Database Multiplier</name>
-        <description>This CAS multiplier receives information about documents to be read from an instance of the XML
-            Database Multiplier reader from the jcore-db-reader project. The multiplier employs the jcore-xml-mapper to
-            map the PubMed XML structure into CAS instances. It also supports additional tables sent by the DB
-            Multiplier Reader that are then joined to the main table. This mechanism is used to load separate data from
-            additional database tables and populate the CAS with them via the 'RowMapping' parameter. This component is
-            part of the Jena Document Information System, JeDIS.
-        </description>
-        <version>2.5.1</version>
+        <description>This CAS multiplier receives information about documents to be read from an instance of the XML Database Multiplier reader from the jcore-db-reader project. The multiplier employs the jcore-xml-mapper to map the document XML structure into CAS instances. It also supports additional tables sent by the DB Multiplier Reader that are then joined to the main table. This mechanism is used to load separate data from additional database tables and populate the CAS with them via the 'RowMapping' parameter. This component is part of the Jena Document Information System, JeDIS.</description>
+        <version>2.6.0</version>
         <vendor>JULIE Lab Jena, Germany</vendor>
+        <copyright>JULIE Lab Jena, Germany</copyright>
         <configurationParameters>
             <configurationParameter>
                 <name>RowMapping</name>
-                <description>In case that the CoStoSys active table schema specified more than two columns to be
-                    retrieved, the other columns need a mapping into the CAS.A mapping item has the following form: &lt;column
-                    index&gt;=&lt;uima type&gt;#&lt;type feature&gt;:&lt;feature datatype&gt;:defaultValue where the
-                    defaultValue is optional. Example: 2=de.julielab.jules.types.max_xmi_id#id:int:0 maps the content of
-                    the third (index 2, zero-based) retrieved column (may also belong to an additional table!) to
-                    feature "id" of the type "d.j.j.t.max_xmi_id" which is an int. In case there is no value returned
-                    from the database for a document, use a 0 as default.
-                </description>
+                <description>In case that the CoStoSys active table schema specified more than two columns to be retrieved, the other columns need a mapping into the CAS.A mapping item has the following form: &lt;column index&gt;=&lt;uima type&gt;#&lt;type feature&gt;:&lt;feature datatype&gt;:defaultValue where the defaultValue is optional. Example: 2=de.julielab.jules.types.max_xmi_id#id:int:0 maps the content of the third (index 2, zero-based) retrieved column (may also belong to an additional table!) to feature "id" of the type "d.j.j.t.max_xmi_id" which is an int. In case there is no value returned from the database for a document, use a 0 as default.</description>
                 <type>String</type>
                 <multiValued>true</multiValued>
                 <mandatory>false</mandatory>
             </configurationParameter>
             <configurationParameter>
                 <name>MappingFile</name>
-                <description>An XML mapping file following the specification required by the jcore-xml-mapper. The
-                    mapping file specifies how contents from an XML docuent are to be brought into the CAS.
-                </description>
+                <description>An XML mapping file following the specification required by the jcore-xml-mapper. The mapping file specifies how contents from an XML docuent are to be brought into the CAS.</description>
                 <type>String</type>
                 <multiValued>false</multiValued>
                 <mandatory>true</mandatory>
+            </configurationParameter>
+            <configurationParameter>
+                <name>AddShaHash</name>
+                <description>For use with AnnotationDefinedFlowController and XMIDBWriter. Possible values: document_text, defaults to 'document_text' and thus doesn't need to be specified manually at the moment. This parameter needs to match the value for the same parameter given to the XMIDBWriter in this pipeline. Then, a comparison between the existing hash in the database and the new hash of the CAS read in this pipeline can be made. In case the hashes match, the CAS is directly routed to the components specified in the ToVisitKeys parameter, skipping all other components. Note that this only works with AAEs where the first component is an 'AnnotationControlledFlow'. Additionally, the DBProcessingMetaData#hasDocumentHashChanged is set. This can be used by the XMIDBWriter to omit the reset of mirror subsets when updating the base document when the actual CAS text stayed the same.</description>
+                <type>String</type>
+                <multiValued>false</multiValued>
+                <mandatory>false</mandatory>
+            </configurationParameter>
+            <configurationParameter>
+                <name>DocumentTable</name>
+                <description>For use with AnnotationDefinedFlowController. String parameter indicating the name of the table where the XMI data and, thus, the hash is stored. The name must be schema qualified. Note that in this component, only the ToVisit annotation is created that determines which components to apply to a CAS with matching (unchanged) hash. The logic to actually control the CAS flow is contained in the AnnotationDefinedFlowController.</description>
+                <type>String</type>
+                <multiValued>false</multiValued>
+                <mandatory>false</mandatory>
+            </configurationParameter>
+            <configurationParameter>
+                <name>DocumentTableSchema</name>
+                <description>For use with AnnotationDefinedFlowController. The name of the schema that the document table - given with the DocumentTable parameter - adheres to. Only the primary key part is required for hash value retrieval.</description>
+                <type>String</type>
+                <multiValued>false</multiValued>
+                <mandatory>false</mandatory>
+            </configurationParameter>
+            <configurationParameter>
+                <name>ToVisitKeys</name>
+                <description>For use with AnnotationDefinedFlowController. Specifies the delegate AE keys of the AEs this CAS should still applied on although the hash has not changed. Can be null or empty indicating that no component should be applied to the CAS. The task of the AnnotationDefinedFlowController is then to read those annotations and route the CAS accordingly.</description>
+                <type>String</type>
+                <multiValued>true</multiValued>
+                <mandatory>false</mandatory>
+            </configurationParameter>
+            <configurationParameter>
+                <name>AddToVisitKeys</name>
+                <description>Toggles the creation of annotations for the AnnotationDefinedFlowController. Only needed when such a flow controller is used in the pipeline. For details, see the description of ToVisitKeys.</description>
+                <type>Boolean</type>
+                <multiValued>false</multiValued>
+                <mandatory>false</mandatory>
+            </configurationParameter>
+            <configurationParameter>
+                <name>AddUnchangedDocumentTextFlag</name>
+                <description>Toggles the addition of the 'document text is unchanged' flag. The value of this flag is determined via a SHA256 hash of the CAS document text. When DocumentTable and DocumentTableSchema are specified, the hash value of the document in storage is retrieved and compared to the current value. The flag is then set with respect to the comparison result.</description>
+                <type>Boolean</type>
+                <multiValued>false</multiValued>
+                <mandatory>false</mandatory>
             </configurationParameter>
         </configurationParameters>
         <configurationParameterSettings>
@@ -53,10 +81,21 @@
                 <import name="de.julielab.jcore.types.jcore-document-meta-pubmed-types" />
                 <import name="de.julielab.jcore.types.jcore-document-structure-pubmed-types" />
                 <import name="de.julielab.jcore.types.extensions.jcore-document-meta-extension-types" />
+                <import name="de.julielab.jcore.types.jcore-casflow-types" />
             </imports>
         </typeSystemDescription>
         <fsIndexCollection />
-        <capabilities />
+        <capabilities>
+            <capability>
+                <inputs>
+                    <type>de.julielab.jcore.types.casmultiplier.RowBatch</type>
+                </inputs>
+                <outputs>
+                    <type>de.julielab.jcore.types.casflow.ToVisit</type>
+                </outputs>
+                <languagesSupported />
+            </capability>
+        </capabilities>
         <operationalProperties>
             <modifiesCas>true</modifiesCas>
             <multipleDeploymentAllowed>true</multipleDeploymentAllowed>

@@ -2,7 +2,7 @@
     "categories": [
         "ae"
     ],
-    "description": "UIMA Wrapper for the JCoRe Sentence Boundary Detector (jcore-jsbd-ae) with a model trained on data from both the GENIA and PennBioIE corpus as well as additional material from MedLine abstracts.",
+    "description": "UIMA Wrapper for the JCoRe Sentence Boundary Detector (jcore-jsbd-ae) with a model trained on data from\n        both the GENIA and PennBioIE corpus as well as additional material from MedLine abstracts.\n    ",
     "descriptors": [
         {
             "category": "ae",
@@ -14,7 +14,7 @@
     "maven-artifact": {
         "artifactId": "jcore-jsbd-ae-biomedical-english",
         "groupId": "de.julielab",
-        "version": "2.5.1"
+        "version": "2.6.0"
     },
     "name": "JCoRe Sentence Annotator, Biomedical English"
 }

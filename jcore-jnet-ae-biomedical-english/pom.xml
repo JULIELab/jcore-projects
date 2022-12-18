@@ -1,32 +1,37 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <artifactId>jcore-jnet-ae-biomedical-english</artifactId>
-  <name>JCoRe JNET AE, Biomedical English</name>
-  <description>This project employs the jcore-jnet-ae (Named Entity Tagger) with a model trained on the PennBioIE corpus.</description>
-  <parent>
-  	<artifactId>jcore-projects</artifactId>
-  	<version>2.5.1</version>
-  	<groupId>de.julielab</groupId>
-  </parent>
-  <dependencies>
-  	<dependency>
-  		<groupId>de.julielab</groupId>
-  		<artifactId>jcore-jnet-ae</artifactId>
-  		<version>2.5.0</version>
-  	</dependency>
-      <dependency>
-          <groupId>junit</groupId>
-          <artifactId>junit</artifactId>
-      </dependency></dependencies>
-<licenses> 
-<license> 
-<name>BSD-2-Clause</name> 
-<url>https://opensource.org/licenses/BSD-2-Clause</url> 
-</license> 
-</licenses>  <organization>
-  	<name>JULIE Lab Jena, Germany</name>
-  	<url>http://www.julielab.de</url>
-  </organization>
-  <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-jnet-ae-biomedical-english</url>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>jcore-jnet-ae-biomedical-english</artifactId>
+    <name>JCoRe JNET AE, Biomedical English</name>
+    <description>This project employs the jcore-jnet-ae (Named Entity Tagger) with a model trained on the PennBioIE
+        corpus.
+    </description>
+    <parent>
+        <artifactId>jcore-projects</artifactId>
+        <version>2.6.0</version>
+        <groupId>de.julielab</groupId>
+    </parent>
+    <dependencies>
+        <dependency>
+            <groupId>de.julielab</groupId>
+            <artifactId>jcore-jnet-ae</artifactId>
+            <version>2.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+        </dependency>
+    </dependencies>
+    <licenses>
+        <license>
+            <name>BSD-2-Clause</name>
+            <url>https://opensource.org/licenses/BSD-2-Clause</url>
+        </license>
+    </licenses>
+    <organization>
+        <name>JULIE Lab Jena, Germany</name>
+        <url>http://www.julielab.de</url>
+    </organization>
+    <url>https://github.com/JULIELab/jcore-projects/tree/master/jcore-jnet-ae-biomedical-english</url>
 </project>

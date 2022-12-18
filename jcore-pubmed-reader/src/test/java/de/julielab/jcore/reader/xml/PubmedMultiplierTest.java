@@ -1,7 +1,7 @@
 package de.julielab.jcore.reader.xml;
 
-import de.julielab.jcore.types.AbstractText;
-import de.julielab.jcore.types.Header;
+import de.julielab.jcore.types.pubmed.Header;
+import de.julielab.jcore.types.pubmed.OtherID;
 import de.julielab.jcore.utility.JCoReTools;
 import org.apache.uima.UIMAException;
 import org.apache.uima.analysis_component.JCasAnnotator_ImplBase;
@@ -18,7 +18,8 @@ import org.apache.uima.fit.factory.AnalysisEngineFactory;
 import org.apache.uima.fit.factory.CollectionReaderFactory;
 import org.apache.uima.fit.util.JCasUtil;
 import org.apache.uima.jcas.JCas;
-import org.junit.Test;
+import org.apache.uima.jcas.cas.FSArray;
+import org.junit.jupiter.api.Test;
 import org.xml.sax.SAXException;
 
 import java.io.IOException;
@@ -26,8 +27,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Tests the multiplier reader together with the multiplier in a simple CPE.
@@ -82,8 +82,6 @@ public class PubmedMultiplierTest {
         assertEquals(177, seenPmids.size());
         for (String pmid : seenPmids)
             assertTrue(pmid.matches("[0-9]+"));
-
-
     }
 
     public static class TestAe extends JCasAnnotator_ImplBase {
@@ -94,6 +92,27 @@ public class PubmedMultiplierTest {
             // Write PMIDs into the list. The samples often don't have
             // abstracts or even titles.
             seenPmids.add(docId);
+            Header header = JCasUtil.selectSingle(aJCas, Header.class);
+            assertNotNull(header);
+            FSArray otherIDs = header.getOtherIDs();
+            assertNotNull(otherIDs, "Document with ID " + header.getId() + " does not have other ID annotations.");
+            // Test for a single document that its PMC ID is set.
+            // The pubmed ID is tested here but actually excluded in a newer version of the mapping file
+            if (header.getDocId().equals("10097079")) {
+                boolean pmcIdFound = false;
+                for (int i = 0; i < otherIDs.size(); i++) {
+                    OtherID otherID = (OtherID) otherIDs.get(i);
+                    if (otherID.getSource().equals("pubmed"))
+                        assertEquals(header.getDocId(), otherID.getId());
+                    else if (otherID.getSource().equals("pmc")) {
+                        assertEquals("PMC22336", otherID.getId());
+                        pmcIdFound = true;
+                    }
+                    else
+                        fail("Unexpected ArticleIdType: " + otherID.getSource());
+                }
+                assertTrue(pmcIdFound);
+            }
         }
     }
 

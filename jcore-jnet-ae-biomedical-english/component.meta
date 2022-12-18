@@ -2,7 +2,7 @@
     "categories": [
         "ae"
     ],
-    "description": "This project employs the jcore-jnet-ae (Named Entity Tagger) with a model trained on the PennBioIE corpus.",
+    "description": "This project employs the jcore-jnet-ae (Named Entity Tagger) with a model trained on the PennBioIE\n        corpus.\n    ",
     "descriptors": [
         {
             "category": "ae",
@@ -14,7 +14,7 @@
     "maven-artifact": {
         "artifactId": "jcore-jnet-ae-biomedical-english",
         "groupId": "de.julielab",
-        "version": "2.5.1"
+        "version": "2.6.0"
     },
     "name": "JCoRe JNET AE, Biomedical English"
 }
